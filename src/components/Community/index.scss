@@ -1,0 +1,45 @@
+.community {
+  height: 800px;
+  background-image: url('../../assets/images/fores.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 23px 30px 82px 56px #171327;
+  
+  .community__heading {
+    margin-bottom: 55px;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+.community__button {
+    padding: 15px 16.5px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 250px 200px;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.4) 26%, rgba(0,0,0,0.4) 35%, rgba(255,255,255,0) 64%);
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

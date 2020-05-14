@@ -1,0 +1,22 @@
+.slide {
+  width: 433px;
+  height: 316px;
+  background-image: url('../../../assets/images/small-tile.svg');
+  margin: 0 19px;
+  cursor: url('../../../assets/images/cursor.svg'), auto;
+}
+
+.slick-slider {
+  width: 990px!important;
+  margin: auto!important;
+  padding: 0 25px!important;
+}
+
+// .slick-slide {
+//   width: max-content!important;
+// }
+
+// .slick-track {
+//   display: flex!important;
+//   justify-content: space-between!important;
+// }

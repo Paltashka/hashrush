@@ -1,0 +1,100 @@
+.header {
+  height: 74px;
+  background-color: #00000066;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  
+  &__wrapper {
+    padding: 0 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 100px;
+    height: 62px;
+    cursor: pointer;
+  }
+
+  &__logo-wrapper {
+    position: relative;
+    margin-right: 60px;
+    transform: translateY(7px);
+    &::after {
+      content: '';
+      border-bottom: 22px solid #00000066;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      height: 0;
+      width: 150px;
+      display: block;
+      transform: rotate(180deg) translateX(50%);
+      position: absolute;
+      bottom: -19px;
+      left: 50%;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__login {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.46px;
+    cursor: pointer;
+  }
+
+  &__register {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.42px;
+  }
+}
+
+.navigation {
+  display: flex;
+  width: 460px;
+  justify-content: space-between;
+
+  &__item {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:last-child {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  }
+}
+
+.triangle {
+  margin-left: 5px;
+  width: 0; 
+  height: 0; 
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  
+  border-top: 3px solid #fff;
+}

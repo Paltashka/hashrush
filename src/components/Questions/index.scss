@@ -1,0 +1,45 @@
+.questions {
+  height: 800px;
+  background-image: url('../../assets/images/baddies.png');
+  position: relative;
+  box-sizing: border-box;
+  padding: 40px 0;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .questions__heading {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  &__img {
+    margin-left: 10px;
+  }
+
+  &__button-bottom {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.42px;
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    width: 17px;
+    height: 12px;
+    margin-right: 5px;
+  }
+}
