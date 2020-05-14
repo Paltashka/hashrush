@@ -19,8 +19,8 @@ const settings = {
   speed: 500,
   slidesToShow: 2,
   slidesToScroll: 1,
-  nextArrow: <SliderArrow direction="left" />,
-  prevArrow: <SliderArrow direction="right" />
+  nextArrow: <SliderArrow direction="right" />,
+  prevArrow: <SliderArrow direction="left" />
 };
 
 const About = () => {
