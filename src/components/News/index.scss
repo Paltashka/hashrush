@@ -61,11 +61,6 @@
       }
     }
   }
-
-  &__platfrom {
-    position: relative;
-    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.5), inset 0 1px 30px 0 #214363;
-  }
 }
 
 .platform {
@@ -127,7 +122,7 @@
     color: white;
     text-transform: uppercase;
     line-height: 33px;
-    background-color: #3a5172;
+    background-color: #395172;
     text-align: center;
     cursor: pointer;
     clip-path: polygon(6% 1%, 95% 1%, 100% 20%, 100% 80%, 95% 100%, 5% 98%, 0% 80%, 0% 20%);
@@ -142,7 +137,7 @@
       display: block;
       height: 25px;
       width: 20px;
-      background-color: #3a5172;
+      background-color: #395172;
       position: absolute;
       right: -6px;
       top: 6px;

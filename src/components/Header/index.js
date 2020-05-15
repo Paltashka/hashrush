@@ -19,10 +19,9 @@ const Header = () => {
             <li className="navigation__item">leaderboard</li>
             <li className="navigation__item" onClick={() => setIsVisible(!isVisible)}>
               community<div className="triangle"></div>
-              {isVisible && <DropDown />}
             </li>
+            {isVisible && <DropDown />}
           </ul>
-
         </div>
 
         <div className="header__right">

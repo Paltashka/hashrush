@@ -12,7 +12,7 @@ const NewsBlock = ({ imgUrl, date, title, text}) => {
           <span className="platform__date">{date}</span>
           <span className="platform__title">{title}</span>
           <p className="platform__text">{text}</p>
-
+          
           <div className="platform__button-wrapper">
             <div className="platform__button-border">
               <div className="platform__button">
@@ -20,7 +20,6 @@ const NewsBlock = ({ imgUrl, date, title, text}) => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

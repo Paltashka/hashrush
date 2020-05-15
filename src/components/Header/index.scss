@@ -2,7 +2,7 @@
   height: 74px;
   background-color: transparent;
   position: absolute;
-  z-index: 4;
+  z-index: 5;
   width: 100%;
 
   &:hover {
@@ -86,6 +86,7 @@
   display: flex;
   width: 460px;
   justify-content: space-between;
+  position: relative;
 
   &__item {
     font-family: 'Montserrat', sans-serif;
@@ -94,6 +95,8 @@
     font-size: 12px;
     letter-spacing: 1px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 
     &:hover {
       transition: opacity 1s;
