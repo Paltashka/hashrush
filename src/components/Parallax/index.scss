@@ -1,6 +1,6 @@
 .parallax {
   &-banner {
-    background-image: url('../../assets/images/sky.png');
+    background-image: url('../../assets/images/sky.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 7px 6px 54px 95px #171327;
@@ -17,15 +17,19 @@
 
   &-outer {
     z-index: 2;
+
+    &:nth-child(3) {
+      z-index: 3 !important;
+    }
   }
 }
 
 .welcome {
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -89%);
   display: flex;
   flex-direction: column;
   align-items: center;

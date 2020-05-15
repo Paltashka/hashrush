@@ -6,9 +6,12 @@ import tw from '../../assets/social-media/twitter.svg';
 import discord from '../../assets/social-media/discord.svg';
 import telegram from '../../assets/social-media/tlgrm.svg';
 
+import bg from '../../assets/images/fores.png';
+
 const Community = () => {
   return (
     <div className="community">
+      <img className="community__bg" src={bg} />
       <div className="community__content">
         <h1 className="community__heading heading">join our community</h1>
         <div className="community__buttons">

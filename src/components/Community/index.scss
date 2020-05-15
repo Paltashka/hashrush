@@ -1,9 +1,9 @@
 .community {
   height: 800px;
-  background-image: url('../../assets/images/fores.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url('../../assets/images/fores.png');
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   position: relative;
   z-index: 5;
   display: flex;
@@ -11,6 +11,13 @@
   justify-content: center;
   box-shadow: inset 23px 30px 82px 56px #171327;
   
+  &__bg {
+    position: absolute;
+    width: 99vw;
+    object-fit: cover;
+    z-index: -1;
+  }
+
   .community__heading {
     margin-bottom: 55px;
   }

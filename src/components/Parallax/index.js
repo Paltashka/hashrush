@@ -14,18 +14,19 @@ const Parallax = () => {
       layers={[
         {
           image: far,
-          amount: 0.5,
-          props: { style: { bottom: '30%', top: '17%', zIndex: 2 }}
+          amount: 0.3,
+          props: { style: { bottom: '7%', top: '17%', zIndex: 2 }}
+          
         },
         {
           image: moon,
-          amount: 0.7,
-          props: { style: { top: '9%', zIndex: 3, width: '400px', height: '400px', right: '20%', left: 'initial' }}
+          amount: 0.15,
+          props: { style: { top: '21%', zIndex: 3, width: '400px', height: '400px', right: '20%', left: 'initial' }}
         },
         {
           image: near,
           amount: 0,
-          props: { style: { bottom: '-30%', top: '20%', zIndex: 4 }}
+          props: { style: { bottom: '-16%', top: '15%', zIndex: 4, backgroundSize: 'contain', backgroundRepeat:  'no-repeat' }}
         },
       ]}
       style={{

@@ -1,9 +1,14 @@
 .about {
   height: 1300px;
-  background-image: linear-gradient(to bottom, #000000, #465c60);
+  // background-image: linear-gradient(to bottom, #000000, #465c60);
+  background-image: linear-gradient(to bottom, #000000 26%, #37494b 117%);
+
+
   box-sizing: border-box;
   padding-top: 50px;
-  box-shadow: 7px 200px 54px 300px #465c60;
+  // box-shadow: 7px 200px 54px 300px #465c60;
+  // box-shadow: 7px 200px 54px 300px #37494b;
+  box-shadow: 7px 200px 54px 300px #2d3b3d;
   position: relative;
 
   .about__heading {

@@ -8,7 +8,7 @@ import discordIcon from '../../assets/social-media/discord.svg';
 const Questions = () => {
   return (
     <div className="questions">
-      <Button text="discover" classPosition="questions__button" />
+      <Button text="discover more" classPosition="questions__button" />
 
       <div className="questions__content">
         <h1 className="questions__heading heading">questions?</h1>

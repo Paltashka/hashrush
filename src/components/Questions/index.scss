@@ -3,7 +3,7 @@
   background-image: url('../../assets/images/baddies.png');
   position: relative;
   box-sizing: border-box;
-  padding: 40px 0;
+  padding: 40px 0 130px;
   background-position: bottom;
   background-size: cover;
   display: flex;
@@ -35,11 +35,13 @@
     color: white;
     font-size: 11px;
     text-transform: uppercase;
+    text-shadow: 0 1px 7px rgba(140, 86, 43, 0.53);
   }
 
   &__icon {
     width: 17px;
     height: 12px;
     margin-right: 5px;
+    box-shadow: inset 0 -3px 0px 0px rgba(0, 0, 0, 0.23);
   }
 }

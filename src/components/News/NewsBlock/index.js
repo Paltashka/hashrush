@@ -1,5 +1,6 @@
 import React from 'react';
-import platform from '../../../assets/images/platform.svg';
+// import platform from '../../../assets/images/platform.svg';
+import platform from '../../../assets/images/tile.svg';
 
 const NewsBlock = ({ imgUrl, date, title, text}) => {
   return (
@@ -11,11 +12,15 @@ const NewsBlock = ({ imgUrl, date, title, text}) => {
           <span className="platform__date">{date}</span>
           <span className="platform__title">{title}</span>
           <p className="platform__text">{text}</p>
-          <div className="platform__button-border">
-            <div className="platform__button">
-              Read more
+
+          <div className="platform__button-wrapper">
+            <div className="platform__button-border">
+              <div className="platform__button">
+                Read more
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
