@@ -1,0 +1,35 @@
+.basics {
+  height: 950px;
+  background-color: black;
+  position: relative;
+  box-shadow: -1px -19px 89px 69px rgba(0,0,0,1);
+  padding-top: 130px;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 90px;
+    background-image: url('../../assets/about/top-panel.png');
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: -82px;
+    width: 100%;
+  }
+
+  &__subtitle {
+    margin: 20px 0;
+    letter-spacing: 1.31px;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+  }
+
+  &__content {
+    height: 600px;
+  }
+}

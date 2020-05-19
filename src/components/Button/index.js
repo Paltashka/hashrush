@@ -1,13 +1,13 @@
 import React from 'react';
 import './index.scss';
 
-const Button = ({ classPosition, text }) => {
+const Button = ({ classPosition, text, layout, type }) => {
   return (
-    <div className={`button__border-black ${classPosition}`}>
+    <div className={`button__border-black ${classPosition ? classPosition : ''}`}>
       <div className="button__border-black-inside">
-        <div className="button__border">
-          <span className="button welcome__button">{text}</span>
-        </div>
+        <button type={type} className="button__border">
+          <span className="button welcome__button">{layout}{text}</span>
+        </button>
       </div>
     </div>
   );

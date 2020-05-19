@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -25,4 +30,3 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-

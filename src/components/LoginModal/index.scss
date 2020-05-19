@@ -1,0 +1,146 @@
+.account {
+  &__button {
+    width: max-content;
+    margin: auto;
+    cursor: pointer;
+
+    &:hover .account__text::before {
+      opacity: 1;
+    }
+
+    &:hover .account__text::after {
+      opacity: 1;
+    }
+  }
+
+  &__border-top {
+    clip-path: polygon(9% 11%, 5% 57%, 3% 52%, 8% 0, 92% 0, 97% 50%, 95% 50%, 91% 13%);
+    width: 150px;
+    background-color: #cfc398;
+    height: 11px;
+    margin: auto;
+  }
+
+  &__border-bottom {
+    clip-path: polygon(9% 11%, 5% 57%, 3% 52%, 8% 0, 92% 0, 97% 55%, 94% 50%, 91% 13%);
+    width: 150px;
+    height: 10px;
+    transform: scaleY(-1);
+    background-color: #cfc398;
+    margin: auto;
+  }
+
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-size: 11px;
+    color: #cec39d;
+    letter-spacing: 0.42px;
+    display: block;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 2px;
+      opacity: 0;
+      background-color: #cec39d;
+      position: absolute;
+      height: 25px;
+      left: 5px;
+      top: -6px;
+      transition: opacity 0.5s;
+    }
+
+    &::after {
+      content: '';
+      width: 2px;
+      opacity: 0;
+      background-color: #cec39d;
+      position: absolute;
+      height: 25px;
+      right: 6px;
+      top: -6px;
+      transition: opacity 0.5s;
+    }
+  }
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  z-index: 2;
+  background-color: black;
+
+  &::before {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/forms/form-bg.png');
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+  }
+
+  &__back {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #cec39d;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__logo {
+    width: 131px;
+    height: 78px;
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__heading {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1.08px;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__helpers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin: auto;
+    margin-top: 30px;
+  }
+}

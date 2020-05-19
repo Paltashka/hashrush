@@ -1,0 +1,40 @@
+.register {
+  
+  &__content {
+    width: 456px;
+    height: 514px;
+    background-image: url('../../assets/forms/big-tile.png');
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 60px 40px;
+    box-sizing: border-box;
+  }
+
+  .account {
+    &__border-top {
+      width: 113px;
+    }
+
+    &__border-bottom {
+      width: 113px;
+    }
+
+    &__text {
+  
+      &::before {
+        left: 4px;
+        top: -6px;
+
+      }
+  
+      &::after {
+        content: '';
+        right: 5px;
+        top: -6px;
+      }
+    }
+  }
+}
