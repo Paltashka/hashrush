@@ -1,13 +1,12 @@
 .button {
   background: linear-gradient(#f5b72d, #ee871a);
-  cursor: pointer;
   padding: 8px 19px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 5px 0 rgba(51, 50, 45, 0.5);
   text-shadow: 0 1px 7px rgba(140, 86, 43, 0.53);
-  border-radius: 6px;
+  border-radius: 4px;
 
   &__img {
     margin-right: 5px;
@@ -23,6 +22,7 @@
     border-radius: 6px;
     width: max-content;
     border: none;
+    cursor: pointer;
 
     &:hover {
       background: linear-gradient(#ee871a, #f5b72d);
@@ -35,6 +35,7 @@
     width: max-content;
     border-radius: 6px;
     box-shadow: 0 2px 26px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 
     &:hover {
       background: linear-gradient(#868686, #1b1f23);

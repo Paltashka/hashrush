@@ -4,11 +4,11 @@
   height: 153px;
   position: absolute;
   border-top: 1px solid #b2d0e080;
-  top: 43px;
-  // left: -25%;
+  top: 73px;
   right: -21px;
   box-sizing: border-box;
   padding: 10px 0;
+  display: none;
 
   &__item {
     display: flex;
@@ -18,7 +18,7 @@
     line-height: 32px;
     align-items: center;
     opacity: 0.5;
-    padding: 0 25px;
+    padding: 0 25px 0 27px;
     font-family: 'Montserrat', sans-serif;
     color: white;
 

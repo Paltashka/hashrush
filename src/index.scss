@@ -7,6 +7,12 @@ a {
   color: inherit;
 }
 
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
 ul {
   list-style: none;
   padding: 0;

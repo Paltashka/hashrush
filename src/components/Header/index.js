@@ -7,7 +7,7 @@ import ava from '../../assets/about/ava.png';
 import download from '../../assets/about/download.svg';
 
 const Header = ({ isLogin }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
   const [choice, setChoice] = useState(true);
 
   return  (
@@ -20,13 +20,14 @@ const Header = ({ isLogin }) => {
             </Link>
           </div>
           <ul className="header__navigation navigation">
-            <Link to="/about"><li className="navigation__item">about</li></Link>
+            <li className="navigation__item"><Link to="/about">about</Link></li>
             <li className="navigation__item">store</li>
             <li className="navigation__item">leaderboard</li>
-            <li className="navigation__item" onClick={() => setIsVisible(!isVisible)}>
+            <li className="navigation__item">
               community<div className="triangle"></div>
+              <DropDown />
             </li>
-            {isVisible && <DropDown />}
+            {/* {isVisible && <DropDown />} */}
           </ul>
         </div>
 

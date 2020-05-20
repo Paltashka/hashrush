@@ -52,13 +52,14 @@
     cursor: pointer;
 
     &:hover {
-      transition: opacity 1s;
+      transition: opacity 0.5s;
       opacity: 0.5;
     }
     
     &--thin {
       font-weight: 200;
       text-transform: none;
+      letter-spacing: initial;
     }
   }
 

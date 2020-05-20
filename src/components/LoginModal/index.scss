@@ -83,6 +83,7 @@
     height: 100vh;
     background-image: url('../../assets/forms/form-bg.png');
     background-repeat: no-repeat;
+    background-size: contain;
     top: 0;
     left: 0;
     position: fixed;
@@ -100,6 +101,11 @@
     right: 40px;
     cursor: pointer;
     z-index: 2;
+
+    &:hover {
+      transition: opacity 0.5s;
+      opacity: 0.5;
+    }
   }
 
   &__logo {

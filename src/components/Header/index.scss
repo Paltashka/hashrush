@@ -69,13 +69,14 @@
     font-size: 12px;
     letter-spacing: 0.46px;
     cursor: pointer;
+    padding: 0 40px;
+    line-height: 34px;
   }
 
   &__register {
     display: block;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    margin-left: 40px;
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 0.42px;
@@ -114,6 +115,7 @@
   width: 460px;
   justify-content: space-between;
   position: relative;
+  height: 74px;
 
   &__item {
     font-family: 'Montserrat', sans-serif;
@@ -126,14 +128,18 @@
     align-items: center;
 
     &:hover {
-      transition: opacity 1s;
-      opacity: 0.5;
+      transition: color 0.6s;
+      color: #ffffff80;
     }
 
     &:last-child {
       display: flex;
       align-items: center;
       position: relative;
+
+      &:hover .dropdown {
+        display: block;
+      }
     }
   }
 }

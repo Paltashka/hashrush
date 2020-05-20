@@ -5,7 +5,6 @@ const SliderArrow = ({ direction, onClick }) => {
   return (
     <div onClick={onClick} className={`slider-arrow--border position-${direction}`}>
       <div className={`slider-arrow arrow-${direction}`}>
-
       </div>
     </div>
   );

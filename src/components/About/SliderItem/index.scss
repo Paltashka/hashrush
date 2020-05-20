@@ -4,6 +4,15 @@
   background-image: url('../../../assets/images/small-tile.svg');
   margin: 0 19px;
   cursor: url('../../../assets/images/cursor.svg'), auto;
+
+  &__img {
+    transition: filter 0.5s;
+
+    &:hover {
+      transition: filter 0.5s;
+      filter: brightness(0.4);
+    }
+  }
 }
 
 .slick-slider {

@@ -3,7 +3,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import CreateAccount from './components/CreateAccount';
 import LoginModal from './components/LoginModal';
-import ThanksModal from './components/TnaksModal';
+import ThanksModal from './components/ThanksModal';
 import raken from './assets/forms/raken-rider.png';
 import muskernack from './assets/forms/3-muskernack-smaller-size.png';
 
