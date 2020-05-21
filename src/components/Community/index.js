@@ -32,8 +32,16 @@ const Community = () => {
           <ButtonRounded imgUrl={telegram} alt="telegram" />
         </div>
       </div>
-      <h1 className="community__about heading">About Hash Rush</h1>
 
+      <div className="community__about-pos">
+        <h1 className="community__about heading">About Hash Rush</h1>
+        <p className="about__text">
+            An online sci-fi/fantasy RTS set in the fictional Hermeian galaxy, Hash Rush sees players build,
+            fight and trade their way to victory as they grow and manage their small mining colony, battle monsters, and trade valuable items and resources.
+            Tasked with accumulating the much sought-after Crypto Crystals on their planet, successful players will earn themselves tokenized blockchain rewards as well
+            as in-game items, bonuses and other prizes.
+          </p>
+      </div>
     </div>
   )
 };
