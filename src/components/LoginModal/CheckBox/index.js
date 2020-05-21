@@ -8,8 +8,8 @@ const CheckBox = ({ label, id}) => {
         <div className="input__bg"></div>
         <input className="checkbox" type="checkbox" id={id} />
         <span className="checkmark">
-          <div className="checkmark__stem"></div>
-          <div className="checkmark__kick"></div>
+          {/* <div className="checkmark__stem"></div>
+          <div className="checkmark__kick"></div> */}
         </span>
       </div>
 

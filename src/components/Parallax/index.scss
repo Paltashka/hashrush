@@ -20,6 +20,10 @@
   &-outer {
     z-index: 2;
 
+    &:first-child {
+      overflow: hidden;
+    }
+
     &:nth-child(3) {
       // z-index: 3 !important;
     }

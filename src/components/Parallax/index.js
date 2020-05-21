@@ -28,8 +28,8 @@ const Parallax = () => {
         },
         {
           image: moon,
-          amount: 0.4,
-          props: { style: { top: '11%', zIndex: 3, width: '400px', height: '400px', right: '25%', left: 'initial' }}
+          amount: 0.45,
+          props: { style: { top: '11%', zIndex: 3, width: '400px', height: '400px', right: '23%', left: 'initial' }}
         },
         {
           image: near,

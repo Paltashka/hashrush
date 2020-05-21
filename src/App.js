@@ -1,9 +1,11 @@
 import React from 'react';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import AccountPage from './pages/AccountPage';
 import CreateAccount from './components/CreateAccount';
 import LoginModal from './components/LoginModal';
 import ThanksModal from './components/ThanksModal';
+
 import raken from './assets/forms/raken-rider.png';
 import muskernack from './assets/forms/3-muskernack-smaller-size.png';
 
@@ -24,6 +26,7 @@ function App() {
         <Route path="/thanks-download">
           <ThanksModal img={muskernack} title="Thank you for downloading Hash Rush!" text={false} />
         </Route>
+        <Route path="/account" component={AccountPage} />
       </Switch>
     </HashRouter>
   );

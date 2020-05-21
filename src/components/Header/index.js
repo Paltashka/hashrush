@@ -47,13 +47,15 @@ const Header = ({ isLogin }) => {
                     >hc</span>
                   </div>
 
-                  <div className="header__user user">
-                    <div className="user__img--wrapper">
-                      <img className="user__img" src={ava} alt="user avatar"/>
+                  <Link to="/account">
+                    <div className="header__user user">
+                      <div className="user__img--wrapper">
+                        <img className="user__img" src={ava} alt="user avatar"/>
+                      </div>
+                      <span className="user__name">username__88</span>
+                      <div className="triangle"></div>
                     </div>
-                    <span className="user__name">username__88</span>
-                    <div className="triangle"></div>
-                  </div>
+                  </Link>
 
                   <div className="header__register button__border">
                     <span className="button">
