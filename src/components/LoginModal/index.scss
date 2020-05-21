@@ -4,30 +4,36 @@
     margin: auto;
     cursor: pointer;
 
-    &:hover .account__text::before {
-      opacity: 1;
+    &:hover .account__border-top {
+      background-color: #cf9e1d;
+      transform: translateY(-5px);
+      transition: transform 0.5s;
     }
 
-    &:hover .account__text::after {
-      opacity: 1;
+    &:hover .account__border-bottom {
+      transition: transform 0.5s;
+      background-color: #cf9e1d;
+      transform: scaleY(-1) translateY(-5px);
     }
   }
 
   &__border-top {
-    clip-path: polygon(9% 11%, 5% 57%, 3% 52%, 8% 0, 92% 0, 97% 50%, 95% 50%, 91% 13%);
+    clip-path: polygon(8% 12%,3.3% 57%,3% 57%,8% 0,91% 0,95% 47%,95% 50%,91% 13%);
     width: 150px;
     background-color: #cfc398;
     height: 11px;
     margin: auto;
+    transition: transform 0.5s;
   }
 
   &__border-bottom {
-    clip-path: polygon(9% 11%, 5% 57%, 3% 52%, 8% 0, 92% 0, 97% 55%, 94% 50%, 91% 13%);
+    clip-path: polygon(8% 12%,3.3% 57%,3% 57%,8% 0,91% 0,95% 47%,95% 50%,91% 13%);
     width: 150px;
     height: 10px;
     transform: scaleY(-1);
     background-color: #cfc398;
     margin: auto;
+    transition: transform 0.5s;
   }
 
   &__text {
@@ -40,30 +46,6 @@
     display: block;
     text-align: center;
     position: relative;
-
-    &::before {
-      content: '';
-      width: 2px;
-      opacity: 0;
-      background-color: #cec39d;
-      position: absolute;
-      height: 25px;
-      left: 5px;
-      top: -6px;
-      transition: opacity 0.5s;
-    }
-
-    &::after {
-      content: '';
-      width: 2px;
-      opacity: 0;
-      background-color: #cec39d;
-      position: absolute;
-      height: 25px;
-      right: 6px;
-      top: -6px;
-      transition: opacity 0.5s;
-    }
   }
 }
 

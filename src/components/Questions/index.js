@@ -1,13 +1,25 @@
 import React from 'react';
 import Button from '../Button';
 import './index.scss';
+import { Parallax } from 'react-scroll-parallax';
 
+import bg from '../../assets/images/baddies.png';
 import discord from '../../assets/images/discord.svg';
 import discordIcon from '../../assets/social-media/discord.svg';
+
+const ParallaxImg = () => {
+  return (
+    <Parallax y={[20, -20]}>
+      <img className="questions__bg" src={bg} />
+    </Parallax>
+  );
+};
 
 const Questions = () => {
   return (
     <div className="questions">
+      <ParallaxImg />
+
       <Button text="discover more" classPosition="questions__button" />
 
       <div className="questions__content">

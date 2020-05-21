@@ -1,11 +1,18 @@
 .parallax {
-  &-banner {
-    // background-image: url('../../assets/images/sky.jpg');
+  &__start {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 7px 6px 54px 95px #171327;
     overflow: initial !important;
-    margin-bottom: 470px;
+    margin-bottom: 470px;  
+  }
+  &-banner {
+    // background-image: url('../../assets/images/sky.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // box-shadow: 7px 6px 54px 95px #171327;
+    // overflow: initial !important;
+    // margin-bottom: 470px;
     
     &::after {
       content: '';

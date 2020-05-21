@@ -12,11 +12,12 @@
   box-shadow: inset 23px 30px 82px 56px #171327;
   
   &__bg {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     object-fit: cover;
     z-index: -1;
     top: 0;
+    // height: 850px;
   }
 
   .community__heading {
@@ -43,11 +44,19 @@
     padding: 250px 200px;
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,0.4) 26%, rgba(0,0,0,0.4) 35%, rgba(255,255,255,0) 64%);
+    position: absolute;
+    z-index: 6;
   }
 
   &__buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  &__about {
+    position: absolute;
+    bottom: -91px;
+    z-index: 3;
   }
 }

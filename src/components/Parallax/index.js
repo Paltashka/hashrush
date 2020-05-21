@@ -13,17 +13,18 @@ import sky from '../../assets/images/sky.jpg';
 const Parallax = () => {
   return (
     <ParallaxBanner
+      className="parallax__start"
       layers={[
         {
           image: sky,
           amount: 0.8,
-          props: { style: { top: '-55px', bottom: '0', zIndex: 2, backgroundSize: 'cover', backgroundRepeat:  'no-repeat' }}
+          props: { style: { top: '-55px', bottom: '0', zIndex: 2, backgroundSize: 'cover', backgroundRepeat:  'no-repeat', overflow: 'hidden'}}
           
         },
         {
           image: far,
           amount: 0.3,
-          props: { style: { bottom: '0', top: '12%', zIndex: 2 }}
+          props: { style: { bottom: '0', top: '-3%', zIndex: 2 }}//12
           
         },
         {

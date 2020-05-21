@@ -35,7 +35,7 @@ const About = () => {
 
   return (
     <div className="about">
-      <div className="about__shadow"></div>
+      {/* <div className="about__shadow"></div> */}
       <div className="about__content">
         <h1 className="heading about__heading">about hash rush</h1>
         <p className="about__text">

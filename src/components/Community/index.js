@@ -8,10 +8,21 @@ import telegram from '../../assets/social-media/tlgrm.svg';
 
 import bg from '../../assets/images/fores.png';
 
+import { Parallax } from 'react-scroll-parallax';
+
+const ParallaxImg = () => {
+  return (
+    <Parallax y={[40, -5]}>
+      <img className="community__bg" src={bg} />
+    </Parallax>
+  );
+};
+
 const Community = () => {
   return (
     <div className="community">
-      <img className="community__bg" src={bg} />
+      <ParallaxImg />
+
       <div className="community__content">
         <h1 className="community__heading heading">join our community</h1>
         <div className="community__buttons">
@@ -21,8 +32,13 @@ const Community = () => {
           <ButtonRounded imgUrl={telegram} alt="telegram" />
         </div>
       </div>
+      <h1 className="community__about heading">About Hash Rush</h1>
+
     </div>
   )
 };
 
 export default Community;
+
+
+

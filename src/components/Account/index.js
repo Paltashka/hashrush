@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
 import ava from '../../assets/about/ava.png';
+import logo from '../../assets/images/logo-planet.png';
 
 const Account = () => {
   return (
@@ -22,8 +23,16 @@ const Account = () => {
             <span className="account__email-change">change email</span>
           </div>
 
+          <div className="account__button button__border">
+            <span className="button">
+              change password
+            </span>
+          </div>
+
         </div>
       </div>
+
+      <img className="account__logo" src={logo} alt="logo with planet" />
     </div>
   );
 };
