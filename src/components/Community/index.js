@@ -12,7 +12,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 const ParallaxImg = () => {
   return (
-    <Parallax y={[40, -5]}>
+    <Parallax y={[40, -5]} styleInner={{transform: 'translate3d(0%, 39.5825%, 0px)'}}>
       <img className="community__bg" src={bg} />
     </Parallax>
   );
