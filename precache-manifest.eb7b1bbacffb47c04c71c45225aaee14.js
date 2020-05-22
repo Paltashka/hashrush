@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53ca624fd8f567fc3b81d7bede96a275",
+    "revision": "0f417e79d0b2eee3f308ea7443972b5d",
     "url": "/hashrush/index.html"
   },
   {
-    "revision": "e001cb8aaa840e77bf2d",
+    "revision": "00d346212c32086b44e0",
     "url": "/hashrush/static/css/2.20d348e8.chunk.css"
   },
   {
-    "revision": "022d62e18cb02ee655e8",
-    "url": "/hashrush/static/css/main.14797933.chunk.css"
+    "revision": "d6d9661cebd311bdce28",
+    "url": "/hashrush/static/css/main.d35538a7.chunk.css"
   },
   {
-    "revision": "e001cb8aaa840e77bf2d",
-    "url": "/hashrush/static/js/2.941de7f3.chunk.js"
+    "revision": "00d346212c32086b44e0",
+    "url": "/hashrush/static/js/2.3d70e81c.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/hashrush/static/js/2.941de7f3.chunk.js.LICENSE.txt"
+    "url": "/hashrush/static/js/2.3d70e81c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "022d62e18cb02ee655e8",
-    "url": "/hashrush/static/js/main.39226036.chunk.js"
+    "revision": "d6d9661cebd311bdce28",
+    "url": "/hashrush/static/js/main.04e162b2.chunk.js"
   },
   {
     "revision": "8d52adc6fc53a3fbbdff",
@@ -52,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/big-tile.15765178.png"
   },
   {
+    "revision": "07362082166acbbec7ac76bbd21f9fba",
+    "url": "/hashrush/static/media/cross.07362082.svg"
+  },
+  {
     "revision": "77deae99f61f24e53f105e87346f2f53",
     "url": "/hashrush/static/media/cursor.77deae99.svg"
   },
@@ -70,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d87d3789fc8facb6e30d9f1be2fa743b",
     "url": "/hashrush/static/media/download.d87d3789.svg"
+  },
+  {
+    "revision": "e24a203bc047c5459bcdf7653b2eff6d",
+    "url": "/hashrush/static/media/emails.e24a203b.svg"
   },
   {
     "revision": "68f357a0eb6408782e099286b5b45033",
