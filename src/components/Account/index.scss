@@ -1,6 +1,6 @@
 .account {
   // height: calc(100vh - 263px);
-  height: 970px;
+  min-height: 970px;
   background-image: url('../../assets/images/baddies.png');
   background-position: center;
   background-size: cover;
@@ -94,7 +94,12 @@
       line-height: 20px;
       letter-spacing: 1.31px;
       text-transform: uppercase;
-      cursor: pointer;      
+      cursor: pointer;
+
+      &:hover {
+        transition: opacity 0.5s;
+        opacity: 0.5;
+      }
     }
   }
 
@@ -111,5 +116,46 @@
     width: 166px;
     height: 136px;
     margin: auto;
+    margin-bottom: 44px;
+    display: block;
+  }
+
+  &__btn {
+    margin: auto;
+  }
+
+  &__verify {
+    width: 492px;
+    margin: auto;
+
+    &-title {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: 0.85px;
+      margin: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    &-text {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      font-size: 14px;
+      line-height: 23px;
+      color: white;
+      margin: 0;
+      margin-bottom: 37px;
+      
+      span {
+        font-weight: 500;
+        color: #cec39d;
+        cursor: pointer;
+        padding-bottom: 3px;
+        border-bottom: 1px solid #cec39d;
+      }
+    }
   }
 }
