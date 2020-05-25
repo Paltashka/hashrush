@@ -10,9 +10,16 @@ import bg from '../../assets/images/fores.png';
 
 import { Parallax } from 'react-scroll-parallax';
 
+import NewsBlock from '../News/NewsBlock';
+import platformHead from '../../assets/images/platform-head.png';
+
+const date = '12 may 2020';
+const title = 'Hash Rush February Update';
+const text = 'The Hash Rush Lore Spotlight series returns. This week we are continuing with the topic of looking at the…';
+
 const ParallaxImg = () => {
   return (
-    <Parallax y={[40, -5]} styleInner={{transform: 'translate3d(0%, 39.5825%, 0px)'}}>
+    <Parallax y={[25, -5]} styleInner={{transform: 'translate3d(0%, 24.1057%, 0px)'}}>
       <img className="community__bg" src={bg} />
     </Parallax>
   );
@@ -21,6 +28,11 @@ const ParallaxImg = () => {
 const Community = () => {
   return (
     <div className="community">
+      <div className="news__blocks">
+          <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
+          <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
+          <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
+        </div>
       <ParallaxImg />
 
       <div className="community__content">
