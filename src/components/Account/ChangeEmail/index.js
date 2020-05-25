@@ -10,8 +10,8 @@ const ChangeEmail = ({ setChangeEmail }) => {
   const [isSent, setIsSent] = useState(false);
 
   return (
-    <div className="change-email">
-      <div className="change-email__message-border">
+    <div className="change-email" onClick={() => setChangeEmail(false)}>
+      <div className="change-email__message-border" onClick={(event) => event.stopPropagation()}>
         <div className="change-email__message">
           <img
             className="change-email__cross"

@@ -1,12 +1,7 @@
 import React from 'react'
 import './index.scss';
-import NewsBlock from './NewsBlock';
-import platformHead from '../../assets/images/platform-head.png';
 
 const News = () => {
-  const date = '12 may 2020';
-  const title = 'Hash Rush February Update';
-  const text = 'The Hash Rush Lore Spotlight series returns. This week we are continuing with the topic of looking at the…';
 
   return (
     <div className="news">

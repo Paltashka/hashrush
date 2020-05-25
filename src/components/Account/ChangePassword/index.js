@@ -9,8 +9,8 @@ const ChangePassword = ({ setChangePassword }) => {
   const [isSent, setIsSent] = useState(false);
 
   return (
-    <div className="change-email change-password">
-      <div className="change-email__message-border">
+    <div className="change-email change-password"  onClick={() => setChangePassword(false)}>
+      <div className="change-email__message-border" onClick={(event) => event.stopPropagation()}>
         <div className="change-email__message">
           <img
             className="change-email__cross"
