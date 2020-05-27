@@ -4,6 +4,7 @@
   position: relative;
   box-shadow: -1px -19px 89px 69px rgba(0,0,0,1);
   padding-top: 130px;
+  box-sizing: border-box;
 
   &::before {
     content: '';
@@ -31,5 +32,44 @@
 
   &__content {
     height: 600px;
+    background-image: url('../../assets/about/planets.png');
+    padding-top: 100px;
   }
+
+  &__blocks {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    position: relative;
+  }
+
+  &__cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.cross-horizontal {
+  background: linear-gradient(to right, rgba(57, 78, 96, 0.2), #d4f0ff, rgba(57, 78, 96, 0.2));
+  height: 2px;
+  opacity: 1;
+  width: 432px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.cross-vertical {
+  background: linear-gradient( rgba(49, 74, 95, 0.2), #d4f0ff, rgba(57, 78, 96, 0.2));
+  width: 2px;
+  opacity: 1;
+  height: 432px;
+  position: absolute;
+  top: -216px;
+  left: 50%;
+  transform: translate(-1px, 0);
 }

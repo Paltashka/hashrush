@@ -1,0 +1,28 @@
+.header-tablet {
+  background-color: black;
+  height: 100vh;
+  background-image: url('../../../assets/about/northern-lights.png');
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  padding-top: 147px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .footer {
+    &__nav:first-child {
+      margin-bottom: 60px;
+    }
+
+    &__right {
+      align-items: center;
+    }
+  
+    &__medias {
+      margin-bottom: 0;
+    }
+  }
+}

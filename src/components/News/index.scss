@@ -2,7 +2,6 @@
   background-color: #171327;
   position: relative;
   z-index: 2;
-  // height: 620px;
   height: 300px;
   top: -100px;
   box-shadow: 7px 200px 54px 400px #171327;
@@ -52,14 +51,6 @@
       
       .platform {
         &__button {
-          // .platform__btn-text::before {
-          //   opacity: 1;
-          // }
-      
-          // .platform__btn-text::after {
-          //   opacity: 1;
-          // }
-
           .platform__border-top {
             background-color: #cf9e1d;
             transform: translateY(-5px);
@@ -135,18 +126,9 @@
   &__button {
     width: max-content;
     cursor: pointer;
-
-    // &:hover .platform__btn-text::before {
-    //   opacity: 1;
-    // }
-
-    // &:hover .platform__btn-text::after {
-    //   opacity: 1;
-    // }
   }
 
   &__border-top {
-    // clip-path: polygon(9% 11%, 5% 57%, 3% 52%, 8% 0, 92% 0, 97% 50%, 95% 50%, 91% 13%);
     clip-path: polygon(8% 12%,3.3% 57%,3% 57%,8% 0,91% 0,95% 47%,95% 50%,91% 13%);
     width: 107px;
     background-image: linear-gradient(to left,rgba(207, 158, 29, 0.48), #ffbe4d, rgba(207, 158, 29, 0.5));
@@ -155,7 +137,6 @@
   }
 
   &__border-bottom {
-    // clip-path: polygon(9% 11%, 5% 57%, 3% 52%, 8% 0, 92% 0, 97% 55%, 94% 50%, 91% 13%);
     clip-path: polygon(8% 12%,3.3% 57%,3% 57%,8% 0,91% 0,95% 47%,95% 50%,91% 13%);
     width: 107px;
     height: 10px;
@@ -197,6 +178,47 @@
       right: 4px;
       top: -6px;
       transition: opacity 0.5s;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news {
+    box-shadow: 7px 200px 23px 300px #171327;
+    // top: -100px;
+    top: 0;
+    height: 600px;
+
+    &::before {
+      content: none;
+    }
+
+    &__content {
+      top: -95px;
+    }
+
+    &__blocks {
+      top: -660px;
+    }
+
+    &__platform {
+      width: 344px;
+      height: 510px;
+    }
+
+    &__block:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &__block:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  .platform {
+    img {
+      width: 341px;
+      transform: translateX(8px);
     }
   }
 }

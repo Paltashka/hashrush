@@ -21,11 +21,25 @@
   padding: 0 25px!important;
 }
 
-// .slick-slide {
-//   width: max-content!important;
-// }
+@media screen and (max-width: 768px) {
+  .slide {
+    width: 276px;
+    height: 206px;
+    background-size: contain;
 
-// .slick-track {
-//   display: flex!important;
-//   justify-content: space-between!important;
-// }
+    &__img {
+      width: 276px;
+      height: 206px;
+      object-fit: contain;
+    }
+  }
+
+  .slick-slider {
+    // width: initial!important;
+    width: 640px!important;
+  }
+
+  .slick-slide {
+    width: 295px!important;
+  }
+}

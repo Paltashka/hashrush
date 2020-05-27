@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 import ButtonRounded from './ButtonRounded';
 import facebook from '../../assets/social-media/facebook.svg';
@@ -26,12 +26,23 @@ const ParallaxImg = () => {
 };
 
 const Community = () => {
+  const [screnWidth, setScreenWidth] = useState(window.innerWidth);
+  const handleResize = () => setScreenWidth(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, [handleResize, screnWidth])
+
   return (
     <div className="community">
       <div className="news__blocks">
           <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
           <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
-          <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
+          {screnWidth > 769 && <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />}
         </div>
       <ParallaxImg />
 

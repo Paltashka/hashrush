@@ -72,3 +72,28 @@
     z-index: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 0;
+    height: 750px;
+    
+    &__text {
+      width: 613px;
+    }
+
+    &__content {
+      display: none;
+    }
+    &__video {
+      width: 734px;
+      height: 414px;
+
+      &--wrapper {
+        background-image: none;
+        width: 734px;
+        height: 414px;
+      }
+    }
+  }
+}

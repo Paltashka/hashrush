@@ -81,3 +81,13 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .position-left {
+    left: -15px;
+  }
+
+  .position-right {
+    right: -35px;
+  }
+}

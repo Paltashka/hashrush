@@ -6,14 +6,7 @@
     overflow: initial !important;
     margin-bottom: 470px;  
   }
-  &-banner {
-    // background-image: url('../../assets/images/sky.jpg');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // box-shadow: 7px 6px 54px 95px #171327;
-    // overflow: initial !important;
-    // margin-bottom: 470px;
-    
+  &-banner {    
     &::after {
       content: '';
       z-index: 1;
@@ -97,5 +90,42 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .parallax {
+    &-banner::after {
+      content: none;
+    }
+
+    &-outer {
+      display: none;
+    }
+
+    &__start {
+      background-image: url('../../assets/responsive/bg-hero-mob.png');
+      height: 1100px!important;
+      background-size: cover;
+      margin-bottom: 0;
+    }
+  }
+
+  .welcome {
+    top: 33%;
+    
+    &__logo {
+      width: 270px;
+      height: 220px;
+      margin-bottom: 10px;
+    }
+
+    &__button--position {
+      transform: none;
+    }
+
+    &__border {
+      transform: translateY(-15px);
+    }
   }
 }

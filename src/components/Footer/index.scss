@@ -95,3 +95,64 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 808px;
+    padding-bottom: 80px;
+
+    &__border {
+      margin-bottom: 78px;
+      opacity: 0.5;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+      height: auto;
+    }
+
+    &__logo {
+      margin-bottom: 50px;
+    }
+
+    &__left {
+      flex-direction: column;
+    }
+
+    &__nav {
+      text-align: center;
+      margin-bottom: 20px;
+
+      &-item {
+        line-height: 50px;
+      }
+
+      &-item--thin {
+        line-height: 45px;
+      }
+
+      &:last-child {
+        margin-bottom: 60px;
+      }
+    }
+
+    &__icon {
+      width: 31px;
+      height: 26px;
+    }
+
+    &__headline {
+      text-align: center;
+    }
+
+    &__medias {
+      width: 300px;
+      margin-bottom: 45px;
+    }
+
+    &__copyright {
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+}

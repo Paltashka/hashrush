@@ -1,5 +1,5 @@
 .questions {
-  height: 800px;
+  height: 802px;
   // background-image: url('../../assets/images/baddies.png');
   position: relative;
   box-sizing: border-box;
@@ -63,5 +63,11 @@
     z-index: -1;
     top: 0;
     height: 900px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .questions {
+    background-image: url('../../assets/responsive/baddies.png');
   }
 }

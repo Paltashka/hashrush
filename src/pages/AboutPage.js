@@ -3,6 +3,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from '../components/Header';
 import Overview from '../components/Overview';
 import Basics from '../components/Basics';
+import ChooseRace from '../components/ChooseRace';
 
 const AboutPage = () => {
   return (
@@ -10,6 +11,7 @@ const AboutPage = () => {
       <Header isLogin={true} />
       <Overview />
       <Basics />
+      <ChooseRace />
     </ParallaxProvider>
   );
 };

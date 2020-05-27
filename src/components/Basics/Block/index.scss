@@ -1,0 +1,40 @@
+.basics__block {
+  width: 530px;
+  height: 162px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+
+  &:nth-child(2), &:nth-child(3) {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  
+  .block {
+    &__title {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
+      font-size: 20px;
+      color: white;
+      margin: 0;
+      margin-bottom: 16px;      
+    }
+
+    &__text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      line-height: 23px;
+      font-weight: 200;
+      color: white;
+      margin: 0;
+      width: 362px;
+    }
+
+    &__img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+}
