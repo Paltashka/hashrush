@@ -132,3 +132,12 @@
     margin-top: 30px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .modal {
+    &::before {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

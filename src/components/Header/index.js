@@ -2,16 +2,18 @@ import React, { useState, useRef } from 'react';
 import {Link} from 'react-router-dom';
 import './index.scss';
 import logo from '../../assets/images/logo.png';
-import DropDown from './DropDown';
 import ava from '../../assets/about/ava.png';
 import download from '../../assets/about/download.svg';
 import burger from '../../assets/responsive/burger.png';
 import cross from '../../assets/forms/cross.svg';
+import rc from '../../assets/about/rc.svg';
+import hc from '../../assets/about/hc.svg';
 
 import HeaderTablet from './HeaderTablet';
+import DropDown from './DropDown';
+import AccountDropdown from '../Account/AccountDropdown';
 
 const Header = ({ isLogin }) => {
-  const [choice, setChoice] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
   if (isOpen) {
@@ -52,14 +54,13 @@ const Header = ({ isLogin }) => {
                 <>
                   <div className="header__choice">
                     <span
-                      className={choice ? 'header__choice--active' : ''}
-                      onClick={()=> setChoice(true)}
-                    >rc</span>
-                    <span>|</span>
+                      className={'header__choice--active'}
+                    >
+                      <img className="header__choice-icon" src={rc} alt="rc" />23
+                    </span>
                     <span
-                      className={!choice ? 'header__choice--active' : ''}
-                      onClick={()=> setChoice(false)}
-                    >hc</span>
+                      className={'header__choice--active'}
+                    ><img className="header__choice-icon" src={hc} alt="hc" />142</span>
                   </div>
 
                   <Link to="/account">
@@ -69,6 +70,7 @@ const Header = ({ isLogin }) => {
                       </div>
                       <span className="user__name">username__88</span>
                       <div className="triangle"></div>
+                      <AccountDropdown />
                     </div>
                   </Link>
 

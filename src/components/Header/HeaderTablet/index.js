@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss';
+import { Link } from 'react-router-dom';
 
 import fb from '../../../assets/footer_social-media/fb.svg';
 import tw from '../../../assets/footer_social-media/tw.svg';
@@ -12,7 +13,7 @@ const HeaderTablet = () => {
       <div>
         <ul className="footer__nav">
           <li className="footer__nav-item">main</li>
-          <li className="footer__nav-item">about</li>
+          <Link to="/about"><li className="footer__nav-item">about</li></Link>
           <li className="footer__nav-item">store</li>
           <li className="footer__nav-item">leaderboard</li>
         </ul>

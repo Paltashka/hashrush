@@ -1,12 +1,17 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import './index.scss';
+
 import ava from '../../assets/about/ava.png';
 import logo from '../../assets/images/logo-planet.png';
 import emails from '../../assets/forms/emails.svg';
-
 import Button from '../Button';
 import ChangeEmail from './ChangeEmail';
 import ChangePassword from './ChangePassword';
+import rc from '../../assets/about/rc.svg';
+import hc from '../../assets/about/hc.svg';
+import lock from '../../assets/about/lock.svg';
+import star from '../../assets/about/star.svg';
 
 const Account = () => {
   const [changeEmail, setChangeEmail] = useState(false);
@@ -35,12 +40,44 @@ const Account = () => {
             <span className="account__email-change" onClick={() => setChangeEmail(true)}>change email</span>
           </div>
 
-          <div onClick={() => setChangePassword(true)} className="account__button button__border">
-            <span className="button">
-              change password
-            </span>
+          <div className="account__email-wrapper">
+            <span className="account__email">{'●'.repeat(10)}</span>
+            <span className="account__email-change"  onClick={() => setChangePassword(true)}>change password</span>
           </div>
 
+        </div>
+      </div>
+
+      <div className="account__content-border">
+        <div className="account__content account__content--medium">
+          <span className="account__words">Balance</span>
+            <div className="header__choice">
+              <span
+                className={'header__choice--active'}
+              >
+                <img className="header__choice-icon" src={rc} alt="rc" />23
+              </span>
+              <span
+                className={'header__choice--active'}
+              ><img className="header__choice-icon" src={hc} alt="hc" />142</span>
+            </div>
+            <div className="header__register button__border">
+              <Link to="/createaccount"><span className="button">refill</span></Link>
+            </div>
+        </div>
+      </div>
+
+      <div className="account__content-border">
+        <div className="account__content account__content--medium">
+          <img src={star} alt="star" />
+          <span className="account__words">my position in the leaderboard</span>
+        </div>
+      </div>
+
+      <div className="account__content-border">
+        <div className="account__content account__content--medium">
+          <img src={lock} alt="lock" />
+          <span className="account__words">log out</span>
         </div>
       </div>
 

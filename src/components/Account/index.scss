@@ -1,5 +1,4 @@
 .account {
-  // height: calc(100vh - 263px);
   min-height: 970px;
   background-image: url('../../assets/images/baddies.png');
   background-position: center;
@@ -12,6 +11,15 @@
     margin-bottom: 115px;
   }
 
+  &__words {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 1.31px;
+    text-transform: uppercase;
+    color: white;
+  }
+
   &__content {
     width: 453px;
     height: 270px;
@@ -20,7 +28,7 @@
     border-radius: 10px;
     position: relative;
     box-sizing: border-box;
-    padding: 85px 62px 48px;
+    padding: 85px 30px 48px;
 
     &-border {
       padding: 2px;
@@ -29,7 +37,31 @@
       width: max-content;
       margin: auto;
       border-radius: 10px;
-      margin-bottom: 70px;
+      margin-bottom: 20px;
+
+      &:nth-child(3) {
+        .account__content {
+          justify-content: space-between;
+        }
+      }
+    }
+
+    &--medium {
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      height: max-content;
+
+      .button {
+        padding: 8px 37px;
+      }
+
+      img {
+        margin-right: 15px;
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 
@@ -118,6 +150,7 @@
     margin: auto;
     margin-bottom: 44px;
     display: block;
+    margin-top: 80px;
   }
 
   &__btn {
@@ -157,5 +190,14 @@
         border-bottom: 1px solid #cec39d;
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .account {
+    background-image: url('../../assets/responsive/baddies.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

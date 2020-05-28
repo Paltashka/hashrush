@@ -5,6 +5,10 @@
   z-index: 11;
   width: 100%;
 
+  .header__choice {
+    margin-right: 60px;
+  }
+
   &__burger {
     display: none;
   }
@@ -87,7 +91,6 @@
   }
 
   &__choice {
-    width: 60px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -96,20 +99,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 60px;
+    font-weight: 200;
+
+    &-icon {
+      width: 21px;
+      height: 19px;
+      margin-right: 5px;
+    }
 
     &--active {
       opacity: 1!important;
-    }
-
-    span:nth-child(odd) {
+      display: flex;
+      align-items: center;
       cursor: pointer;
-      opacity: 0.5;
-    }
 
-    span:nth-child(2) {
-      font-size: 16px;
-      opacity: 0.5;
+      &:first-child {
+        margin-right: 30px;
+      }
     }
   }
 }
@@ -161,7 +167,15 @@
   display: flex;
   align-items: center;
   margin-right: 30px;
-  
+  position: relative;
+  height: 74px;
+
+  &:hover {
+    .account-dropdown {
+      display: block;
+    }
+  }
+
   &__img {
     width: 32px;
     height: 43px;
