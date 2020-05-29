@@ -24,7 +24,7 @@ const Header = ({ isLogin }) => {
 
   return  (
     <header className="header">
-      {isOpen && <HeaderTablet />}
+      {isOpen && <HeaderTablet isLogin={isLogin} />}
       <div className="header__wrapper container">
         <div className="header__left">
           {isOpen
@@ -68,7 +68,7 @@ const Header = ({ isLogin }) => {
                       <div className="user__img--wrapper">
                         <img className="user__img" src={ava} alt="user avatar"/>
                       </div>
-                      <span className="user__name">username__88</span>
+                      <span className="user__name">username</span>
                       <div className="triangle"></div>
                       <AccountDropdown />
                     </div>
@@ -76,7 +76,8 @@ const Header = ({ isLogin }) => {
 
                   <div className="header__register button__border">
                     <span className="button">
-                      <img className="button__img" src={download} alt="download" /> download game
+                      <img className="button__img" src={download} alt="download" />
+                      <span className="button__text-visible">download game</span>
                     </span>
                   </div>
                 </>

@@ -5,7 +5,7 @@
     height: 521px;
     background-image: url('../../assets/forms/big-tile.png');
     position: relative;
-    z-index: 1;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -35,6 +35,18 @@
         right: 4px;
         top: -6px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .register {
+    &__content {
+      background-image: none;
+    }
+
+    .button {
+      width: 180px;
     }
   }
 }

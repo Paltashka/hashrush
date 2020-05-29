@@ -19,7 +19,7 @@ const CreateAccount = () => {
   return (
     <div className="modal register">
       <Link to="/"><span className="modal__back">back</span></Link>
-      <img className="modal__logo" src={logo} alt="logo" />
+      <Link to="/"><img className="modal__logo" src={logo} alt="logo" /></Link>
 
       <div className="register__content">
         <h1 className="modal__heading">Create account</h1>

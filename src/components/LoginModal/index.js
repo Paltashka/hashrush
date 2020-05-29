@@ -13,7 +13,7 @@ const LoginModal = ({ setLoginShow }) => {
   return (
     <div className="modal">
       <Link to="/"><span className="modal__back">back</span></Link>
-      <img className="modal__logo" src={logo} alt="logo" />
+      <Link to="/"><img className="modal__logo" src={logo} alt="logo" /></Link>
 
       {forgotPassword
         ? (<ResetPassword />)

@@ -156,3 +156,10 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .footer {
+    padding-bottom: 0;
+    height: 772px;
+  }
+}

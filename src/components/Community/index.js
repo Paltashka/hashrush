@@ -42,7 +42,7 @@ const Community = () => {
       <div className="news__blocks">
           <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
           <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
-          {screnWidth > 769 && <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />}
+          {(screnWidth > 768 || screnWidth < 376) && <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />}
         </div>
       <ParallaxImg />
 

@@ -63,6 +63,11 @@
         height: 15px;
       }
     }
+
+    &--small {
+      padding: 18px 20px;
+      height: max-content;
+    }
   }
 
   &__img {
@@ -199,5 +204,67 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .account {
+    background-image: url('../../assets/responsive-mob/baddies.png');
+    
+    &__verify {
+      width: 346px;
+    }
+
+    &__heading {
+      display: none;
+    }
+
+    &__name {
+      margin-bottom: 15px;
+    }
+
+    &__content {
+      width: 343px;
+      height: 281px;
+      padding: 75px 0 30px;
+
+      &--medium {
+        width: 343px;
+        height: 145px;
+        padding: 20px 0;
+        flex-direction: column;
+        
+        .header__choice--active {
+          font-size: 14px;
+        }
+
+        .button {
+          padding: 8px 53px;
+        }
+      }
+
+      &--small {
+        padding: 18px 20px;
+        height: max-content;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 15px;
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    &__email-wrapper {
+      flex-direction: column;
+      height: 50px;
+      justify-content: space-between;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }

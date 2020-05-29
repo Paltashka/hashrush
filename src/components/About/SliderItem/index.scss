@@ -21,12 +21,27 @@
   padding: 0 25px!important;
 }
 
+.slick-dots {
+  width: 85%!important;
+
+  button::before {
+    color: #cec39d !important;
+  }
+
+  .slick-active {
+    button::before {
+      color: #cec39d !important;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .slide {
     width: 276px;
     height: 206px;
     background-size: contain;
-
+    margin: 0 28px;
+    
     &__img {
       width: 276px;
       height: 206px;
@@ -35,11 +50,22 @@
   }
 
   .slick-slider {
-    // width: initial!important;
+    width: initial!important;
     width: 640px!important;
   }
 
   .slick-slide {
     width: 295px!important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slick-slider {
+    width: initial!important;
+    width: initial!important;
+  }
+
+  .slick-slide {
+    width: 325px!important;
   }
 }

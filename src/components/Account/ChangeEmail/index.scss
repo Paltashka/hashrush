@@ -77,3 +77,23 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .change-email {
+    background-color: #000000e6;
+    
+    &__message {
+      background: none;
+      box-shadow: none;
+
+      &-border {
+        background: none;
+        box-shadow: none;
+      }  
+    } 
+
+    &__img {
+      margin-top: 80px;
+    }
+  }
+}

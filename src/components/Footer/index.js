@@ -23,7 +23,7 @@ const Footer = () => {
           <ul className="footer__nav">
             <li className="footer__nav-item footer__nav-item--thin">Read us on Medium</li>
             <li className="footer__nav-item footer__nav-item--thin">Contact Support</li>
-            <li className="footer__nav-item footer__nav-item--thin">Potentiaaly third</li>
+            <li className="footer__nav-item footer__nav-item--thin">Potentialy third</li>
           </ul>
         </div>
 

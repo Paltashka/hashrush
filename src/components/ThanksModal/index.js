@@ -7,7 +7,7 @@ const ThanksModal = ({ img, title, text }) => {
   return (
     <div className="thanks">
       <Link to="/"><span className="modal__back">back</span></Link>
-      <img className="modal__logo" src={logo} alt="logo" />
+      <Link to="/"><img className="modal__logo" src={logo} alt="logo" /></Link>
 
       <div className="login__content">
         <h1 className="modal__heading">{title}</h1>

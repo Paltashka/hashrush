@@ -141,3 +141,28 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .modal {
+    &__back {
+      top: 20px;
+      right: 20px;
+    }
+
+    &__logo {
+      top: 60px;
+    }
+
+    &::after {
+      content: '';
+      opacity: 0.8;
+      background-color: #000000;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}

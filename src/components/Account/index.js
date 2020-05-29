@@ -68,14 +68,14 @@ const Account = () => {
       </div>
 
       <div className="account__content-border">
-        <div className="account__content account__content--medium">
+        <div className="account__content account__content--small">
           <img src={star} alt="star" />
           <span className="account__words">my position in the leaderboard</span>
         </div>
       </div>
 
       <div className="account__content-border">
-        <div className="account__content account__content--medium">
+        <div className="account__content account__content--small">
           <img src={lock} alt="lock" />
           <span className="account__words">log out</span>
         </div>

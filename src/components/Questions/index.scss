@@ -71,3 +71,21 @@
     background-image: url('../../assets/responsive/baddies.png');
   }
 }
+
+@media screen and (max-width: 375px) {
+  .questions {
+    height: 862px;
+    background-image: url('../../assets/responsive-mob/baddies.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    &__content {
+      bottom: 0px;
+      width: 100%;
+      background: black;
+      padding: 22px 0 120px;
+      text-align: center;
+    }
+  }
+}

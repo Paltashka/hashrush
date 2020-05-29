@@ -196,6 +196,7 @@
     letter-spacing: 0.46px;
     font-size: 12px;
     margin-left: 10px;
+    text-decoration: underline;
   }
 }
 
@@ -203,6 +204,18 @@
   .header {
     background-color: #00000066;
     height: 60px;
+
+    &__user {
+      .triangle {
+        display: none;
+      }
+    }
+
+    &:hover {
+      .account-dropdown {
+        display: none;
+      }
+    }
 
     &__wrapper {
       padding: 0 15px;
@@ -234,6 +247,26 @@
     }
 
     &__login {
+      display: none;
+    }
+
+    .button {
+      padding: 8px 12px;
+
+      &__img {
+        margin-right: 0;
+      }
+
+      &__text-visible {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    .header__choice {
       display: none;
     }
   }

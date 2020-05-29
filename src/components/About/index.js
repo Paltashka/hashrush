@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import SliderItem from './SliderItem';
 import Slider from "react-slick";
 import SliderArrow from './SliderArrow';
@@ -13,20 +13,40 @@ import play from '../../assets/images/play.svg';
 import img from '../../assets/slider/img.png';
 
 
-const settings = {
+let settings = {
   dots: false,
   infinite: true,
   speed: 500,
   slidesToShow: 2,
   slidesToScroll: 1,
   nextArrow: <SliderArrow direction="right" />,
-  prevArrow: <SliderArrow direction="left" />
+  prevArrow: <SliderArrow direction="left" />,
 };
 
 const About = () => {
   const [isVideoPlay, setIsVideoPlay] = useState(false);
   const videoRef = useRef();
+  const [screnWidth, setScreenWidth] = useState(window.innerWidth);
+  const handleResize = () => setScreenWidth(window.innerWidth);
 
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, [handleResize, screnWidth])
+
+  if (screnWidth < 376) {
+    settings = {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      infinite: false,
+      nextArrow: <SliderArrow direction="right" />,
+      prevArrow: <SliderArrow direction="left" />,
+    }
+  }
   const toggleVideo = () => {
     setIsVideoPlay(!isVideoPlay);
 

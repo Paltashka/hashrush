@@ -85,6 +85,7 @@
     &__content {
       display: none;
     }
+
     &__video {
       width: 734px;
       height: 414px;
@@ -93,6 +94,30 @@
         background-image: none;
         width: 734px;
         height: 414px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    box-sizing: border-box;
+    padding-top: 150px;
+
+    &__text {
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      background-color: black;
+    }
+
+    &__video {
+      width: 375px;
+      height: 212px;
+
+      &--wrapper {
+        width: 375px;
+        height: 212px;
       }
     }
   }

@@ -129,3 +129,16 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .parallax {
+    &__start {
+      background-image: url('../../assets/responsive-mob/bg-hero-mob.png');
+      height: 816px!important;
+    }
+  }
+
+  .welcome {
+    top: 40%;
+  }
+}

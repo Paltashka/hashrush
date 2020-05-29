@@ -1,6 +1,5 @@
 .community {
   height: 800px;
-  // background-image: url('../../assets/images/fores.png');
   background-image: url('../../assets/responsive/fores-mob.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -13,12 +12,10 @@
   box-shadow: inset 23px 30px 82px 56px #171327;
   
   &__bg {
-    // position: absolute;
     width: 100%;
     object-fit: cover;
     z-index: -1;
     top: 0;
-    // height: 850px;
   }
 
   .community__heading {
@@ -87,3 +84,34 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .community__heading  {
+    width: 350px;
+  }
+
+  .community {
+    background-image: url('../../assets/responsive-mob/fores-mob.png');
+    background-size: contain;
+    height: 1200px;
+    box-shadow: none;
+
+    &__content {
+      width: 375px;
+      padding: 250px 0;
+    }
+
+    &__buttons {
+      width: 95%;
+    }
+
+    &__about {
+      width: 350px;
+      margin: auto!important;
+
+      &-pos {
+        bottom: -100px;
+      }
+    }
+  }
+} 
