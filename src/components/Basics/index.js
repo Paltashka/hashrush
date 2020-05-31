@@ -48,7 +48,7 @@ const Basics = () => {
         </div>
 
         <div className="galaxy__content"> 
-          <h1 className="heading galaxy__heading">Galaxy Points &amp; the Leaderboard</h1>
+          <h1 className="heading galaxy__heading">Galaxy Points &amp;&nbsp;the Leaderboard</h1>
           <p className="galaxy__text">
             All major actions taken by the player will generate special points known as Galaxy Points (GP).
             The player’s position in the Hash Rush high score table will be primarily based on how many Galaxy Points they have accumulated.

@@ -17,20 +17,22 @@ const Crafting = () => {
         <div className="crafting__exchange">
           <div className="galaxy__border"></div>
           <div className="crafting__row"> 
-            <div className="crafting__item">
-              <img src={borlium} alt="borlium" />
-              <span>Borrlium</span>
-            </div>
-            <div className="crafting__item">
-              <img src={borlium} alt="borlium" />
-              <span>Borrlium</span>
-            </div>
-            <div className="crafting__item">
-              <img src={borlium} alt="borlium" />
-              <span>Borrlium</span>
+            <div className="crafting__items-wrapper">
+              <div className="crafting__item">
+                <img src={borlium} alt="borlium" />
+                <span>Borrlium</span>
+              </div>
+              <div className="crafting__item">
+                <img src={borlium} alt="borlium" />
+                <span>Borrlium</span>
+              </div>
+              <div className="crafting__item">
+                <img src={borlium} alt="borlium" />
+                <span>Borrlium</span>
+              </div>
             </div>
 
-            <img src={arrow} alt="arrow" />
+            <img className="crafting__arrow" src={arrow} alt="arrow" />
             <img className="crafting__tome" src={tome} alt="tome of conflict" />
           </div>
           <div className="galaxy__border"></div>

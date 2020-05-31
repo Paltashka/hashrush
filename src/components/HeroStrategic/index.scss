@@ -63,3 +63,25 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .strategic {
+    background-image: url('../../assets/responsive/hero-strategic-mob.png');
+    height: 1900px;
+    background-repeat: no-repeat;
+
+    &::before {
+      top: -53px;
+    }
+
+    &__classes {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__class {
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -147,3 +147,23 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .system {
+    background-image: linear-gradient(#000000, #465c60);
+    height: 1440px;
+    
+    &::after {
+      background-image: url('../../assets/responsive/baddies.png');
+    }
+
+    &__row {
+      flex-direction: column;
+    }
+
+    &__block {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+  }
+}

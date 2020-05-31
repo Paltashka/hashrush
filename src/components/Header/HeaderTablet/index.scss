@@ -12,6 +12,10 @@
   flex-direction: column;
   justify-content: space-between;
 
+  &__currency {
+    display: none;
+  }
+  
   .footer {
     &__nav:first-child {
       margin-bottom: 60px;
