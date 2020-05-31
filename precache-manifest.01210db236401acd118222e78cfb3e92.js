@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e84393ad62d77e647b1a6c688958fb8",
+    "revision": "3f1da4459811e4c48e8462371500a8b6",
     "url": "/hashrush/index.html"
   },
   {
-    "revision": "af87c119bdedddd832a2",
+    "revision": "eacdbccf9aeea53be449",
     "url": "/hashrush/static/css/2.20d348e8.chunk.css"
   },
   {
-    "revision": "d01c8377edbe7602690d",
-    "url": "/hashrush/static/css/main.749af23a.chunk.css"
+    "revision": "23fdff201127800b5a6e",
+    "url": "/hashrush/static/css/main.349464dc.chunk.css"
   },
   {
-    "revision": "af87c119bdedddd832a2",
-    "url": "/hashrush/static/js/2.f2f9c7d8.chunk.js"
+    "revision": "eacdbccf9aeea53be449",
+    "url": "/hashrush/static/js/2.eeb3f0fe.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/hashrush/static/js/2.f2f9c7d8.chunk.js.LICENSE.txt"
+    "url": "/hashrush/static/js/2.eeb3f0fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d01c8377edbe7602690d",
-    "url": "/hashrush/static/js/main.36fb369a.chunk.js"
+    "revision": "23fdff201127800b5a6e",
+    "url": "/hashrush/static/js/main.c202a278.chunk.js"
   },
   {
     "revision": "8d52adc6fc53a3fbbdff",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d2d3d6cf5773c73c2f7e1e24d77163ed",
     "url": "/hashrush/static/media/arrow-active.d2d3d6cf.svg"
+  },
+  {
+    "revision": "01b8fe3bd9c0813f4a322baeb4c81f3b",
+    "url": "/hashrush/static/media/arrow-gold.01b8fe3b.svg"
   },
   {
     "revision": "c23d29538d5ac25b38e0593c641a7aee",
@@ -72,16 +76,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/big-tile.15765178.png"
   },
   {
+    "revision": "fd3b2fe0529a9b604beb13463b15a49d",
+    "url": "/hashrush/static/media/building.fd3b2fe0.png"
+  },
+  {
+    "revision": "e6f29b219ae6b555440db3d5209d0b8e",
+    "url": "/hashrush/static/media/carax.e6f29b21.png"
+  },
+  {
+    "revision": "2b08d8d8f460ea59209a2739f0bbfcec",
+    "url": "/hashrush/static/media/card-unit-ernack-archer.2b08d8d8.png"
+  },
+  {
+    "revision": "c8979782e2bd651a665786787a85a246",
+    "url": "/hashrush/static/media/combat.c8979782.png"
+  },
+  {
     "revision": "9fce5a6c02c515d692b20d15c645ce5c",
     "url": "/hashrush/static/media/cookie.9fce5a6c.svg"
   },
   {
-    "revision": "07362082166acbbec7ac76bbd21f9fba",
-    "url": "/hashrush/static/media/cross.07362082.svg"
+    "revision": "204e69529d6300da02fb849ae6c99758",
+    "url": "/hashrush/static/media/crafting-material-borlium.204e6952.png"
   },
   {
-    "revision": "d9e668fd6079bab2bacd7b9596d6ee81",
-    "url": "/hashrush/static/media/crystals.d9e668fd.png"
+    "revision": "07362082166acbbec7ac76bbd21f9fba",
+    "url": "/hashrush/static/media/cross.07362082.svg"
   },
   {
     "revision": "77deae99f61f24e53f105e87346f2f53",
@@ -108,8 +128,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/emails.e24a203b.svg"
   },
   {
-    "revision": "dbc5be970b114b2aca100a6e1089830e",
-    "url": "/hashrush/static/media/exploring.dbc5be97.png"
+    "revision": "cbdbb394fd55647b3b842a31d7b6e5bd",
+    "url": "/hashrush/static/media/exploring.cbdbb394.png"
   },
   {
     "revision": "68f357a0eb6408782e099286b5b45033",
@@ -118,6 +138,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fcac99a95d524d5d440d2d07cc52d8fe",
     "url": "/hashrush/static/media/far-view.fcac99a9.png"
+  },
+  {
+    "revision": "d9dab32cb54ba2419012ca83adba8057",
+    "url": "/hashrush/static/media/fario.d9dab32c.png"
   },
   {
     "revision": "63fda09de88f9beb691520f3c83a0aea",
@@ -140,6 +164,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/form-bg.04e0999b.png"
   },
   {
+    "revision": "49fda48cb8fc9ce2453c35668682458d",
+    "url": "/hashrush/static/media/galaxy-points.49fda48c.png"
+  },
+  {
     "revision": "b19bf2edf4d6a7a2fb8afcc23319c3ae",
     "url": "/hashrush/static/media/hash-rush trailer.b19bf2ed.mp4"
   },
@@ -148,12 +176,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/hc.f07c5f23.svg"
   },
   {
+    "revision": "8f992ba76f9a4a4c2e952ff2d243d2a1",
+    "url": "/hashrush/static/media/hero-strategic-mob.8f992ba7.png"
+  },
+  {
+    "revision": "0534df9841aebfefcd1654beee777961",
+    "url": "/hashrush/static/media/hero-strategic.0534df98.png"
+  },
+  {
     "revision": "f9f137feb3b55ea6a04c61f50c2fd72e",
     "url": "/hashrush/static/media/img.f9f137fe.png"
   },
   {
-    "revision": "e17056a013a9b5a999157c5c659ed3d6",
-    "url": "/hashrush/static/media/leadervboards.e17056a0.png"
+    "revision": "1cbda3cc073e03152b2e6022c0265de6",
+    "url": "/hashrush/static/media/leadervboards.1cbda3cc.png"
   },
   {
     "revision": "1a4b88efff9115f6f691d5030aea8857",
@@ -168,6 +204,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/logo.4794f5a5.png"
   },
   {
+    "revision": "5f050866faa75d3d440c9e723e4b9d93",
+    "url": "/hashrush/static/media/melighar.5f050866.png"
+  },
+  {
     "revision": "3170516d4c764053f8d2f2fc25ea42b8",
     "url": "/hashrush/static/media/moon.3170516d.png"
   },
@@ -180,6 +220,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/northern-lights.2d152f7b.png"
   },
   {
+    "revision": "06b4ec35cf44c7c0173c016a9b75b0c7",
+    "url": "/hashrush/static/media/overview-mob.06b4ec35.png"
+  },
+  {
+    "revision": "9d56784f32b3af2dad4959bae36832af",
+    "url": "/hashrush/static/media/planet.9d56784f.png"
+  },
+  {
     "revision": "7aac64d60e66fecdaa0e4df64b3f0311",
     "url": "/hashrush/static/media/planets.7aac64d6.png"
   },
@@ -190,6 +238,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "21b114411820acdeaea09e9e223ed3d7",
     "url": "/hashrush/static/media/play.21b11441.svg"
+  },
+  {
+    "revision": "4decdb3be15bd9ffed08ead35ba13fe0",
+    "url": "/hashrush/static/media/question.4decdb3b.svg"
   },
   {
     "revision": "00f6924dd7c31b678d1aa6ee9f221406",
@@ -260,8 +312,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/tlgrm.2744a451.svg"
   },
   {
+    "revision": "81b8d268ab107bc3a2e1d8a47999d0bf",
+    "url": "/hashrush/static/media/tome-of-conflict.81b8d268.png"
+  },
+  {
     "revision": "079a0d949ebcb90de238b107472b9f18",
     "url": "/hashrush/static/media/top-panel.079a0d94.png"
+  },
+  {
+    "revision": "66d3ad1c0457d333593c5194ff4609c5",
+    "url": "/hashrush/static/media/traveller.66d3ad1c.png"
   },
   {
     "revision": "c4aced2ac9150b97eb1073eadb001173",
