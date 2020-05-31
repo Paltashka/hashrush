@@ -2,7 +2,7 @@
   height: 1200px;
   background-image: linear-gradient(#000000, #a7ac7a);
   position: relative;
-
+  
   &::after {
     content: '';
     width: 100%;
@@ -12,6 +12,7 @@
     background-size: contain;
     position: absolute;
     overflow: hidden;
+    background-size: cover;
   }
 
   .system__heading {

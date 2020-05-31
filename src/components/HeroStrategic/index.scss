@@ -5,7 +5,8 @@
   box-sizing: border-box;
   padding-top: 200px;
   background-color: black;
-
+  background-size: cover;
+  
   &::before {
     content: '';
     display: block;

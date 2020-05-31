@@ -4,7 +4,8 @@
   background-image: url('../../assets/about/northern-lights.png');
   box-sizing: border-box;
   padding-top: 50px;
-
+  background-size: cover;
+  
   &__content {
     display: flex;
     width: 1280px;
