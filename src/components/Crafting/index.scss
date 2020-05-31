@@ -1,0 +1,71 @@
+.crafting {
+  .crafting__heading {
+    margin-bottom: 30px;
+  }
+
+  .galaxy__text {
+    width: 678px;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__content {
+    height: 600px;
+    background-image: url('../../assets/about/planets.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__exchange {
+    width: 1130px;
+    margin: auto;
+    height: 350px;
+    margin-bottom: 30px;
+    position: relative;
+
+    .galaxy__border:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 160px;
+  }
+
+  &__tome {
+    width: 159px;
+    height: 230px;
+    transform: rotate(14deg);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-child(2) {
+      transform: translateY(60px);
+    }
+
+    span {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 23px;
+    }
+
+    img {
+      height: 130px;
+      width: 130px;
+      margin-bottom: 10px;
+    }
+  }
+}

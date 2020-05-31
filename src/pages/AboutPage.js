@@ -3,7 +3,11 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from '../components/Header';
 import Overview from '../components/Overview';
 import Basics from '../components/Basics';
-import ChooseRace from '../components/ChooseRace';
+import GalaxyPoints from '../components/GalaxyPoints';
+import HeroStrategic from '../components/HeroStrategic';
+import Heroes from '../components/Heroes';
+import System from '../components/System';
+import Footer from '../components/Footer';
 
 const AboutPage = () => {
   return (
@@ -11,7 +15,11 @@ const AboutPage = () => {
       <Header isLogin={true} />
       <Overview />
       <Basics />
-      <ChooseRace />
+      <GalaxyPoints />
+      <HeroStrategic />
+      <Heroes />
+      <System />
+      <Footer />
     </ParallaxProvider>
   );
 };

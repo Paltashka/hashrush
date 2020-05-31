@@ -32,7 +32,7 @@ const HeaderTablet = ({ isLogin }) => {
           </>
         )}
         <ul className="footer__nav">
-          <li className="footer__nav-item">main</li>
+          <Link to="/"><li className="footer__nav-item">main</li></Link>
           <Link to="/about"><li className="footer__nav-item">about</li></Link>
           <li className="footer__nav-item">store</li>
           <li className="footer__nav-item">leaderboard</li>

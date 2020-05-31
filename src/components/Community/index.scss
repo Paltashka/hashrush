@@ -1,6 +1,5 @@
 .community {
   height: 800px;
-  background-image: url('../../assets/responsive/fores-mob.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,6 +71,8 @@
 @media screen and (max-width: 768px) {
   .community {
     height: 1000px;
+    background-image: url('../../assets/responsive/fores-mob.png');
+
 
     &__content {
       top: -250px;
