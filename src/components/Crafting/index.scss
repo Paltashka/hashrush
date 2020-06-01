@@ -13,10 +13,25 @@
 
   &__content {
     height: 600px;
-    background-image: url('../../assets/about/planets.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url('../../assets/about/planets.png');
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      background-image: url('../../assets/about/planets.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 800px;
+    }
   }
 
   &__exchange {
@@ -101,6 +116,43 @@
 
     .galaxy__text {
       width: 491px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .crafting {
+    &__content {
+      background-image: none;
+    }    
+    
+    .galaxy__text {
+      width: 260px;
+      transform: translateY(-30px);
+    }
+
+    &__exchange {
+      width: 345px;
+      height: 750px;
+    }
+
+    &__items-wrapper {
+      width: 345px;
+    }
+
+    &__item {
+      img {
+        width: 104px;
+        height: 104px;
+      }
+    }
+
+    &__row {
+      padding: 0;
+    }
+
+    .galaxy__border:last-child {
+      bottom: -140px;
     }
   }
 }

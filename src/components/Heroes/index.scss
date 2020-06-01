@@ -1,11 +1,26 @@
 .heroes {
   height: 900px;
   background-color: black;
-  background-image: url('../../assets/about/northern-lights.png');
+  // background-image: url('../../assets/about/northern-lights.png');
   box-sizing: border-box;
   padding-top: 50px;
   background-size: cover;
-  
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url('../../assets/about/northern-lights.png');
+    height: 1200px;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    top: -200px;
+    left: 0;
+    z-index: -1;
+  }
+
   &__content {
     display: flex;
     width: 1280px;
@@ -19,7 +34,6 @@
       opacity: 0.4;
       height: 432px;
       position: absolute;
-      // top: -216px;
       left: 50%;
       transform: translate(-2px, 0);
     }
@@ -100,5 +114,36 @@
       padding: 0 75px;
       margin-bottom: 120px;
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .heroes {
+    height: 2400px;
+
+    &__block {
+      padding: 0;
+      margin-bottom: 70px;
+    }
+  }
+
+  .block {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__hero {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      width: 345px;
+    }
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .heroes::after {
+    height: 1300px;
   }
 }

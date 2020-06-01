@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.scss';
 import archer from '../../assets/about/card-unit-ernack-archer.png';
+import raken from '../../assets/about/raken-archer.png';
+import swordsman from '../../assets/about/swordsman.png';
 
 const classes = [
   {
@@ -10,13 +12,13 @@ const classes = [
       they were quickly able to train themselves in the arts of swordplay. The Swordsman is the backbone of the Ernack armies and makes use of Slash damage.`
   },
   {
-    img: archer,
+    img: raken,
     title: 'raken archer',
     text: `The close bond that the Ernacks have with the Raken has allowed them to train together and form a mounted force. Like the standard foot
       Archers trained in the barracks, the Raken Archers make use of piercing damage. `
   },
   {
-    img: archer,
+    img: swordsman,
     title: 'trogg',
     text: `Troggs are Ernacks that were trapped in collapsed mines and muted by the dark powers of the crystals. However, they remain friendly to the
       Ernacks, and thanks to their powerful bodies are living siege weapons, making use of Blunt damage.`
@@ -39,7 +41,7 @@ const HeroStrategic = () => {
       <div className="strategic__classes">
         {classes.map(({ img, title, text }) => (
           <div className="strategic__class">
-            <img src={img} alt={title} />
+            <img className="strategic__img" src={img} alt={title} />
             <span className="strategic__name">{title}</span>
             <p className="strategic__text">{text}</p>
           </div>

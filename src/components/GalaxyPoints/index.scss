@@ -1,8 +1,11 @@
 .galaxy {
-  background-image: linear-gradient(#0b1d43, #0a1525);
+  // background-image: linear-gradient(#0b1d43, #0a1525);
+  // background-image: linear-gradient(#0a1525, #0b1d43);
+  // background: #0e1b31;
+  margin-top: -150px;
   height: 800px;
   z-index: -1;
-  padding-top: 150px;
+  // padding-top: 150px;
   width: 100%;
   
   &__content {
@@ -87,11 +90,52 @@
 @media screen and (max-width: 768px) {
   .galaxy {
     height: 1200px;
-    padding-top: 355px;
+    padding-top: 155px;
     padding-bottom: 50px;
 
     &__text {
       width: 615px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .galaxy {
+    padding-top: 1275px;
+    height: 1300px;
+    
+    &__text {
+      width: 345px;
+    }
+
+    &__questions {
+      width: 345px;
+    }
+
+    &__question {
+      font-size: 20px;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__images {
+      flex-direction: column;
+      height: 450px;
+    }
+
+    &__exchange {
+      width: 347px;
+      text-align: center;
+
+      .galaxy__text {
+        width: 345px;
+      }
+    }
+
+    &__arrow {
+      transform: rotate(90deg);
     }
   }
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import './index.scss';
 import discordIcon from '../../assets/social-media/discord.svg';
 
+const characteristics = ['os', 'processor', 'memory', 'graphics', 'directx', 'storage'];
+
 const Characteristics = () => {
   return (
     <ul className="characteristics">
@@ -18,8 +20,8 @@ const Characteristics = () => {
 const Requirements = ({ data }) => {
   return (
     <ul className="requirements">
-      {data.map(item => (
-        <li className="requirements__item">{item}</li>
+      {data.map((item, index) => (
+        <li className="requirements__item"><span className="characteristics__item-mob">{characteristics[index]}:</span>{item}</li>
       ))}
     </ul>
   );

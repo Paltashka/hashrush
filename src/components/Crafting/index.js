@@ -2,6 +2,8 @@ import React from 'react';
 import './index.scss';
 
 import borlium from '../../assets/about/crafting-material-borlium.png';
+import sandstone from '../../assets/about/sandstone.png';
+import warts from '../../assets/about/warts.png';
 import arrow from '../../assets/about/arrow-gold.svg';
 import tome from '../../assets/about/tome-of-conflict.png';
 
@@ -19,12 +21,12 @@ const Crafting = () => {
           <div className="crafting__row"> 
             <div className="crafting__items-wrapper">
               <div className="crafting__item">
-                <img src={borlium} alt="borlium" />
-                <span>Borrlium</span>
+                <img src={sandstone} alt="sandstone" />
+                <span>sand salts</span>
               </div>
               <div className="crafting__item">
-                <img src={borlium} alt="borlium" />
-                <span>Borrlium</span>
+                <img src={warts} alt="warts" />
+                <span>toad warts</span>
               </div>
               <div className="crafting__item">
                 <img src={borlium} alt="borlium" />

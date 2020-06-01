@@ -58,3 +58,17 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .overview {
+    background-image: url('../../assets/responsive-mob/overview-mob.png');
+
+    &::after {
+      box-shadow: inset 13px -87px 257px -40px rgba(0, 0, 0, 0.75);
+    }
+
+    &__content {
+      width: 346px;
+    }
+  }
+}

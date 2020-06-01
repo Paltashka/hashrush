@@ -133,6 +133,10 @@
     letter-spacing: 1.31px;
     font-size: 14px;
     color: white;
+
+    &-mob {
+      display: none;
+    }
   }
 }
 
@@ -165,6 +169,76 @@
     &__block {
       margin-bottom: 40px;
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .system {
+    padding-top: 40px;
+    height: 2650px;
+    
+    // &__prepare {
+    //   background: none;
+    // }
+
+    &::after {
+      height: 793px;
+      background-image: url('../../assets/responsive-mob/baddies.png');
+      bottom: 200px;
+    }
+
+    &__block {
+      padding: 0;
+      margin-bottom: 250px;
+
+      &:first-child::before {
+        left: 50%;
+        transform: translateX(-64%);
+        z-index: 1;
+      }
+  
+      &:last-child::after {
+        top: -215px;
+        right: 20px;
+      }
+    }
+
+    &__title {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .characteristics {
+    display: none;
+
+    &__item {
+      &-mob {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 1.31px;
+        font-size: 14px;
+        color: white;
+      }
+    }
+  }
+
+  .requirements {
+    &__item {
+      margin-bottom: 27px;
+    }
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .system {
+    height: 1500px;
+
+    &::after {
+      height: 989px;
     }
   }
 }

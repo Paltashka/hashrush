@@ -29,6 +29,7 @@
       color: white;
       margin: 0;
       width: 362px;
+      text-align: left;
     }
 
     &__img {
@@ -57,5 +58,12 @@
         order: -1;
       }
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .basics__block {
+    align-items: center;
+    margin: auto;
   }
 }

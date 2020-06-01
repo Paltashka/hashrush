@@ -13,7 +13,8 @@
     height: 90px;
     background-image: url('../../assets/about/top-panel.png');
     background-position: center;
-    background-size: contain;
+    // background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     top: -60px;
@@ -31,6 +32,11 @@
     &:first-of-type {
       margin-bottom: 20px;
     }
+  }
+
+  &__img {
+    width: 200px;
+    height: 200px;
   }
 
   &__classes {
@@ -84,5 +90,23 @@
     &__class {
       margin-bottom: 60px;
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .strategic {
+    padding-top: 150px;
+    height: 2000px;
+    
+    .galaxy__text {
+      width: 344px;
+    }
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .strategic {
+    height: 1267px;
+    background-position: bottom;
   }
 }

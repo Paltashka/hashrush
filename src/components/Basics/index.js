@@ -66,7 +66,7 @@ const Basics = () => {
           <div className="galaxy__exchange">
             <div className="galaxy__images">
               <img className="galaxy__tome" src={tome} alt="tome of conflict" />
-              <img src={arrow} alt="arrow" />
+              <img className="galaxy__arrow" src={arrow} alt="arrow" />
               <img src={points} alt="galaxy points" />
             </div>
 

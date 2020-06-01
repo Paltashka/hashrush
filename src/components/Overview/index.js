@@ -6,7 +6,7 @@ const Overview = () => {
   return (
     <div className="overview">
       <div className="overview__content">
-        <h1 className="heading overview__heading">game overview</h1>
+        <h1 className="heading overview__heading">about hash&nbsp;rush</h1>
         <p className="overview__text">
           The Crystal Storm has wreaked havoc upon the many races of the Hermeian Galaxy and it is down to
           the player to guide the races in their efforts to rebuild and survive.

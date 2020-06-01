@@ -5,14 +5,14 @@
     cursor: pointer;
 
     &:hover .account__border-top {
-      background-color: #cf9e1d;
+      // background-color: #cf9e1d;
       transform: translateY(-5px);
       transition: transform 0.5s;
     }
 
     &:hover .account__border-bottom {
       transition: transform 0.5s;
-      background-color: #cf9e1d;
+      // background-color: #cf9e1d;
       transform: scaleY(-1) translateY(-5px);
     }
   }
@@ -55,7 +55,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-size: contain;
+  // background-size: contain;
+  background-size: cover;
   z-index: 2;
   background-color: black;
 
@@ -135,6 +136,8 @@
 
 @media screen and (max-width: 768px) {
   .modal {
+    height: 756px;
+
     &::before {
       background-size: cover;
       background-position: center;
@@ -144,6 +147,8 @@
 
 @media screen and (max-width: 375px) {
   .modal {
+    height: 756px;
+
     &__back {
       top: 20px;
       right: 20px;

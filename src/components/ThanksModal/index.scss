@@ -6,6 +6,7 @@
   left: 0;
   z-index: 2;
   background-color: black;
+  background-size: cover;
 
   &::before {
     content: '';
@@ -60,14 +61,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .thanks::before {
-    background-position: center;
-    background-size: cover;
-    height: 120vh;
+  .thanks {
+    height: 756px;
+
+    &::before {
+      background-position: center;
+      background-size: cover;
+      height: 120vh;
+    }
   }
 }
 
 @media screen and (max-width: 375px) {
+  .thanks {
+    height: 756px;
+  }
+
   .thanks::before {
     background-position: center;
     background-size: cover;
