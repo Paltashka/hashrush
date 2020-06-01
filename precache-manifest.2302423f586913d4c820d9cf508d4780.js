@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8763b1f77fcaae2042fcdcbbe5cf6751",
+    "revision": "d3f01993ba23109b8c61154f4bc54b09",
     "url": "/hashrush/index.html"
   },
   {
-    "revision": "eacdbccf9aeea53be449",
+    "revision": "5d8a8ce2950f3409dbd9",
     "url": "/hashrush/static/css/2.20d348e8.chunk.css"
   },
   {
-    "revision": "fb0c13758c46da1a568c",
-    "url": "/hashrush/static/css/main.9778224a.chunk.css"
+    "revision": "50a4879cf867b0269686",
+    "url": "/hashrush/static/css/main.15572442.chunk.css"
   },
   {
-    "revision": "eacdbccf9aeea53be449",
-    "url": "/hashrush/static/js/2.eeb3f0fe.chunk.js"
+    "revision": "5d8a8ce2950f3409dbd9",
+    "url": "/hashrush/static/js/2.dc7b10f0.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/hashrush/static/js/2.eeb3f0fe.chunk.js.LICENSE.txt"
+    "url": "/hashrush/static/js/2.dc7b10f0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fb0c13758c46da1a568c",
-    "url": "/hashrush/static/js/main.c202a278.chunk.js"
+    "revision": "50a4879cf867b0269686",
+    "url": "/hashrush/static/js/main.019c3891.chunk.js"
   },
   {
     "revision": "8d52adc6fc53a3fbbdff",
@@ -224,6 +224,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/overview-mob.06b4ec35.png"
   },
   {
+    "revision": "9f6ef02869c42e6e1d3795f4fbf22dc5",
+    "url": "/hashrush/static/media/overview-mob.9f6ef028.png"
+  },
+  {
     "revision": "9d56784f32b3af2dad4959bae36832af",
     "url": "/hashrush/static/media/planet.9d56784f.png"
   },
@@ -244,12 +248,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/media/question.4decdb3b.svg"
   },
   {
+    "revision": "df88eb8c7393b71940ce8d49ec8f5c0e",
+    "url": "/hashrush/static/media/raken-archer.df88eb8c.png"
+  },
+  {
     "revision": "00f6924dd7c31b678d1aa6ee9f221406",
     "url": "/hashrush/static/media/raken-rider.00f6924d.png"
   },
   {
     "revision": "abf603ad33ec1ab15830f728c40520bd",
     "url": "/hashrush/static/media/rc.abf603ad.svg"
+  },
+  {
+    "revision": "e13d756a683ab1b1c0c73554d056b838",
+    "url": "/hashrush/static/media/sandstone.e13d756a.png"
   },
   {
     "revision": "daeace84c275116cacc78cb6c8c4fb6e",
@@ -282,6 +294,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6608fbdf13108ad0da7a90178c6b9750",
     "url": "/hashrush/static/media/star.6608fbdf.svg"
+  },
+  {
+    "revision": "6861d05fc84d28b6295989f5c44844b6",
+    "url": "/hashrush/static/media/swordsman.6861d05f.png"
   },
   {
     "revision": "2390eea9e2a3fe8ba823c6aa829ae95f",
@@ -330,5 +346,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "db109c7831235f56ecff3aa432b2c388",
     "url": "/hashrush/static/media/twitter.db109c78.svg"
+  },
+  {
+    "revision": "6e0897c17c5207eeb1e5881c209d41fa",
+    "url": "/hashrush/static/media/warts.6e0897c1.png"
   }
 ]);

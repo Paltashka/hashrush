@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/hashrush/static/css/main.9778224a.chunk.css",
-    "main.js": "/hashrush/static/js/main.c202a278.chunk.js",
-    "main.js.map": "/hashrush/static/js/main.c202a278.chunk.js.map",
+    "main.css": "/hashrush/static/css/main.15572442.chunk.css",
+    "main.js": "/hashrush/static/js/main.019c3891.chunk.js",
+    "main.js.map": "/hashrush/static/js/main.019c3891.chunk.js.map",
     "runtime-main.js": "/hashrush/static/js/runtime-main.5ba20236.js",
     "runtime-main.js.map": "/hashrush/static/js/runtime-main.5ba20236.js.map",
     "static/css/2.20d348e8.chunk.css": "/hashrush/static/css/2.20d348e8.chunk.css",
-    "static/js/2.eeb3f0fe.chunk.js": "/hashrush/static/js/2.eeb3f0fe.chunk.js",
-    "static/js/2.eeb3f0fe.chunk.js.map": "/hashrush/static/js/2.eeb3f0fe.chunk.js.map",
+    "static/js/2.dc7b10f0.chunk.js": "/hashrush/static/js/2.dc7b10f0.chunk.js",
+    "static/js/2.dc7b10f0.chunk.js.map": "/hashrush/static/js/2.dc7b10f0.chunk.js.map",
     "index.html": "/hashrush/index.html",
-    "precache-manifest.cedd8253a1b99ed9c8b71d02798168c3.js": "/hashrush/precache-manifest.cedd8253a1b99ed9c8b71d02798168c3.js",
+    "precache-manifest.2302423f586913d4c820d9cf508d4780.js": "/hashrush/precache-manifest.2302423f586913d4c820d9cf508d4780.js",
     "service-worker.js": "/hashrush/service-worker.js",
     "static/css/2.20d348e8.chunk.css.map": "/hashrush/static/css/2.20d348e8.chunk.css.map",
-    "static/css/main.9778224a.chunk.css.map": "/hashrush/static/css/main.9778224a.chunk.css.map",
-    "static/js/2.eeb3f0fe.chunk.js.LICENSE.txt": "/hashrush/static/js/2.eeb3f0fe.chunk.js.LICENSE.txt",
+    "static/css/main.15572442.chunk.css.map": "/hashrush/static/css/main.15572442.chunk.css.map",
+    "static/js/2.dc7b10f0.chunk.js.LICENSE.txt": "/hashrush/static/js/2.dc7b10f0.chunk.js.LICENSE.txt",
     "static/media/3-muskernack-smaller-size.png": "/hashrush/static/media/3-muskernack-smaller-size.ccfe48fb.png",
     "static/media/index.scss": "/hashrush/static/media/top-panel.079a0d94.png",
     "static/media/arrow-gold.svg": "/hashrush/static/media/arrow-gold.01b8fe3b.svg",
@@ -48,22 +48,26 @@
     "static/media/near-view.png": "/hashrush/static/media/near-view.4be39465.png",
     "static/media/platform-head.png": "/hashrush/static/media/platform-head.e93e9323.png",
     "static/media/play.svg": "/hashrush/static/media/play.21b11441.svg",
+    "static/media/raken-archer.png": "/hashrush/static/media/raken-archer.df88eb8c.png",
     "static/media/rc.svg": "/hashrush/static/media/rc.abf603ad.svg",
+    "static/media/sandstone.png": "/hashrush/static/media/sandstone.e13d756a.png",
     "static/media/sky.jpg": "/hashrush/static/media/sky.daeace84.jpg",
     "static/media/slick-theme.css": "/hashrush/static/media/slick.f97e3bbf.svg",
     "static/media/star.svg": "/hashrush/static/media/star.6608fbdf.svg",
+    "static/media/swordsman.png": "/hashrush/static/media/swordsman.6861d05f.png",
     "static/media/tile.svg": "/hashrush/static/media/tile.a5389d17.svg",
     "static/media/tlgrm.svg": "/hashrush/static/media/tlgrm.2744a451.svg",
     "static/media/tome-of-conflict.png": "/hashrush/static/media/tome-of-conflict.81b8d268.png",
     "static/media/traveller.png": "/hashrush/static/media/traveller.66d3ad1c.png",
     "static/media/tw.svg": "/hashrush/static/media/tw.c4aced2a.svg",
-    "static/media/twitter.svg": "/hashrush/static/media/twitter.db109c78.svg"
+    "static/media/twitter.svg": "/hashrush/static/media/twitter.db109c78.svg",
+    "static/media/warts.png": "/hashrush/static/media/warts.6e0897c1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5ba20236.js",
     "static/css/2.20d348e8.chunk.css",
-    "static/js/2.eeb3f0fe.chunk.js",
-    "static/css/main.9778224a.chunk.css",
-    "static/js/main.c202a278.chunk.js"
+    "static/js/2.dc7b10f0.chunk.js",
+    "static/css/main.15572442.chunk.css",
+    "static/js/main.019c3891.chunk.js"
   ]
 }
