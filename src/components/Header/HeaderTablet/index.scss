@@ -2,6 +2,9 @@
   background-color: black;
   height: 100vh;
   background-image: url('../../../assets/about/northern-lights.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -175px;
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -31,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .header-tablet {
     padding-top: 80px;
 

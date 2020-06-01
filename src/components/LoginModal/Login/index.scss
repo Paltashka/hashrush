@@ -44,10 +44,13 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .login {
     &__content {
+      width: 347px;
+      padding: 0;
       background-image: none;
+      height: unset;
 
       .button {
         width: 222px;

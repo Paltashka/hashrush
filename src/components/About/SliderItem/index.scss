@@ -24,6 +24,10 @@
 .slick-dots {
   width: 85%!important;
 
+  li {
+    margin: 0;
+  }
+  
   button::before {
     color: #cec39d !important;
   }
@@ -35,7 +39,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .slide {
     width: 276px;
     height: 206px;
@@ -51,7 +55,7 @@
 
   .slick-slider {
     width: initial!important;
-    width: 640px!important;
+    width: 650px!important;
   }
 
   .slick-slide {
@@ -59,13 +63,20 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .slick-slider {
     width: initial!important;
     width: initial!important;
+    padding: 0 44px!important;
   }
 
   .slick-slide {
     width: 325px!important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slick-slider {
+    padding: 0 25px!important;
   }
 }

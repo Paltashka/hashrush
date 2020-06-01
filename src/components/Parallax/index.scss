@@ -93,7 +93,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .parallax {
     &-banner::after {
       content: none;
@@ -130,7 +130,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .parallax {
     &__start {
       background-image: url('../../assets/responsive-mob/bg-hero-mob.png');
@@ -140,5 +140,9 @@
 
   .welcome {
     top: 40%;
+
+    &__inside {
+      padding-top: 12px;
+    }
   }
 }

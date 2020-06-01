@@ -37,7 +37,7 @@ const About = () => {
     }
   }, [handleResize, screnWidth])
 
-  if (screnWidth < 376) {
+  if (screnWidth < 415) {
     settings = {
       slidesToShow: 1,
       slidesToScroll: 1,

@@ -80,7 +80,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .position-left {
     left: -15px;
   }
@@ -90,7 +90,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .slider-arrow {
     &--border {
       display: none;

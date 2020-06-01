@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .community {
     height: 1000px;
     background-image: url('../../assets/responsive/fores-mob.png');
@@ -86,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .community__heading  {
     width: 350px;
   }
@@ -103,7 +103,7 @@
     }
 
     &__buttons {
-      width: 95%;
+      width: 90%;
     }
 
     &__about {

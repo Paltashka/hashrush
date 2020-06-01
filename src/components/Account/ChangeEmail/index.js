@@ -11,6 +11,7 @@ const ChangeEmail = ({ setChangeEmail }) => {
 
   return (
     <div className="change-email" onClick={() => setChangeEmail(false)}>
+      <span className="modal__back">back</span>
       <div className="change-email__message-border" onClick={(event) => event.stopPropagation()}>
         <div className="change-email__message">
           <img

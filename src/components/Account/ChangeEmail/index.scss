@@ -78,13 +78,18 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .change-email {
     background-color: #000000e6;
-    
+
+    &__cross {
+      display: none;
+    }
+
     &__message {
       background: none;
       box-shadow: none;
+      width: 350px;
 
       &-border {
         background: none;
@@ -94,6 +99,10 @@
 
     &__img {
       margin-top: 80px;
+    }
+
+    .change-email__img {
+      margin-top: 0;
     }
   }
 }

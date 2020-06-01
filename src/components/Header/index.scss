@@ -200,7 +200,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header {
     background-color: #00000066;
     height: 60px;
@@ -217,7 +217,7 @@
       }
     }
 
-    &__wrapper {
+    .header__wrapper {
       padding: 0 15px;
     }
 
@@ -264,7 +264,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .header {
     .header__choice {
       display: none;

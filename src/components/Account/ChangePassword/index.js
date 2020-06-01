@@ -10,6 +10,7 @@ const ChangePassword = ({ setChangePassword }) => {
 
   return (
     <div className="change-email change-password"  onClick={() => setChangePassword(false)}>
+      <span className="modal__back">back</span>
       <div className="change-email__message-border" onClick={(event) => event.stopPropagation()}>
         <div className="change-email__message">
           <img

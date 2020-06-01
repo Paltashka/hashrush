@@ -39,10 +39,14 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .register {
     &__content {
       background-image: none;
+      height: unset;
+      transform: translate(-50%, -48%);
+      width: 347px;
+      padding: 0;
     }
 
     .button {
