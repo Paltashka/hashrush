@@ -1,6 +1,7 @@
 .header-tablet {
   background-color: black;
   height: 100vh;
+  // top: -100vh;
   background-image: url('../../../assets/about/northern-lights.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,6 +38,9 @@
 @media screen and (max-width: 414px) {
   .header-tablet {
     padding-top: 80px;
+    animation-name: drop;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 
     .footer {
       &__nav:first-child {
@@ -70,5 +74,13 @@
         margin-bottom: 15px;
       }
     }
+  }
+}
+
+@keyframes drop {
+  from {
+    top: -100vh;
+  } to {
+    top: 0;
   }
 }
