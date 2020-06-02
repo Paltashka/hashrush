@@ -1,20 +1,40 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { connect } from "react-redux";
 
 import './index.scss';
+
+import { signIn } from '../../../actions/signIn';
+
 import Button from '../../Button';
 import Input from '../Input';
 import CheckBox from '../CheckBox';
 
-const Login = ({ setForgotPassword }) => {
+const Login = ({ setForgotPassword, signIn }) => {
+  const history = useHistory();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { username, password } = e.target;
+
+    if (!username.value || !password.value) return;
+
+    const err = await signIn(username, password);
+
+    if (err) return;
+
+    history.push('/about');
+  };
+
   return (
     <div className="login__content">
       <h1 className="modal__heading">Welcome back!</h1>
       <p className="modal__text">Login to Hash Rush</p>
 
-      <form>
-        <Input type="text" placeholder="Username" />
-        <Input type="password" placeholder="Password" />
+      <form onSubmit={handleSubmit}>
+        <Input type="text" id="username" placeholder="Username" />
+        <Input type="password" id="password" placeholder="Password" />
 
         <div className="modal__helpers">
           <CheckBox label="Remember me" id="remember" />
@@ -38,4 +58,8 @@ const Login = ({ setForgotPassword }) => {
   );
 };
 
-export default Login;
+const mapActionToProps = {
+  signIn
+};
+
+export default connect(null, mapActionToProps)(Login);

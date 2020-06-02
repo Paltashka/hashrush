@@ -1,11 +1,24 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import { signOut } from '../../../actions/signIn';
+
 import './index.scss';
+
 import lock from '../../../assets/about/lock.svg';
 import star from '../../../assets/about/star.svg';
 import avatar from '../../../assets/about/avatar.svg';
 
-const AccountDropdown = () => {
+const AccountDropdown = ({ signOut }) => {
+  const history = useHistory();
+
+  const handleLogout = () => {
+    signOut();
+
+    history.push('/login');
+  };
+
   return (
     <div className="account-dropdown">
       <Link to="/account">
@@ -16,11 +29,15 @@ const AccountDropdown = () => {
       <span className="dropdown__item">
         <img className="dropdown__icon" src={star} alt="star" />My Position in the Leaderboard
       </span>
-      <span className="dropdown__item">
+      <span className="dropdown__item" onClick={handleLogout}>
         <img className="dropdown__icon" src={lock} alt="lock" />Log out
       </span>
     </div>
   );
 };
 
-export default AccountDropdown;
+const mapActionToProps = {
+  signOut,
+};
+
+export default connect(null, mapActionToProps)(AccountDropdown);

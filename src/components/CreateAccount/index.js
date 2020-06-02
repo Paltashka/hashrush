@@ -1,6 +1,9 @@
 import React from 'react';
-import {Link, useHistory} from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import axios from 'axios';
+
 import logo from '../../assets/images/logo.png';
+
 import Input from '../LoginModal/Input';
 import CheckBox from '../LoginModal/CheckBox';
 import Button from '../Button';
@@ -10,10 +13,31 @@ import './index.scss';
 const CreateAccount = () => {
   const history = useHistory();
 
-  const showThanks = () => {
-    if (true) {
-      history.push('/thanks-register')
-    }
+  const handleSubmit = (e) => {
+    const { username, email, repeatedEmail, password } = e.target;
+
+    if (!email.value || !repeatedEmail.value || !username.value || !password.value) return;
+
+    if (email.value !== repeatedEmail.value) return;
+
+    const data = JSON.stringify({
+      username: username.value,
+      email: email.value,
+      repeatedEmail: repeatedEmail.value,
+      password: password.value
+    });
+
+    axios.post('http://localhost:3002/registerAccount', data, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+      .then(response => {
+        history.push('/thanks-register');
+      })
+      .catch(err => {
+        console.log(err);
+      });
   };
 
   return (
@@ -25,11 +49,11 @@ const CreateAccount = () => {
         <h1 className="modal__heading">Create account</h1>
         <p className="modal__text">Sign up to Hash Rush</p>
 
-        <form onSubmit={showThanks}> 
-          <Input type="text" placeholder="Username" />
-          <Input type="text" placeholder="Email" />
-          <Input type="text" placeholder="Repeat email" />
-          <Input type="password" placeholder="Password" />
+        <form onSubmit={handleSubmit}>
+          <Input type="text" id="username" placeholder="Username" />
+          <Input type="text" id="email" placeholder="Email" />
+          <Input type="text" id="repeatedEmail" placeholder="Repeat email" />
+          <Input type="password" id="password" placeholder="Password" />
 
           <div className="modal__helpers">
             <CheckBox label="Subscribe to newsletter" id="subscribe" />
