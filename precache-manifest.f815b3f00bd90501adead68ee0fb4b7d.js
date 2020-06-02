@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a10ee144bb9f98d4e419dc0ba4c95eb8",
+    "revision": "6580d39b2a549a23794a4e6add832bd4",
     "url": "/hashrush/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/css/2.20d348e8.chunk.css"
   },
   {
-    "revision": "138e1084da3a18049575",
-    "url": "/hashrush/static/css/main.e881fa02.chunk.css"
+    "revision": "190a5887a08f903b8db7",
+    "url": "/hashrush/static/css/main.8fd18184.chunk.css"
   },
   {
     "revision": "5d8a8ce2950f3409dbd9",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hashrush/static/js/2.dc7b10f0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "138e1084da3a18049575",
+    "revision": "190a5887a08f903b8db7",
     "url": "/hashrush/static/js/main.019c3891.chunk.js"
   },
   {
