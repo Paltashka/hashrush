@@ -10,7 +10,7 @@ export function signIn(username, password) {
                 password: password.value,
             });
 
-            const response = await axios.post('http://localhost:3002/login', data, {
+            const response = await axios.post('http://3.213.231.181:3002/login', data, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
