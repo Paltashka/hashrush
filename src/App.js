@@ -1,7 +1,11 @@
 import React from 'react';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import AccountPage from './pages/AccountPage';
+import EmailVerificationPage from './pages/EmailVerificationPage';
+
 import CreateAccount from './components/CreateAccount';
 import LoginModal from './components/LoginModal';
 import ThanksModal from './components/ThanksModal';
@@ -9,7 +13,6 @@ import ThanksModal from './components/ThanksModal';
 import raken from './assets/forms/raken-rider.png';
 import muskernack from './assets/forms/3-muskernack-smaller-size.png';
 
-import  {HashRouter, Route, Switch} from 'react-router-dom';
 import './index.scss';
 
 function App() {
@@ -27,6 +30,7 @@ function App() {
           <ThanksModal img={muskernack} title="Thank you for downloading Hash Rush!" text={false} />
         </Route>
         <Route path="/account" component={AccountPage} />
+        <Route path="/emailVerification/:token" component={EmailVerificationPage} />
       </Switch>
     </HashRouter>
   );
