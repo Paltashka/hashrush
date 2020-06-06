@@ -30,10 +30,10 @@ const Footer = () => {
         <div className="footer__right">
           <span className="footer__headline">join our community</span>
           <div className="footer__medias">
-            <img className="footer__icon" src={fb} alt="face" />
-            <img className="footer__icon" src={tw} alt="twitt" />
-            <img className="footer__icon" src={discord} alt="discord" />
-            <img className="footer__icon" src={tlgrm} alt="telegram" />
+            <a href="https://www.facebook.com/HashRushGame/" target="_blank"><img className="footer__icon" src={fb} alt="face" /></a>
+            <a href="https://twitter.com/PlayHashRush" target="_blank"><img className="footer__icon" src={tw} alt="twitt" /></a>
+            <a href="https://t.me/hashrushofficial" target="_blank"><img className="footer__icon" src={discord} alt="discord" /></a>
+            <a href="http://discord.gg/4YMBHbw" target="_blank"><img className="footer__icon" src={tlgrm} alt="telegram" /></a>
           </div>
           <span className="footer__copyright">@ Hash Rush 2020</span>
         </div>
