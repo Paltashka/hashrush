@@ -18,10 +18,12 @@ export function signIn(username, password) {
 
             dispatch({ type: SIGN_IN_SUCCESS, payload: response.data.data.User });
         } catch (err) {
+            alert('email or password are incorrect');
             return err;
         }
     };
 }
+
 
 export function signOut() {
     return async dispatch => {

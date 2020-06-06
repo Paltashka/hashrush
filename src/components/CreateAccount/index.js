@@ -36,7 +36,7 @@ const CreateAccount = () => {
         history.push('/thanks-register');
       })
       .catch(err => {
-        console.log(err);
+         alert('An account already exists with this username')
       });
   };
 
