@@ -27,7 +27,7 @@ const CreateAccount = () => {
       password: password.value
     });
 
-    axios.post('http://3.213.231.181:3002/registerAccount', data, {
+    axios.post('https://3.213.231.181:3002/registerAccount', data, {
       headers: {
         'Content-Type': 'application/json'
       },

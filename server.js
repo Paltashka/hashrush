@@ -1,4 +1,12 @@
 'use strict';
+const https = require("https"),
+    fs = require("fs");
+
+const options = {
+    key: fs.readFileSync("/etc/letsencrypt/live/hashrush.com/privkey.pem"),
+    cert: fs.readFileSync("/etc/letsencrypt/live/hashrush.com/fullchain.pem")
+};
+
 var path = require('path');
 var express = require('express');
 
@@ -17,6 +25,8 @@ app.get('/', (req, res) => {
 // Allows you to set port in the project properties.
 app.set('port', process.env.PORT || 3000);
 
-var server = app.listen(app.get('port'), function() {
-    console.log(path.join(__dirname + 'hashrush',  'build'));
-});
+// var server = app.listen(app.get('port'), function() {
+//     console.log(path.join(__dirname + 'hashrush',  'build'));
+// });
+
+https.createServer(options, app).listen(3000);

@@ -29,7 +29,7 @@ const ChangePassword = ({ setChangePassword, id, username, email }) => {
       email
     });
 
-    axios.post('http://3.213.231.181:3002/changePassword', data, {
+    axios.post('https://3.213.231.181:3002/changePassword', data, {
       headers: {
         'Content-Type': 'application/json'
       }

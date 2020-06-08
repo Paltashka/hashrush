@@ -11,7 +11,7 @@ class EmailVerificationPage extends React.Component {
     }
 
     componentDidMount() { 
-        axios.post('http://3.213.231.181:3002/confirmAccount', { token: this.props.match.params.token })
+        axios.post('https://3.213.231.181:3002/confirmAccount', { token: this.props.match.params.token })
             .then(() => {
                 this.setState({ success: true });
 
