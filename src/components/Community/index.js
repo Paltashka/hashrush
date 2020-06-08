@@ -49,10 +49,10 @@ const Community = () => {
       <div className="community__content">
         <h1 className="community__heading heading">join our community</h1>
         <div className="community__buttons">
-          <ButtonRounded imgUrl={facebook} alt="face" />
-          <ButtonRounded imgUrl={tw} alt="twitt" />
-          <ButtonRounded imgUrl={discord} alt="discord" />
-          <ButtonRounded imgUrl={telegram} alt="telegram" />
+          <ButtonRounded url={'https://www.facebook.com/HashRushGame/'} imgUrl={facebook} alt="face" />
+          <ButtonRounded url={'https://twitter.com/PlayHashRush'} imgUrl={tw} alt="twitt" />
+          <ButtonRounded url={'https://t.me/hashrushofficial'} imgUrl={discord} alt="discord" />
+          <ButtonRounded url={'http://discord.gg/4YMBHbw'} imgUrl={telegram} alt="telegram" />
         </div>
       </div>
 

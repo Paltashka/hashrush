@@ -23,8 +23,8 @@ const ThanksModal = ({ img, title, text }) => {
 
           <div className="account__button">
             <div className="account__border-top"></div>
-            <span className="account__text">we are here to help</span>
-            <div className="account__border-bottom"></div>
+              <a href="http://discord.gg/4YMBHbw" target="_blank" ><span className="account__text">we are here to help</span></a>
+              <div className="account__border-bottom"></div>
           </div>
 
         </div>

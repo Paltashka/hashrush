@@ -44,8 +44,7 @@ const Parallax = () => {
     >
       <div className="welcome">
         <img className="welcome__logo" src={logo} alt="logo with planet" />
-        <Button classPosition="welcome__button--position" text="play now for free"/>
-
+        <a href="http://3.213.231.181:3000/?#/createaccount" target="_blank"><Button classPosition="welcome__button--position" text="play now for free"/></a>
         <div className="welcome__border">
           <div className="welcome__inside">
             <span>open beta</span>

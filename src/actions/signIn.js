@@ -10,7 +10,7 @@ export function signIn(username, password) {
                 password: password.value,
             });
 
-            const response = await axios.post('http://localhost:3002/login', data, {
+            const response = await axios.post('https://3.213.231.181:3002/login', data, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -18,10 +18,12 @@ export function signIn(username, password) {
 
             dispatch({ type: SIGN_IN_SUCCESS, payload: response.data.data.User });
         } catch (err) {
+            alert('email or password are incorrect');
             return err;
         }
     };
 }
+
 
 export function signOut() {
     return async dispatch => {

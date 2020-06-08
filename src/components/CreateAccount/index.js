@@ -27,7 +27,7 @@ const CreateAccount = () => {
       password: password.value
     });
 
-    axios.post('http://localhost:3002/registerAccount', data, {
+    axios.post('https://3.213.231.181:3002/registerAccount', data, {
       headers: {
         'Content-Type': 'application/json'
       },
@@ -36,7 +36,7 @@ const CreateAccount = () => {
         history.push('/thanks-register');
       })
       .catch(err => {
-        console.log(err);
+         alert('An account already exists with this username')
       });
   };
 
