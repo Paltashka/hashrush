@@ -26,9 +26,9 @@ const AccountDropdown = ({ signOut }) => {
           <img className="dropdown__icon" src={avatar} alt="avatar" />My Account
         </span>
       </Link>
-      <span className="dropdown__item">
+      {/* <span className="dropdown__item">
         <img className="dropdown__icon" src={star} alt="star" />My Position in the Leaderboard
-      </span>
+      </span> */}
       <span className="dropdown__item" onClick={handleLogout}>
         <img className="dropdown__icon" src={lock} alt="lock" />Log out
       </span>

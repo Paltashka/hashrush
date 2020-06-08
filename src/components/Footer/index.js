@@ -16,8 +16,8 @@ const Footer = () => {
           <img className="footer__logo" src={logo} alt="logo" />
           <ul className="footer__nav">
             <li className="footer__nav-item">about</li>
-            <li className="footer__nav-item">store</li>
-            <li className="footer__nav-item">leaderboard</li>
+            {/* <li className="footer__nav-item">store</li>
+            <li className="footer__nav-item">leaderboard</li> */}
           </ul>
 
           <ul className="footer__nav">

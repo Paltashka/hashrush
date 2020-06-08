@@ -34,8 +34,8 @@ const HeaderTablet = ({ isLogin }) => {
         <ul className="footer__nav">
           <Link to="/"><li className="footer__nav-item">main</li></Link>
           <Link to="/about"><li className="footer__nav-item">about</li></Link>
-          <li className="footer__nav-item">store</li>
-          <li className="footer__nav-item">leaderboard</li>
+          {/* <li className="footer__nav-item">store</li>
+          <li className="footer__nav-item">leaderboard</li> */}
         </ul>
         <ul className="footer__nav">
           <li className="footer__nav-item footer__nav-item--thin">Read us on Medium</li>
