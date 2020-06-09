@@ -15,10 +15,10 @@ const DropDown = () => {
         <img className="dropdown__icon" src={tw} alt="twit" /><a href="https://twitter.com/PlayHashRush" target="_blank">Twitter</a>
       </span>
       <span className="dropdown__item">
-        <img className="dropdown__icon" src={discord} alt="discord" /><a href="https://t.me/hashrushofficial" target="_blank">Discord</a>
+        <img className="dropdown__icon" src={discord} alt="discord" /><a href="http://discord.gg/4YMBHbw" target="_blank">Discord</a>
       </span>
       <span className="dropdown__item">
-        <img className="dropdown__icon" src={telegram} alt="telegram" /><a href="http://discord.gg/4YMBHbw" target="_blank">Telegram</a>
+        <img className="dropdown__icon" src={telegram} alt="telegram" /><a href="https://t.me/hashrushofficial" target="_blank">Telegram</a>
       </span>
     </div>
   );

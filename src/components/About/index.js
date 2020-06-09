@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import video from '../../assets/video/hash-rush trailer.mp4';
 import play from '../../assets/images/play.svg';
-import img from '../../assets/slider/img.png';
+import img from '../../assets/slider/Baddies.jpg';
 
 
 let settings = {

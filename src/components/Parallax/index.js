@@ -44,7 +44,7 @@ const Parallax = () => {
     >
       <div className="welcome">
         <img className="welcome__logo" src={logo} alt="logo with planet" />
-        <a href="https://hashrush.com:3000/?#/createaccount" target="_blank"><Button classPosition="welcome__button--position" text="play now for free"/></a>
+        <a href="https://hashrush.com:3000/?#/createaccount"><Button classPosition="welcome__button--position" text="play now for free"/></a>
         <div className="welcome__border">
           <div className="welcome__inside">
             <span>open beta</span>

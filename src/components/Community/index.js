@@ -11,11 +11,10 @@ import bg from '../../assets/images/fores.png';
 import { Parallax } from 'react-scroll-parallax';
 
 import NewsBlock from '../News/NewsBlock';
-import platformHead from '../../assets/images/platform-head.png';
+import readMore1 from '../../assets/images/readMore1.png';
+import readMore2 from '../../assets/images/readMore2.png';
+import readMore3 from '../../assets/images/readMore3.png';
 
-const date = '12 may 2020';
-const title = 'Hash Rush February Update';
-const text = 'The Hash Rush Lore Spotlight series returns. This week we are continuing with the topic of looking at the…';
 
 const ParallaxImg = () => {
   return (
@@ -40,9 +39,9 @@ const Community = () => {
   return (
     <div className="community">
       <div className="news__blocks">
-          <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
-          <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />
-          {(screnWidth > 1024 || screnWidth < 415) && <NewsBlock imgUrl={platformHead} date={date} title={title} text={text} />}
+          <NewsBlock imgUrl={readMore1} date={'6 Jun 2020'} title={'Hash Rush Progress Update — May 2020'} text={'It has been quite a while since we last wrote to you talking about what we’ve been working on...'} href={'https://medium.com/@Hash_Rush/hash-rush-progress-update-may-2020-1d205d9112f8'} />
+          <NewsBlock imgUrl={readMore2} date={'28 Feb 2020'} title={'Hash Rush February update'} text={'February has almost ended so we are back with a look at what we’ve been working on during this month.'} href={'https://medium.com/@Hash_Rush/hash-rush-february-update-e44a253e8b72?source=---------3------------------'} />
+          {(screnWidth > 1024 || screnWidth < 415) && <NewsBlock imgUrl={readMore3} date={'31 Jan 2020'} title={'Hash Rush in 2020'} text={'Hello everyone and welcome to our first news blast of 2020! With our last update — the Rise of the Crystal Titan...'} href={'https://medium.com/@Hash_Rush/hash-rush-in-2020-4efec0ffaa11?source=---------4------------------'} />}
         </div>
       <ParallaxImg />
 
@@ -51,8 +50,8 @@ const Community = () => {
         <div className="community__buttons">
           <ButtonRounded url={'https://www.facebook.com/HashRushGame/'} imgUrl={facebook} alt="face" />
           <ButtonRounded url={'https://twitter.com/PlayHashRush'} imgUrl={tw} alt="twitt" />
-          <ButtonRounded url={'https://t.me/hashrushofficial'} imgUrl={discord} alt="discord" />
-          <ButtonRounded url={'http://discord.gg/4YMBHbw'} imgUrl={telegram} alt="telegram" />
+          <ButtonRounded url={'http://discord.gg/4YMBHbw'} imgUrl={discord} alt="discord" />
+          <ButtonRounded url={'https://t.me/hashrushofficial'} imgUrl={telegram} alt="telegram" />
         </div>
       </div>
 
