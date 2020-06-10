@@ -7,8 +7,13 @@
 
   &__img {
     transition: filter 0.5s;
-    width: 431px;
-    height: 326px;
+    // width: 431px;
+    // height: 326px;
+
+    width: 406px;
+    height: 308px;
+    margin: auto;
+    transform: translate(2px, 5px);
 
     &:hover {
       transition: filter 0.5s;
@@ -49,9 +54,13 @@
     margin: 0 28px;
     
     &__img {
-      width: 276px;
-      height: 206px;
+      // width: 276px;
+      // height: 206px;
       object-fit: contain;
+
+      width: 255px;
+      height: 194px;
+      transform: translate(0px, 5px);
     }
   }
 

@@ -10,7 +10,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 import video from '../../assets/video/hash-rush trailer.mp4';
 import play from '../../assets/images/play.svg';
-import img from '../../assets/slider/Baddies.jpg';
+// import img from '../../assets/slider/Baddies.jpg';
+import img1 from '../../assets/slider/image 1.png';
+import img2 from '../../assets/slider/image 2.png';
+import img3 from '../../assets/slider/image 3.png';
 import prevideo from '../../assets/forms/form-bg.png';
 
 
@@ -78,9 +81,9 @@ const About = () => {
       </div>
 
       <Slider {...settings}>
-        <SliderItem imgUrl={img} />
-        <SliderItem imgUrl={img} />
-        <SliderItem imgUrl={img} />
+        <SliderItem imgUrl={img1} />
+        <SliderItem imgUrl={img2} />
+        <SliderItem imgUrl={img3} />
       </Slider>
 
     </div>
