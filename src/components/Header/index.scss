@@ -4,6 +4,7 @@
   position: absolute;
   z-index: 11;
   width: 100%;
+  font-weight: 700;
 
   .header__choice {
     margin-right: 60px;
@@ -122,7 +123,8 @@
 
 .navigation {
   display: flex;
-  width: 460px;
+  // width: 460px;
+  width: 220px;
   justify-content: space-between;
   position: relative;
   height: 74px;

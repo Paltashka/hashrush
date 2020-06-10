@@ -69,6 +69,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  &__video-pre {
+    position: absolute;
+    width: 930px;
+    height: 520px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
   }
 }
@@ -89,6 +99,11 @@
     &__video {
       width: 734px;
       height: 414px;
+
+      &-pre {
+        width: 734px;
+        height: 414px;
+      }
 
       &--wrapper {
         background-image: none;
@@ -115,6 +130,11 @@
     &__video {
       width: 375px;
       height: 212px;
+
+      &-pre {
+        width: 375px;
+        height: 212px;
+      }
 
       &--wrapper {
         width: 375px;

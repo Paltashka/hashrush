@@ -67,7 +67,7 @@ const Basics = () => {
             <div className="galaxy__images">
               <img className="galaxy__tome" src={tome} alt="tome of conflict" />
               <img className="galaxy__arrow" src={arrow} alt="arrow" />
-              <img src={points} alt="galaxy points" />
+              <img className="galaxy__points" src={points} alt="galaxy points" />
             </div>
 
             <p className="galaxy__text">The leaderboard is reset every week and players will win exciting prizes based on their overall position!</p>

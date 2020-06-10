@@ -47,7 +47,7 @@ const Parallax = () => {
         <a href="https://hashrush.com:3000/?#/createaccount"><Button classPosition="welcome__button--position" text="play now for free"/></a>
         <div className="welcome__border">
           <div className="welcome__inside">
-            <span>open beta</span>
+            <span>soft beta coming soon</span>
           </div>
         </div>
       </div>

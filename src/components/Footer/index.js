@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import './index.scss';
 
 import logo from '../../assets/images/logo.png';
@@ -23,8 +23,8 @@ const Footer = () => {
           </ul>
 
           <ul className="footer__nav">
-            <li className="footer__nav-item footer__nav-item--thin"><a href="https://medium.com/@Hash_Rush/has-recommended" target="_blank">Read us on Medium</a></li>
-            <li className="footer__nav-item footer__nav-item--thin"><a href="https://discord.com/invite/4YMBHbw" target="_blank">Contact Support</a></li>
+            <li className="footer__nav-item footer__nav-item--thin"><a href="https://medium.com/@Hash_Rush/has-recommended" target="_blank">Read our Blog</a></li>
+            <li className="footer__nav-item footer__nav-item--thin"><a href="mailto:community@hashrush.com" target="_blank">Contact Support</a></li>
             <li className="footer__nav-item footer__nav-item--thin">Potentialy third</li>
           </ul>
         </div>

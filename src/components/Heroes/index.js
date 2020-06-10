@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.scss';
 
-import melighar from '../../assets/about/melighar.png';
-import carax from '../../assets/about/carax.png';
-import fario from '../../assets/about/fario.png';
+import melighar from '../../assets/about/melighar.jpg';
+import carax from '../../assets/about/carax.jpg';
+import fario from '../../assets/about/fario.jpg';
 import traveller from '../../assets/about/traveller.png';
 
 const Heroes = () => {
@@ -20,18 +20,18 @@ const Heroes = () => {
 
           <div className="block__row"> 
             <div className="block__hero">
-              <img src={fario} alt="farion" />
-              <span>farion</span>
+              <img src={fario} className="block__img" alt="farion" />
+              <span>farion, the crystal shield</span>
             </div>
 
             <div className="block__hero">
-              <img src={melighar} alt="melighar" />
-              <span>melighar</span>
+              <img src={melighar} className="block__img" alt="melighar" />
+              <span>melighar, the grand sage</span>
             </div>
 
             <div className="block__hero">
-              <img src={carax} alt="carax" />
-              <span>carax</span>
+              <img src={carax} className="block__img" alt="carax" />
+              <span>carax, the Conjuror</span>
             </div>      
           </div>
 

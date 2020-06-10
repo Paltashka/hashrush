@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import video from '../../assets/video/hash-rush trailer.mp4';
 import play from '../../assets/images/play.svg';
 import img from '../../assets/slider/Baddies.jpg';
+import prevideo from '../../assets/forms/form-bg.png';
 
 
 let settings = {
@@ -25,6 +26,7 @@ let settings = {
 
 const About = () => {
   const [isVideoPlay, setIsVideoPlay] = useState(false);
+  const [times, setTimes] = useState(0);
   const videoRef = useRef();
   const [screnWidth, setScreenWidth] = useState(window.innerWidth);
   const handleResize = () => setScreenWidth(window.innerWidth);
@@ -49,6 +51,7 @@ const About = () => {
   }
   const toggleVideo = () => {
     setIsVideoPlay(!isVideoPlay);
+    setTimes(times + 1);
 
     !isVideoPlay ? videoRef.current.play() : videoRef.current.pause();
   };
@@ -68,6 +71,7 @@ const About = () => {
 
       <div onClick={toggleVideo} className="about__video--wrapper">
         {!isVideoPlay && <img className="about__video-play" src={play} alt="play" />}
+        {!isVideoPlay && times < 1 && <img className="about__video-pre" src={prevideo} alt="pre video" />}
         <video ref={videoRef} className="about__video">
           <source src={video} type="video/mp4" />
         </video> 

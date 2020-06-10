@@ -1,12 +1,12 @@
 import React from 'react';
 import './index.scss';
-import archer from '../../assets/about/card-unit-ernack-archer.png';
+import trogg from '../../assets/about/ernack-trogg.png';
 import raken from '../../assets/about/raken-archer.png';
 import swordsman from '../../assets/about/swordsman.png';
 
 const classes = [
   {
-    img: archer,
+    img: swordsman,
     title: 'swordsman',
     text: `The Ernacks are incredibly adaptable so when the threat of the Crystal Scourge came to light,
       they were quickly able to train themselves in the arts of swordplay. The Swordsman is the backbone of the Ernack armies and makes use of Slash damage.`
@@ -18,7 +18,7 @@ const classes = [
       Archers trained in the barracks, the Raken Archers make use of piercing damage. `
   },
   {
-    img: swordsman,
+    img: trogg,
     title: 'trogg',
     text: `Troggs are Ernacks that were trapped in collapsed mines and muted by the dark powers of the crystals. However, they remain friendly to the
       Ernacks, and thanks to their powerful bodies are living siege weapons, making use of Blunt damage.`
