@@ -27,7 +27,7 @@ const CreateAccount = () => {
       password: password.value
     });
 
-    axios.post('https://hashrush.com:3002/registerAccount', data, {
+    axios.post('http://localhost:3002/registerAccount', data, {
       headers: {
         'Content-Type': 'application/json'
       },
@@ -36,7 +36,7 @@ const CreateAccount = () => {
         history.push('/thanks-register');
       })
       .catch(err => {
-         alert('An account already exists with this username')
+        return err;
       });
   };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import Button from '../Button';
 import './index.scss';
@@ -11,6 +12,8 @@ import sky from '../../assets/images/sky.jpg';
 
 
 const Parallax = () => {
+  const history = useHistory();
+
   return (
     <ParallaxBanner
       className="parallax__start"
@@ -18,33 +21,33 @@ const Parallax = () => {
         {
           image: sky,
           amount: 0.8,
-          props: { style: { top: '-55px', bottom: '0', zIndex: 2, backgroundSize: 'cover', backgroundRepeat:  'no-repeat', overflow: 'hidden'}}
-          
+          props: { style: { top: '-55px', bottom: '0', zIndex: 2, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', overflow: 'hidden' } }
+
         },
         {
           image: far,
           amount: 0.3,
-          props: { style: { bottom: '0', top: '-3%', zIndex: 2 }}//12
-          
+          props: { style: { bottom: '0', top: '-3%', zIndex: 2 } }//12
+
         },
         {
           image: moon,
           amount: 0.45,
-          props: { style: { top: '11%', zIndex: 3, width: '400px', height: '400px', right: '23%', left: 'initial' }}
+          props: { style: { top: '11%', zIndex: 3, width: '400px', height: '400px', right: '23%', left: 'initial' } }
         },
         {
           image: near,
           amount: 0,
-          props: { style: { bottom: '-50%', top: '30%', zIndex: 4, backgroundSize: 'cover', backgroundRepeat:  'no-repeat' }}
+          props: { style: { bottom: '-50%', top: '30%', zIndex: 4, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' } }
         },
       ]}
       style={{
-          height: '100vh',
+        height: '100vh',
       }}
     >
       <div className="welcome">
         <img className="welcome__logo" src={logo} alt="logo with planet" />
-        <a href="https://hashrush.com:3000/?#/createaccount"><Button classPosition="welcome__button--position" text="play now for free"/></a>
+        <a onClick={() => history.push('/createaccount')}><Button classPosition="welcome__button--position" text="play now for free" /></a>
         <div className="welcome__border">
           <div className="welcome__inside">
             <span>soft beta coming soon</span>

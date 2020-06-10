@@ -78,7 +78,7 @@ const Header = ({ isLogin, username }) => {
                 </div>
 
                 <div className="header__register button__border">
-                  <a href="https://hashrush.com/sites/default/files/2019-07/Hash%20Rush.exe" download>
+                  <a href={`${process.env.REACT_APP_ProdUrl}/HashRush`} download>
                     <span className="button">
                       <img className="button__img" src={download} alt="download" />
                       <span className="button__text-visible">download game</span>
