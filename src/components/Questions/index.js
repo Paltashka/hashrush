@@ -1,4 +1,6 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+
 import Button from '../Button';
 import './index.scss';
 import { Parallax } from 'react-scroll-parallax';
@@ -16,11 +18,13 @@ const ParallaxImg = () => {
 };
 
 const Questions = () => {
+  const history = useHistory();
+
   return (
     <div className="questions">
       <ParallaxImg />
 
-      <Button text="discover more" classPosition="questions__button" />
+      <Button onClick={() => history.push('/about')} text="discover more" classPosition="questions__button" />
 
       <div className="questions__content">
         <h1 className="questions__heading heading">questions?</h1>

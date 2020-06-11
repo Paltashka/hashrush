@@ -10,8 +10,8 @@ class EmailVerificationPage extends React.Component {
         }
     }
 
-    componentDidMount() { 
-        axios.post('https://hashrush.com:3002/confirmAccount', { token: this.props.match.params.token })
+    componentDidMount() {
+        axios.post(`${process.env.REACT_APP_ProdUrl}/confirmAccount`, { token: this.props.match.params.token })
             .then(() => {
                 this.setState({ success: true });
 
@@ -21,17 +21,21 @@ class EmailVerificationPage extends React.Component {
             });
     }
 
-    render() { 
+    render() {
         return (
             <>
                 {this.state.success ?
-                    <h2>Your email was verified</h2> :
+                    <>
+                        <h2>Your email was verified</h2>
+                        <a onClick={() => this.props.history.push('/login')}>Now you can login</a>
+                    </>
+                    :
                     <h2>Some problem occured during account verification</h2>
                 }
             </>
         );
     }
-    
+
 };
 
 export default EmailVerificationPage;

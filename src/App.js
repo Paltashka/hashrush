@@ -1,5 +1,6 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 // import HomePage from './pages/HomePage';
 // import AboutPage from './pages/AboutPage';
@@ -13,12 +14,18 @@ import ThanksModal from './components/ThanksModal';
 import raken from './assets/forms/raken-rider.png';
 import muskernack from './assets/forms/3-muskernack-smaller-size.png';
 
+import { signInByToken } from './actions/authorizationFlow';
+
 import './index.scss';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 
-function App() {
+function App({ signInByToken }) {
+  useEffect(() => { 
+    localStorage.getItem('token') && signInByToken();
+  });
+
   return (
     <HashRouter> 
       <Switch>
@@ -41,4 +48,8 @@ function App() {
   );
 }
 
-export default App;
+const mapActionToProps = {
+  signInByToken
+};
+
+export default connect(null, mapActionToProps)(App);

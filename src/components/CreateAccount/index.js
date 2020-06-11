@@ -27,7 +27,7 @@ const CreateAccount = () => {
       password: password.value
     });
 
-    axios.post('http://localhost:3002/registerAccount', data, {
+    axios.post(`${process.env.REACT_APP_ProdUrl}/registerAccount`, data, {
       headers: {
         'Content-Type': 'application/json'
       },

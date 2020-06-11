@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 import './index.scss';
 
-import { signIn } from '../../../actions/signIn';
+import { signIn } from '../../../actions/authorizationFlow';
 
 import Button from '../../Button';
 import Input from '../Input';

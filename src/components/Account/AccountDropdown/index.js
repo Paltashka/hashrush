@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import { signOut } from '../../../actions/signIn';
+import { signOut } from '../../../actions/authorizationFlow';
 
 import './index.scss';
 

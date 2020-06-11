@@ -29,7 +29,7 @@ const ChangePassword = ({ setChangePassword, id, username, email }) => {
       email
     });
 
-    axios.post('https://hashrush.com:3002/changePassword', data, {
+    axios.post(`${process.env.REACT_APP_ProdUrl}/changePassword`, data, {
       headers: {
         'Content-Type': 'application/json'
       }
@@ -40,7 +40,6 @@ const ChangePassword = ({ setChangePassword, id, username, email }) => {
       .catch(err => {
         console.log(err);
       });
-
   };
 
   return (
