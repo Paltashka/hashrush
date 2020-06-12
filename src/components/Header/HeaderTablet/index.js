@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import fb from '../../../assets/footer_social-media/fb.svg';
 import tw from '../../../assets/footer_social-media/tw.svg';
@@ -10,6 +10,8 @@ import rc from '../../../assets/about/rc.svg';
 import hc from '../../../assets/about/hc.svg';
 
 const HeaderTablet = ({ isLogin }) => {
+  const history = useHistory();
+
   return (
     <div className="header-tablet">
       <div>
@@ -32,15 +34,15 @@ const HeaderTablet = ({ isLogin }) => {
           </>
         )}
         <ul className="footer__nav">
-          <Link to="/"><li className="footer__nav-item">main</li></Link>
-          <Link to="/about"><li className="footer__nav-item">about</li></Link>
+          <li className="footer__nav-item" onClick={() => history.push('/')}>main</li>
+          <li className="footer__nav-item" onClick={() => history.push('/about')}>about game</li>
           {/* <li className="footer__nav-item">store</li>
           <li className="footer__nav-item">leaderboard</li> */}
         </ul>
         <ul className="footer__nav">
-          <li className="footer__nav-item footer__nav-item--thin">Read us on Medium</li>
-          <li className="footer__nav-item footer__nav-item--thin">Contact Support</li>
-          <li className="footer__nav-item footer__nav-item--thin">Potentialy third</li>
+            <li className="footer__nav-item footer__nav-item--thin"><a href="https://medium.com/@Hash_Rush/has-recommended" target="_blank">Read our Blog</a></li>
+            <li className="footer__nav-item footer__nav-item--thin"><a href="mailto:community@hashrush.com" target="_blank">Contact Support</a></li>
+            <li className="footer__nav-item footer__nav-item--thin" onClick={() => history.push('/privacypolicy')}>Privacy policy</li>
         </ul>
       </div>
 

@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer__left">
           <img className="footer__logo" src={logo} alt="logo" />
           <ul className="footer__nav">
-            <li className="footer__nav-item" onClick={() => history.push('/about')} >about</li>
+            <li className="footer__nav-item" onClick={() => history.push('/about')} >about game</li>
             {/* <li className="footer__nav-item">store</li>
             <li className="footer__nav-item">leaderboard</li> */}
           </ul>
@@ -25,7 +25,7 @@ const Footer = () => {
           <ul className="footer__nav">
             <li className="footer__nav-item footer__nav-item--thin"><a href="https://medium.com/@Hash_Rush/has-recommended" target="_blank">Read our Blog</a></li>
             <li className="footer__nav-item footer__nav-item--thin"><a href="mailto:community@hashrush.com" target="_blank">Contact Support</a></li>
-            <li className="footer__nav-item footer__nav-item--thin">Potentialy third</li>
+            <li className="footer__nav-item footer__nav-item--thin" onClick={() => history.push('/privacypolicy')}>Privacy policy</li>
           </ul>
         </div>
 

@@ -1,11 +1,12 @@
 import React, { lazy, Suspense, useEffect } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch, BrowserRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 // import HomePage from './pages/HomePage';
 // import AboutPage from './pages/AboutPage';
 import AccountPage from './pages/AccountPage';
 import EmailVerificationPage from './pages/EmailVerificationPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 import CreateAccount from './components/CreateAccount';
 import LoginModal from './components/LoginModal';
@@ -27,7 +28,7 @@ function App({ signInByToken }) {
   });
 
   return (
-    <HashRouter> 
+    <BrowserRouter> 
       <Switch>
         <Suspense fallback>
           <Route path="/" component={HomePage} exact />
@@ -42,9 +43,10 @@ function App({ signInByToken }) {
           </Route>
           <Route path="/account" component={AccountPage} />
           <Route path="/emailVerification/:token" component={EmailVerificationPage} />
+          <Route path="/privacypolicy" component={PrivacyPolicy} />
         </Suspense>
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
