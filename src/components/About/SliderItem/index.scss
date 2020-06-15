@@ -19,6 +19,16 @@
       transition: filter 0.5s;
       filter: brightness(0.4);
     }
+
+    &--large {
+      position: fixed;
+      width: 80vw;
+      height: 80vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: contain;
+    }
   }
 }
 
@@ -61,6 +71,11 @@
       width: 255px;
       height: 194px;
       transform: translate(0px, 5px);
+
+      &--large {
+        width: 95vw;
+        height: 95vh;
+      }
     }
   }
 
@@ -75,6 +90,14 @@
 }
 
 @media screen and (max-width: 414px) {
+  .slide {
+    &__img {
+      &--large {
+        width: 95vw;
+        height: 95vh;
+      }
+    }
+  }
   .slick-slider {
     width: initial!important;
     width: initial!important;

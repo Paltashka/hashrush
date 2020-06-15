@@ -16,7 +16,7 @@ const Overview = () => {
           explore your planet to secure valuable resources, and build thriving settlements as you work to cleanse your planet
           and defeat the Crystal Scourge.
         </p>
-        <a href="https://www.youtube.com/watch?v=iPmxQ9hZkvU">
+        <a target="_blank" href="https://www.youtube.com/watch?v=iPmxQ9hZkvU">
           <Button
             text="gameplay video"
             layout={

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import './index.scss';
@@ -18,6 +18,7 @@ import AccountDropdown from '../Account/AccountDropdown';
 
 const Header = ({ isLogin, username }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const history = useHistory();
 
   if (isOpen) {
     document.body.style.overflow = 'hidden';
@@ -55,7 +56,7 @@ const Header = ({ isLogin, username }) => {
           {username
             ? (
               <>
-                <div className="header__choice">
+                {/* <div className="header__choice">
                   <span
                     className={'header__choice--active'}
                   >
@@ -64,7 +65,7 @@ const Header = ({ isLogin, username }) => {
                   <span
                     className={'header__choice--active'}
                   ><img className="header__choice-icon" src={hc} alt="hc" />142</span>
-                </div>
+                </div> */}
 
                 <div className="header__user user">
                   <Link to="/account">
@@ -78,7 +79,7 @@ const Header = ({ isLogin, username }) => {
                 </div>
 
                 <div className="header__register button__border">
-                  <a href={`${process.env.REACT_APP_ProdUrl}/HashRush`} download>
+                  <a href={`${process.env.REACT_APP_ProdUrl}/HashRush`} download onClick={() => history.push('/thanks-download')}>
                     <span className="button">
                       <img className="button__img" src={download} alt="download" />
                       <span className="button__text-visible">download game</span>

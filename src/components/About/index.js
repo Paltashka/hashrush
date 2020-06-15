@@ -16,6 +16,9 @@ import img2 from '../../assets/slider/image 2.png';
 import img3 from '../../assets/slider/image 3.png';
 import prevideo from '../../assets/forms/form-bg.png';
 
+import img1large from '../../assets/slider/image 1 large.jpg';
+import img2large from '../../assets/slider/image 2 large.jpg';
+import img3large from '../../assets/slider/image 3 large.png';
 
 let settings = {
   dots: false,
@@ -30,10 +33,11 @@ let settings = {
 const About = () => {
   const [isVideoPlay, setIsVideoPlay] = useState(false);
   const [times, setTimes] = useState(0);
+  const [enlarge, setEnlarge] = useState(null);
   const videoRef = useRef();
   const [screnWidth, setScreenWidth] = useState(window.innerWidth);
   const handleResize = () => setScreenWidth(window.innerWidth);
-
+  
   useEffect(() => {
     window.addEventListener('resize', handleResize);
 
@@ -61,7 +65,6 @@ const About = () => {
 
   return (
     <div className="about">
-      {/* <div className="about__shadow"></div> */}
       <div className="about__content">
         <h1 className="heading about__heading">about hash rush</h1>
         <p className="about__text">
@@ -80,10 +83,16 @@ const About = () => {
         </video> 
       </div>
 
+      {enlarge && (
+        <div className="about__enlarge" onClick={() => setEnlarge(null)}>
+          <img src={enlarge} className="slide__img--large" />
+        </div>
+      )}
+
       <Slider {...settings}>
-        <SliderItem imgUrl={img1} />
-        <SliderItem imgUrl={img2} />
-        <SliderItem imgUrl={img3} />
+        <SliderItem imgUrl={img1} large={img1large} enlarge={setEnlarge} />
+        <SliderItem imgUrl={img2} large={img2large} enlarge={setEnlarge} />
+        <SliderItem imgUrl={img3} large={img3large} enlarge={setEnlarge} />
       </Slider>
 
     </div>

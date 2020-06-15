@@ -54,6 +54,7 @@ const CreateAccount = () => {
           <Input type="text" id="email" placeholder="Email" />
           <Input type="text" id="repeatedEmail" placeholder="Repeat email" />
           <Input type="password" id="password" placeholder="Password" />
+          <Input type="password" id="repeatedPassword" placeholder="Repeat password" />
 
           <div className="modal__helpers">
             <CheckBox label="Subscribe to newsletter" id="subscribe" />

@@ -60,6 +60,7 @@ const ChangePassword = ({ setChangePassword, id, username, email }) => {
                   <form onSubmit={handleSubmit}>
                     <Input type="password" id="password" placeholder="Current password" />
                     <Input type="password" id="newpassword" placeholder="New password" />
+                    <Input type="password" id="newpasswordRepeated" placeholder="Repeat new password" />
                     <Button text="change password" />
                   </form>
                 </div>
