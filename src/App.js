@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import AccountPage from './pages/AccountPage';
 import EmailVerificationPage from './pages/EmailVerificationPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import CompleteResetPasswordPage from './pages/CompleteResetPasswordPage';
 
 import CreateAccount from './components/CreateAccount';
 import LoginModal from './components/LoginModal';
@@ -44,6 +45,7 @@ function App({ signInByToken }) {
           <Route path="/account" component={AccountPage} />
           <Route path="/emailVerification/:token" component={EmailVerificationPage} />
           <Route path="/privacypolicy" component={PrivacyPolicy} />
+          <Route path="/resetPassword" component={CompleteResetPasswordPage} />
         </Suspense>
       </Switch>
     </BrowserRouter>

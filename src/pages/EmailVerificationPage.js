@@ -27,7 +27,7 @@ class EmailVerificationPage extends React.Component {
                 {this.state.success ?
                     <>
                         <h2>Your email was verified</h2>
-                        <a onClick={() => this.props.history.push('/login')}>Now you can login</a>
+                        <button onClick={() => this.props.history.push('/login')}>Now you can login</button>
                     </>
                     :
                     <h2>Some problem occured during account verification</h2>

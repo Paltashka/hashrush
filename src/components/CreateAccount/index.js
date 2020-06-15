@@ -14,6 +14,8 @@ const CreateAccount = () => {
   const history = useHistory();
 
   const handleSubmit = (e) => {
+    e.preventDefault();
+    
     const { username, email, repeatedEmail, password } = e.target;
 
     if (!email.value || !repeatedEmail.value || !username.value || !password.value) return;
