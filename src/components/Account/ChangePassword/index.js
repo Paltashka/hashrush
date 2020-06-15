@@ -17,9 +17,11 @@ const ChangePassword = ({ setChangePassword, id, username, email }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const { password, newpassword } = e.target;
+    const { password, newpassword, newpasswordRepeated } = e.target;
 
     if (!password.value || !newpassword.value) return;
+
+    if (newpassword.value !== newpasswordRepeated.value) return;
 
     const data = JSON.stringify({
       userid: id,

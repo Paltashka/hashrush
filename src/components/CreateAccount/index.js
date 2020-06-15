@@ -16,9 +16,11 @@ const CreateAccount = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const { username, email, repeatedEmail, password } = e.target;
+    const { username, email, repeatedEmail, password, repeatedPassword } = e.target;
 
     if (!email.value || !repeatedEmail.value || !username.value || !password.value) return;
+
+    if (password.value !== repeatedPassword.value) return;
 
     if (email.value !== repeatedEmail.value) return;
 

@@ -33,7 +33,7 @@ const Login = ({ setForgotPassword, signIn }) => {
       <p className="modal__text">Login to Hash Rush</p>
 
       <form onSubmit={handleSubmit}>
-        <Input type="text" id="username" placeholder="Username" />
+        <Input type="text" id="username" placeholder="Username or email" />
         <Input type="password" id="password" placeholder="Password" />
 
         <div className="modal__helpers">
