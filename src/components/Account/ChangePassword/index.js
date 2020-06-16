@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import axios from 'axios';
+import { useAlert } from 'react-alert'
 
 import './index.scss';
 
@@ -12,6 +13,8 @@ import cross from '../../../assets/forms/cross.svg';
 
 
 const ChangePassword = ({ setChangePassword, id, username, email }) => {
+  const alert = useAlert();
+
   const [isSent, setIsSent] = useState(false);
 
   const handleSubmit = (e) => {
@@ -19,9 +22,11 @@ const ChangePassword = ({ setChangePassword, id, username, email }) => {
     
     const { password, newpassword, newpasswordRepeated } = e.target;
 
-    if (!password.value || !newpassword.value) return;
+    if (newpassword.value !== newpasswordRepeated.value) {
+      alert.show('Passwords are not the same', { type: 'error' });
 
-    if (newpassword.value !== newpasswordRepeated.value) return;
+      return;
+    };
 
     const data = JSON.stringify({
       userid: id,
@@ -40,6 +45,7 @@ const ChangePassword = ({ setChangePassword, id, username, email }) => {
         setIsSent(true);
       })
       .catch(err => {
+        alert.show(err.response.data.data.Message, { type: 'error' });
         console.log(err);
       });
   };

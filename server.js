@@ -2,6 +2,8 @@
 const https = require("https"),
     fs = require("fs");
 
+const compression = require('compression');
+
 const options = {
     key: fs.readFileSync("/etc/letsencrypt/live/hashrush.com/privkey.pem"),
     cert: fs.readFileSync("/etc/letsencrypt/live/hashrush.com/fullchain.pem")
@@ -11,6 +13,8 @@ var path = require('path');
 var express = require('express');
 
 var app = express();
+
+app.use(compression());
 
 app.use('/hashrush', express.static(path.join(__dirname,  'build')))
 

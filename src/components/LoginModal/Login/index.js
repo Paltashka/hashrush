@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { connect } from "react-redux";
+import { useAlert } from 'react-alert'
 
 import './index.scss';
 
@@ -12,17 +13,26 @@ import CheckBox from '../CheckBox';
 
 const Login = ({ setForgotPassword, signIn }) => {
   const history = useHistory();
+  const alert = useAlert();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const { username, password } = e.target;
 
-    if (!username.value || !password.value) return;
+    if (!username.value || !password.value) { 
+      alert.show('Complete all fields', { type: 'error' });
+
+      return;
+    }
 
     const err = await signIn(username, password);
 
-    if (err) return;
+    if (err) {
+      alert.show('Invalid username/email or password', { type: 'error' });
+
+      return;
+    }
 
     history.push('/about');
   };

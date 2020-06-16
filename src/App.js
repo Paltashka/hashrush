@@ -29,7 +29,7 @@ function App({ signInByToken }) {
   });
 
   return (
-    <BrowserRouter> 
+    <HashRouter> 
       <Switch>
         <Suspense fallback>
           <Route path="/" component={HomePage} exact />
@@ -48,7 +48,7 @@ function App({ signInByToken }) {
           <Route path="/resetPassword" component={CompleteResetPasswordPage} />
         </Suspense>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

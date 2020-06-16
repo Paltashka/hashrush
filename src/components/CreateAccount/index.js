@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
+import { useAlert } from 'react-alert';
 
 import logo from '../../assets/images/logo.png';
 
@@ -12,17 +13,30 @@ import './index.scss';
 
 const CreateAccount = () => {
   const history = useHistory();
+  const alert = useAlert();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const { username, email, repeatedEmail, password, repeatedPassword } = e.target;
 
-    if (!email.value || !repeatedEmail.value || !username.value || !password.value) return;
+    if (!email.value || !repeatedEmail.value || !username.value || !password.value) {
+      alert.show('Complete all fields', { type: 'error' });
 
-    if (password.value !== repeatedPassword.value) return;
+      return;
+    }
 
-    if (email.value !== repeatedEmail.value) return;
+    if (password.value !== repeatedPassword.value) {
+      alert.show('Passwords are not the same', { type: 'error' });
+
+      return;
+    };
+
+    if (email.value !== repeatedEmail.value) {
+      alert.show('Emails are not the same', { type: 'error' });
+
+      return;
+    };
 
     const data = JSON.stringify({
       username: username.value,
@@ -40,6 +54,8 @@ const CreateAccount = () => {
         history.push('/thanks-register');
       })
       .catch(err => {
+        alert.show(err.response.data.Message, { type: 'error' });
+
         return err;
       });
   };
