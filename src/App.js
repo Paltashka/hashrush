@@ -1,6 +1,8 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 import { HashRouter, Route, Switch, BrowserRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
 
 // import HomePage from './pages/HomePage';
 // import AboutPage from './pages/AboutPage';
@@ -23,13 +25,20 @@ import './index.scss';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 
+const history = createBrowserHistory();
+
+history.listen(location => {
+  console.log(location.hash);
+  ReactGA.pageview(location.hash);
+});
+
 function App({ signInByToken }) {
   useEffect(() => { 
     localStorage.getItem('token') && signInByToken();
   });
 
   return (
-    <HashRouter> 
+    <HashRouter history={history}> 
       <Switch>
         <Suspense fallback>
           <Route path="/" component={HomePage} exact />
