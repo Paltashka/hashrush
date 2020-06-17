@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
+import { useAlert } from 'react-alert';
 
 import './index.scss';
 
@@ -9,13 +10,18 @@ import Button from '../../Button';
 
 const ResetPassword = () => {
   const history = useHistory();
+  const alert = useAlert();
 
   const handleSubmitForm = (e) => {
     e.preventDefault();
 
     const { email } = e.target;
 
-    if (!email.value) return;
+    if (!email.value) {
+      alert.show('Complete all fields', { type: 'error' });
+
+      return;
+    }
 
     axios.post(`${process.env.REACT_APP_ProdUrl}/sendResetPasswordMail`, { email: email.value }, {
       headers: {
@@ -26,6 +32,7 @@ const ResetPassword = () => {
         history.push('/about');
       })
       .catch(err => {
+        alert.show(err.response.data.message, { type: 'error' });
         console.log(err);
         return err;
       });

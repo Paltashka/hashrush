@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import axios from 'axios';
-import { useAlert } from 'react-alert'
+import { useAlert } from 'react-alert';
 
 import './index.scss';
 
