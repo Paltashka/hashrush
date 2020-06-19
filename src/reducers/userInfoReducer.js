@@ -4,6 +4,7 @@ const emptyStore = {
     Name: '',
     Id: '',
     Email: '',
+    Token: ''
 }
 
 const initStore = {
@@ -15,7 +16,8 @@ export default function reducer(store = initStore, { type, payload }) {
         case SIGN_IN_SUCCESS: {
             return {
                 ...store,
-                ...payload
+                ...payload.user,
+                token: payload.token
             };
         }
 

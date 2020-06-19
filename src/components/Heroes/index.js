@@ -4,7 +4,9 @@ import './index.scss';
 import melighar from '../../assets/about/melighar.jpg';
 import carax from '../../assets/about/carax.jpg';
 import fario from '../../assets/about/fario.jpg';
-import traveller from '../../assets/about/traveller.png';
+import weapon from '../../assets/about/Weapon.jpg';
+import defence from '../../assets/about/Defence.jpg';
+import support from '../../assets/about/Support.jpg';
 
 const Heroes = () => {
   return (
@@ -46,17 +48,17 @@ const Heroes = () => {
 
           <div className="block__row"> 
             <div className="block__hero block__hero--locked">
-              <img src={traveller} alt="traveller" />
+              <img src={weapon} alt="traveller" />
               <span>offensive item</span>
             </div>
 
             <div className="block__hero block__hero--locked">
-              <img src={traveller} alt="traveller" />
+              <img src={defence} alt="traveller" />
               <span>defensive item</span>
             </div>
 
             <div className="block__hero block__hero--locked">
-              <img src={traveller} alt="traveller" />
+              <img src={support} alt="traveller" />
               <span>support item</span>
             </div>      
           </div>

@@ -9,7 +9,7 @@ import App from './App';
 import store from './store';
 
 const options = {
-  position: positions.TOP_RIGHT,
+  position: positions.MIDDLE,
   timeout: 3000,
   offset: '15px',
   transition: transitions.SCALE,

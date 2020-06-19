@@ -30,7 +30,7 @@ class EmailVerificationPage extends React.Component {
             <>
                 {this.state.success ?
                     <>
-                        <ThanksModal img={muskernack} title="Thank you for verifying your account, now go play Hash Rush" text={false} />
+                        <ThanksModal verifying={true} img={muskernack} title="Thank you for verifying your account, now go play Hash Rush" text={false} />
                     </>
                     :
                     <h2>Some problem occured during account verification</h2>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
+import axios from 'axios';
+import { useAlert } from 'react-alert';
 
 import { signOut } from '../../actions/authorizationFlow';
 
@@ -17,16 +19,33 @@ import hc from '../../assets/about/hc.svg';
 import lock from '../../assets/about/lock.svg';
 import star from '../../assets/about/star.svg';
 
-const Account = ({ username, signOut }) => {
+const Account = ({ token, status, email, username, signOut }) => {
   const history = useHistory();
+  const alert = useAlert();
 
   const [changeEmail, setChangeEmail] = useState(false);
   const [changePassword, setChangePassword] = useState(false);
   const [isVerified, setIsVerified] = useState(true);
 
+  const handleResendValidationEmail = () => {
+    axios.post(`${process.env.REACT_APP_ProdUrl}/resendValidationEmail`, { email: 'leonelluson+23@gmail.com', token }, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+      .then(response => {
+        return response;
+      })
+      .catch(err => {
+        alert.show(err.response.data.Message, { type: 'error' });
+
+        return err;
+      });
+  };
+
   const handleLogout = () => {
     signOut();
-    
+
     history.push('/login');
   };
 
@@ -48,7 +67,7 @@ const Account = ({ username, signOut }) => {
           <span className="account__name">{username}</span>
 
           <div className="account__email-wrapper">
-            <span className="account__email">username@gmail.com</span>
+            <span className="account__email">{email}</span>
             <span className="account__email-change" onClick={() => setChangeEmail(true)}>change email</span>
           </div>
 
@@ -101,7 +120,8 @@ const Account = ({ username, signOut }) => {
               type="button"
               text="download game"
               classPosition="account__btn"
-              onClick={() => setIsVerified(false)}
+              onClick={() => setIsVerified(status === 1 ? true : false)}
+              isVerified={isVerified}
             />
           </>)
         : (
@@ -112,11 +132,11 @@ const Account = ({ username, signOut }) => {
               <p className="account__verify-text">
                 Your email address has not been validated, you will not be able to play
                 the game until you have done so. Please check your mailbox for the validation mail.
-                If you are encountering difficulties with this, please <span>contact our support</span>.
+                If you are encountering difficulties with this, please <a href="http://discord.gg/4YMBHbw" target="_blank"><span>contact our support</span></a>.
               </p>
 
               <div className="account__button button__border">
-                <span className="button">
+                <span className="button" onClick={() => handleResendValidationEmail()}>
                   resend validation email
                 </span>
               </div>
@@ -129,8 +149,12 @@ const Account = ({ username, signOut }) => {
 };
 
 function mapStateToProps({ userInfo }) {
+  console.log(userInfo)
   return {
     username: userInfo.Name,
+    email: userInfo.Email,
+    status: userInfo.Status,
+    token: userInfo.token
   };
 }
 

@@ -25,7 +25,7 @@ const Footer = () => {
           <ul className="footer__nav">
             <li className="footer__nav-item footer__nav-item--thin"><a href="https://medium.com/@Hash_Rush/has-recommended" target="_blank">Read our Blog</a></li>
             <li className="footer__nav-item footer__nav-item--thin"><a href="mailto:community@hashrush.com" target="_blank">Contact Support</a></li>
-            <li className="footer__nav-item footer__nav-item--thin" onClick={() => history.push('/privacypolicy')}>Privacy policy</li>
+            <li className="footer__nav-item footer__nav-item--thin" onClick={() => history.push('/privacypolicy')}>Privacy Policy</li>
           </ul>
         </div>
 

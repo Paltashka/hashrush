@@ -47,7 +47,9 @@ export function signInByToken() {
                 }
             });
 
-            dispatch({ type: SIGN_IN_SUCCESS, payload: data.User });
+            console.log(data);
+
+            dispatch({ type: SIGN_IN_SUCCESS, payload: { user: data.User, token: data.Token } });
         } catch (err) {
             return err;
         }

@@ -7,18 +7,27 @@ import './index.scss';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-
 import video from '../../assets/video/hash-rush trailer.mp4';
 import play from '../../assets/images/play.svg';
-// import img from '../../assets/slider/Baddies.jpg';
-import img1 from '../../assets/slider/image 1.png';
-import img2 from '../../assets/slider/image 2.png';
-import img3 from '../../assets/slider/image 3.png';
-import prevideo from '../../assets/forms/form-bg.png';
 
-import img1large from '../../assets/slider/image 1 large.jpg';
-import img2large from '../../assets/slider/image 2 large.jpg';
-import img3large from '../../assets/slider/image 3 large.png';
+import prevideo from '../../assets/forms/prevideo.jpg';
+
+import preview_A from '../../assets/slider/preview-A.png';
+import preview_B from '../../assets/slider/preview-B.png';
+import preview_C from '../../assets/slider/preview-C.png';
+import preview_D from '../../assets/slider/preview-D.png';
+import preview_E from '../../assets/slider/preview-E.png';
+import preview_F from '../../assets/slider/preview-F.png';
+import preview_G from '../../assets/slider/preview-G.png';
+import preview_H from '../../assets/slider/preview-H.png';
+import a from '../../assets/slider/a.jpg';
+import b from '../../assets/slider/b.jpg';
+import c from '../../assets/slider/c.jpg';
+import d from '../../assets/slider/d.jpg';
+import e from '../../assets/slider/e.jpg';
+import f from '../../assets/slider/f.jpg';
+import g from '../../assets/slider/g.jpg';
+import h from '../../assets/slider/h.jpg';
 
 let settings = {
   dots: false,
@@ -90,9 +99,14 @@ const About = () => {
       )}
 
       <Slider {...settings}>
-        <SliderItem imgUrl={img1} large={img1large} enlarge={setEnlarge} />
-        <SliderItem imgUrl={img2} large={img2large} enlarge={setEnlarge} />
-        <SliderItem imgUrl={img3} large={img3large} enlarge={setEnlarge} />
+        <SliderItem imgUrl={preview_A} large={a} enlarge={setEnlarge} />
+        <SliderItem imgUrl={preview_B} large={b} enlarge={setEnlarge} />
+        <SliderItem imgUrl={preview_C} large={c} enlarge={setEnlarge} />
+        <SliderItem imgUrl={preview_D} large={d} enlarge={setEnlarge} />
+        <SliderItem imgUrl={preview_E} large={e} enlarge={setEnlarge} />
+        <SliderItem imgUrl={preview_F} large={f} enlarge={setEnlarge} />
+        <SliderItem imgUrl={preview_G} large={g} enlarge={setEnlarge} />
+        <SliderItem imgUrl={preview_H} large={h} enlarge={setEnlarge} />
       </Slider>
 
     </div>
