@@ -25,18 +25,18 @@ const ThanksModal = ({ verifying, img, title, text }) => {
           {verifying && <a href={`${process.env.REACT_APP_ProdUrl}/HashRush`} download>
             <span className="button">
               <img className="button__img" src={download} alt="download" />
-              <span className="button__text-visible" style={{fontFamily: 'Monserat', color: 'white', textTransform: 'uppercase', fontSize: '11px', letterSpacing: '0.42px'}}>download game</span>
+              <span className="button__text-visible" style={{color: 'white', fontWeight: '700', textTransform: 'uppercase', fontSize: '11px', letterSpacing: '0.42px'}}>download game</span>
             </span>
           </a>}
           <h2 className="login__subheading">Problems?</h2>
           <div className="account__button">
             <div className="account__border-top"></div>
-            <a href="http://discord.gg/4YMBHbw" target="_blank" ><span className="account__text">we are here to help</span></a>
+            <a href="http://discord.gg/4YMBHbw" target="_blank" ><span className="account__text" style={{fontWeight: '700'}}>we are here to help</span></a>
             <div className="account__border-bottom"></div>
           </div>
           <div className="account__button">
             <div className="account__border-top"></div>
-            <a onClick={() => history.push('/')} ><span className="account__text">Return to our Homepage</span></a>
+            <a onClick={() => history.push('/')}><span className="account__text" style={{ fontWeight: '700' }}>Return to our Homepage</span></a>
             <div className="account__border-bottom"></div>
           </div>
         </div>

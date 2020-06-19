@@ -18,7 +18,7 @@ export function signIn(username, password) {
 
             localStorage.setItem('token', data.Token);
 
-            dispatch({ type: SIGN_IN_SUCCESS, payload: data.User });
+            dispatch({ type: SIGN_IN_SUCCESS, payload: { user: data.User, token: data.Token } });
         } catch (err) {
             return err;
         }

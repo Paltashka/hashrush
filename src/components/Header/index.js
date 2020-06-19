@@ -42,6 +42,7 @@ const Header = ({ isLogin, username }) => {
             </Link>
           </div>
           <ul className="header__navigation navigation">
+            <li className="navigation__item"><Link to="/">home</Link></li>
             <li className="navigation__item"><Link to="/about">about game</Link></li>
             {/* <li className="navigation__item">store</li>
             <li className="navigation__item">leaderboard</li> */}

@@ -65,7 +65,7 @@ const System = () => {
           <h1 className="heading system__heading">prepare yourself!</h1>
           <h2 className="system__subtitle">the Crystal Scourge is upon us</h2>
           <p className="system__text">Join our Discord server to learn more about Hash Rush</p>
-          <div className="button__border questions__button-bottom">
+          <div className="button__border questions__button-bottom" style={{ margin: 'auto' }}>
               <a href="http://discord.gg/4YMBHbw" target="_blank">
               <span className="button">
                   <img className="questions__icon"  src={discordIcon} alt="discord icon" />chat now

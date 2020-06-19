@@ -1,7 +1,10 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { ParallaxBanner } from 'react-scroll-parallax';
+import { connect } from 'react-redux';
+
 import Button from '../Button';
+
 import './index.scss';
 
 import far from '../../assets/images/far-view.png';
@@ -10,8 +13,7 @@ import moon from '../../assets/images/moon.png';
 import logo from '../../assets/images/logo-planet.png';
 import sky from '../../assets/images/sky.jpg';
 
-
-const Parallax = () => {
+const Parallax = ({ token }) => {
   const history = useHistory();
 
   return (
@@ -47,7 +49,7 @@ const Parallax = () => {
     >
       <div className="welcome">
         <img className="welcome__logo" src={logo} alt="logo with planet" />
-        <a onClick={() => history.push('/createaccount')}><Button classPosition="welcome__button--position" text="play now for free" /></a>
+        <a onClick={() => history.push(!token ? '/createaccount' : null)}><Button classPosition="welcome__button--position" text="play now for free" /></a>
         <div className="welcome__border">
           <div className="welcome__inside">
             <span>soft beta coming soon</span>
@@ -58,4 +60,10 @@ const Parallax = () => {
   );
 };
 
-export default Parallax;
+function mapStateToProps({ userInfo }) {
+  return {
+    token: userInfo.token,
+  };
+}
+
+export default connect(mapStateToProps, null)(Parallax);

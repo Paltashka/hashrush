@@ -85,7 +85,7 @@ const About = () => {
       </div>
 
       <div onClick={toggleVideo} className="about__video--wrapper">
-        {!isVideoPlay && <img className="about__video-play" src={play} alt="play" />}
+        {!isVideoPlay && <img className="about__video-play" style={{ width: '200px' }} src={play} alt="play" />}
         {!isVideoPlay && times < 1 && <img className="about__video-pre" src={prevideo} alt="pre video" />}
         <video ref={videoRef} className="about__video">
           <source src={video} type="video/mp4" />
