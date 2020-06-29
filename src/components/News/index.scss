@@ -5,7 +5,7 @@
   height: 300px;
   top: -100px;
   box-shadow: 7px 200px 54px 400px #171327;
-
+  
   &::before {
     content: '';
     display: block;
@@ -55,6 +55,7 @@
             background-color: #cf9e1d;
             transform: translateY(-5px);
             transition: transform 0.5s;
+
           }
 
           .platform__border-bottom {
@@ -85,6 +86,7 @@
     width: 355px;
     height: 198px;
     transform: translateX(1px);
+    clip-path: polygon(40% 0, 59% 0, 61% 3%, 96% 3%, 100% 11%, 100% 100%, 0 100%, 0 10%, 4% 3%, 38% 3%);
   }
 
   &__content {
@@ -219,6 +221,7 @@
     img {
       width: 341px;
       transform: translateX(8px);
+
     }
   }
 }

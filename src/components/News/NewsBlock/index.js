@@ -7,7 +7,7 @@ const NewsBlock = ({ imgUrl, date, title, text, href }) => {
       <div className="news__block">
         <img className="news__platform" src={platform} alt="platform" />
         <div className="platform">
-          <img src={imgUrl} alt="news image" />
+          <img src={imgUrl} alt="news image"/>
           <div className="platform__content">
             <span className="platform__date">{date}</span>
             <span className="platform__title">{title}</span>
