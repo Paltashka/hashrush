@@ -52,13 +52,12 @@ const Community = () => {
     }
   }, [handleResize, screnWidth]);
 
-  useEffect(async () => {
-    await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/vz-games')
+  useEffect(() => {
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/vz-games')
       .then((res) => res.json())
       .then((data) => {
         const res = data.items;
         const posts = res.filter(item => item.categories.length > 0);
-        console.log(posts)
         setPosts(posts.slice(0, 3));
       });
   }, []);

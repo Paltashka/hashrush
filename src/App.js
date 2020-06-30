@@ -28,7 +28,6 @@ const AboutPage = lazy(() => import('./pages/AboutPage'));
 const history = createBrowserHistory();
 
 history.listen(location => {
-  console.log(location.hash);
   ReactGA.pageview(location.hash);
 });
 
