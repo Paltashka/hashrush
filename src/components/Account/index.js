@@ -104,8 +104,25 @@ const Account = ({ token, status, email, username, signOut }) => {
           <span className="account__words">my position in the leaderboard</span>
         </div>
       </div> */}
+      {isVerified 
+      &&
+      <Button
+              
+              type="button"
+              text="download game"
+              classPosition="account__btn"
+              onClick={() => {
+                history.push('/thanks-download');
+                setIsVerified(status === 1 ? true : false);
+              }
+              }
+              isVerified={isVerified}
+            />
+            
+}
 
       <div className="account__content-border">
+
         <div className="account__content account__content--small">
           <img src={lock} alt="lock" />
           <span className="account__words" onClick={handleLogout}>log out</span>
@@ -113,17 +130,10 @@ const Account = ({ token, status, email, username, signOut }) => {
       </div>
 
       {isVerified
-        ? (
-          <>
+        ? 
             <img className="account__logo" src={logo} alt="logo with planet" />
-            <Button
-              type="button"
-              text="download game"
-              classPosition="account__btn"
-              onClick={() => setIsVerified(status === 1 ? true : false)}
-              isVerified={isVerified}
-            />
-          </>)
+
+            
         : (
           <>
             <img className="change-email__img" src={emails} alt="emails" />

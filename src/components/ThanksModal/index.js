@@ -21,6 +21,11 @@ const ThanksModal = ({ verifying, img, title, text }) => {
           you will not be able to play the game unless your email address is verified
         </p>}
         <img className="thanks__img" src={img} alt="Raken" />
+        <div className="account__button button__position">
+            <div className="account__border-top"></div>
+            <Link to="/login"><span className="account__text">Log in</span></Link>
+            <div className="account__border-bottom"></div>
+          </div>
         <div className="login__account">
           {verifying && <a href={`${process.env.REACT_APP_ProdUrl}/HashRush`} download>
             <span className="button">
@@ -32,11 +37,6 @@ const ThanksModal = ({ verifying, img, title, text }) => {
           <div className="account__button">
             <div className="account__border-top"></div>
             <a href="http://discord.gg/4YMBHbw" target="_blank" ><span className="account__text" style={{fontWeight: '700'}}>we are here to help</span></a>
-            <div className="account__border-bottom"></div>
-          </div>
-          <div className="account__button">
-            <div className="account__border-top"></div>
-            <a onClick={() => history.push('/')}><span className="account__text" style={{ fontWeight: '700' }}>Return to our Homepage</span></a>
             <div className="account__border-bottom"></div>
           </div>
         </div>

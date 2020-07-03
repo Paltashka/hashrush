@@ -34,7 +34,7 @@ const Login = ({ setForgotPassword, signIn }) => {
       return;
     }
 
-    history.push('/about');
+    history.push('/account');
   };
 
   return (
