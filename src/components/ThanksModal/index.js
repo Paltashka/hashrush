@@ -28,6 +28,11 @@ const ThanksModal = ({ verifying, img, title, text }) => {
               <span className="button__text-visible" style={{ color: 'white', fontWeight: '700', textTransform: 'uppercase', fontSize: '11px', letterSpacing: '0.42px' }}>download game</span>
             </span>
           </a>}
+            <div className="account__button">
+                <div className="account__border-top"></div>
+                <Link to="/login"><span className="account__text">Log in</span></Link>
+                <div className="account__border-bottom"></div>
+            </div>
           <h2 className="login__subheading">Problems?</h2>
           <div className="account__button">
             <div className="account__border-top"></div>

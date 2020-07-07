@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { useAlert } from 'react-alert';
@@ -8,10 +8,12 @@ import logo from '../../assets/images/logo.png';
 import Input from '../LoginModal/Input';
 import CheckBox from '../LoginModal/CheckBox';
 import Button from '../Button';
+import Preloader from "../Preloader";
 
 import './index.scss';
 
 const CreateAccount = () => {
+  const [isLoading, setIsloading] = useState(false);
   const history = useHistory();
   const alert = useAlert();
 
@@ -45,23 +47,27 @@ const CreateAccount = () => {
       password: password.value
     });
 
+    setIsloading(true);
     axios.post(`${process.env.REACT_APP_ProdUrl}/registerAccount`, data, {
       headers: {
         'Content-Type': 'application/json'
       },
     })
       .then(response => {
+        setIsloading(false);
         history.push('/thanks-register');
       })
       .catch(err => {
-        alert.show(err.response.data.Message, { type: 'error' });
+        setIsloading(false);
 
+        alert.show(err.response.data.Message, { type: 'error' });
         return err;
       });
   };
 
   return (
     <div className="modal register">
+      {isLoading && <Preloader />}
       <Link to="/"><span className="modal__back">back</span></Link>
       <Link to="/"><img className="modal__logo" src={logo} alt="logo" /></Link>
 

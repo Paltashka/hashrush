@@ -35,6 +35,10 @@
     transform: translate(-50%);
   } 
   .account {
+    &__button {
+      margin-bottom: 15px;
+    }
+
     &__border-top {
       width: 185px;
     }
