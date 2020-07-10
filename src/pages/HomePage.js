@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from '../components/Header';
 import Parallax from '../components/Parallax';
@@ -11,19 +11,38 @@ import Cookies from '../components/Cookies';
 
 const HomePage = () => {
   const [isCookiesAgreed, setIsCookiesAgreed] = useState(false);
+  const [isReadyFirstPart, setReadyFirstPart] = useState(false);
+  const [isReadySecondPart, setReadySecondPart] = useState(false);
+
+  setTimeout(() => {
+    setReadyFirstPart(true);
+  }, 5000);
+
+  setTimeout(() => {
+    setReadySecondPart(true);
+  }, 7000);
 
   return (
     <ParallaxProvider>
       <Header isLogin={false} />
       <Parallax />
-      <News />
-      <Community />
-      <About />
-      <Questions />
+
+      {isReadyFirstPart === true && (
+        <div>
+          <News />
+          <Community />
+        </div>
+      )}
+      {isReadySecondPart === true && (
+        <div>
+          <About />
+          <Questions />
+        </div>
+      )}
       <Footer />
-     {!isCookiesAgreed && <Cookies setIsCookiesAgreed={setIsCookiesAgreed} />}
+      {!isCookiesAgreed && <Cookies setIsCookiesAgreed={setIsCookiesAgreed} />}
     </ParallaxProvider>
   );
-}; 
+};
 
 export default HomePage;
