@@ -1,0 +1,39 @@
+.founder-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.founder-item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+
+  &__header {
+    background: linear-gradient(to bottom, #fcf7e9, #b8a978);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+
+  span {
+    font-weight: bold;
+    color: #cec39d;
+  }
+}

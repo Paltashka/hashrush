@@ -21,6 +21,7 @@ import muskernack from './assets/forms/3-muskernack-smaller-size.png';
 import { signInByToken } from './actions/authorizationFlow';
 
 import './index.scss';
+import BundlePage from './pages/BundlePage';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -54,6 +55,7 @@ function App({ signInByToken }) {
           <Route path="/emailVerification/:token" component={EmailVerificationPage} />
           <Route path="/privacypolicy" component={PrivacyPolicy} />
           <Route path="/resetPassword" component={CompleteResetPasswordPage} />
+          <Route path="/bundle" component={BundlePage}/>
         </Suspense>
       </Switch>
     </HashRouter>

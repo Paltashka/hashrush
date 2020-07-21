@@ -35,4 +35,9 @@ ul {
   background: -webkit-linear-gradient(#fcf7e9, #b8a978);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  &--small {
+    color: #cec39d;
+    font-size: 14px;
+  }
 }
