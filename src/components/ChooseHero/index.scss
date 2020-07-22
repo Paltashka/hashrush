@@ -1,0 +1,34 @@
+.choose-hero {
+  background-color: rgba(1, 1, 1, 0.9);
+  position: relative;
+  top: -130px;
+  background-image: url('../../assets/bundle-page/3-heroes-bw.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    &__text {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.64;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  &__content {
+    margin-top: 300px;
+  }
+}

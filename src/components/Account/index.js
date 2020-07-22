@@ -159,7 +159,6 @@ const Account = ({ token, status, email, username, signOut }) => {
 };
 
 function mapStateToProps({ userInfo }) {
-  console.log(userInfo)
   return {
     username: userInfo.Name,
     email: userInfo.Email,

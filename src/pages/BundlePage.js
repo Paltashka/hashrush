@@ -3,6 +3,7 @@ import {ParallaxProvider} from 'react-scroll-parallax/cjs';
 import Header from '../components/Header';
 import LimitedEdition from '../components/LimitedEdition';
 import PreOrder from '../components/PreOrder';
+import ChooseHero from '../components/ChooseHero';
 
 const BundlePage = () => {
     const [isReadyFirstPart, setReadyFirstPart] = useState(false);
@@ -21,6 +22,7 @@ const BundlePage = () => {
             <Header isLogin={true}/>
             <LimitedEdition/>
             <PreOrder/>
+            <ChooseHero/>
         </ParallaxProvider>
     )
 }

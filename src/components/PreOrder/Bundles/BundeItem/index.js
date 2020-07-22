@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
 import brownUrsara from '../../../../assets/bundle-page/brown-ursara-min.png';
+import Button from './Button';
 
 const BundleItem = ({heroName, heroImage, items, price}) => {
     return (
@@ -17,16 +18,7 @@ const BundleItem = ({heroName, heroImage, items, price}) => {
                     <img className="bundles-item__images__items__fourth" src={brownUrsara} alt="brown ursara"/>
                 </div>
             </div>
-            <div className="bundles-item__btn">
-                <button className="bundles-item__btn">
-                    <span>{price}</span>
-                    <div className="bundles-item__btn__dash">
-                        <div className="bundles-item__btn__dash--dark"/>
-                        <div className="bundles-item__btn__dash--light"/>
-                    </div>
-                    <span>Explore</span>
-                </button>
-            </div>
+            <Button price={price}/>
         </div>
     );
 };
