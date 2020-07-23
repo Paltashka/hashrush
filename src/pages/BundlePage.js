@@ -5,6 +5,7 @@ import LimitedEdition from '../components/LimitedEdition';
 import PreOrder from '../components/PreOrder';
 import ChooseHero from '../components/ChooseHero';
 import GearList from '../components/GearList';
+import Footer from '../components/Footer';
 
 const BundlePage = () => {
     const [isReadyFirstPart, setReadyFirstPart] = useState(false);
@@ -25,6 +26,8 @@ const BundlePage = () => {
             <PreOrder/>
             <ChooseHero/>
             <GearList/>
+            <PreOrder/>
+            <Footer/>
         </ParallaxProvider>
     )
 }
