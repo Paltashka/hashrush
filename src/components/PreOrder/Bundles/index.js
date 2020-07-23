@@ -12,7 +12,7 @@ import carax1 from '../../../assets/bundle-page/defensive-chainmail-min.png';
 import carax2 from '../../../assets/bundle-page/support-chalice-min.png';
 import carax3 from '../../../assets/bundle-page/vanguard-lance-min.png';
 
-import farion1 from '../../../assets/bundle-page/defensive-chainmail-min.png';
+import farion1 from '../../../assets/bundle-page/defensive-shield-min.png';
 import farion2 from '../../../assets/bundle-page/offensive-hammer-min.png';
 import farion3 from '../../../assets/bundle-page/support-stew-min.png';
 

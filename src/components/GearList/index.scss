@@ -1,0 +1,15 @@
+.gear-list {
+  background-color: rgba(1, 1, 1, 0.9);
+  position: relative;
+  top: -130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+}
