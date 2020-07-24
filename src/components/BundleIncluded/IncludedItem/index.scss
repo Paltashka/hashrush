@@ -1,0 +1,48 @@
+.bundle-included__item {
+  display: flex;
+  width: 847px;
+  height: 321px;
+
+  &__img {
+    width: 170px;
+    height: 240px;
+    margin-right: 57px;
+  }
+
+  &__data {
+    &__header {
+      display: flex;
+      align-items: center;
+    }
+    &__heading {
+      font-family: Montserrat;
+      font-size: 22px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.85px;
+      color: #ffffff;
+    }
+
+    &__text {
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      color: #ffffff;
+    }
+  }
+
+  &__dash {
+    background: linear-gradient(to right, rgba(57, 78, 96, 0.2), #d4f0ff, rgba(57, 78, 96, 0.2));
+    height: 1px;
+    opacity: 0.5;
+    width: 847px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
