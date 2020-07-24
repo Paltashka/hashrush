@@ -1,0 +1,100 @@
+.purchase {
+  width: 453px;
+
+  &__heading {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.85px;
+    color: #ffffff;
+  }
+
+  &__content {
+    height: 599px;
+    background-image: url("../../../assets/bundle-page/purchase-bg.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+
+    &__heading {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: 1.31px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+
+    &__bundle {
+      display: flex;
+      margin-left: 30px;
+
+      img {
+        width: 96px;
+        height: 136px;
+        margin-right: 7px;
+      }
+
+      &__details {
+        margin-left: 30px;
+      }
+    }
+
+    &__payments {
+      margin-top: 30px;
+
+      &__heading {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 1.31px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-left: 30px;
+      }
+    }
+
+    &__buy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 128px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &__price {
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.08px;
+        text-align: center;
+        color: #ffffff;
+
+        &--small {
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.69px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

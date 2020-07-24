@@ -1,0 +1,17 @@
+.bundle-hero {
+  display: flex;
+  width: 67%;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,30 @@
+.payment-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-left: 12px;
+    flex: 1;
+  }
+}
+
+.purchase-dash {
+  height: 0px;
+  object-fit: contain;
+  opacity: 0.5;
+  border-style: solid;
+  border-image-source: linear-gradient(to bottom, #08141f, #36587d);
+  border-image-slice: 1;
+}
