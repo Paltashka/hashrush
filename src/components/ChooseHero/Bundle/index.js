@@ -15,7 +15,7 @@ const Bundle = ({heroName, heroType, description, image, isReversed}) => {
                     <p className="choose-hero-bundle__information__buttons__read-more">Read more</p>
                 </div>
             </div>
-            <div className="hero-image">
+            <div className="choose-hero-bundle__hero-image">
                 <img src={image}/>
             </div>
         </div>

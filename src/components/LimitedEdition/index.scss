@@ -1,11 +1,15 @@
+.limited-edition__wrapper {
+  height: 760px;
+  background-color: black;
+}
+
 .limited-edition {
-  height: 975px;
-  background-image: url('../../assets/bundle-page/3-heroes-main.png');
+  height: 700px;
+  background-image: url("../../assets/bundle-page/3-heroes-main.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-color: rgba(1, 1, 1, 0.9);
-  top: -130px;
+  top: -175px;
 
   &__content {
     position: absolute;
@@ -49,9 +53,8 @@
 
 .dash {
   width: 99%;
-  height: 2px;
+  background: linear-gradient(to right, rgba(57, 78, 96, 0.2), #d4f0ff, rgba(57, 78, 96, 0.2));
+  height: 1px;
   opacity: 0.5;
-  border-style: solid;
-  border-width: 2px;
-  background: linear-gradient(to right, rgba(57, 78, 96, 0) 0%, #d4f0ff 50%, rgba(57, 78, 96, 0));
+  width: 99%;
 }

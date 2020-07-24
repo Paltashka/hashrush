@@ -7,7 +7,7 @@ const GearItem = ({type, images}) => {
             {images.map(img => {
                 return <img src={img}/>
             })}
-            <p>{type}</p>
+            <p className="gear-item__text">{type}</p>
         </div>
     );
 };

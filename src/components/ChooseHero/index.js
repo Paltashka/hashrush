@@ -34,17 +34,17 @@ const ChooseHero = () => {
                     isReversed={false}
                 />
                 <Bundle
-                    heroName="Carax"
-                    heroType="The Conjuror"
+                    heroName="Farion"
+                    heroType="the Crystal Shield"
                     description="Wielder of the Braces of Cryptar, Carax can conjur a spiritual manifestation of him to wreak Havok on the battlefiend."
-                    image={carax}
+                    image={farion}
                     isReversed={true}
                 />
                 <Bundle
-                    heroName="Carax"
-                    heroType="The Conjuror"
+                    heroName="Melighar"
+                    heroType="The grand sage"
                     description="Wielder of the Braces of Cryptar, Carax can conjur a spiritual manifestation of him to wreak Havok on the battlefiend."
-                    image={carax}
+                    image={melighar}
                     isReversed={false}
                 />
             </div>

@@ -23,10 +23,10 @@ const BundlePage = () => {
         <ParallaxProvider>
             <Header isLogin={true}/>
             <LimitedEdition/>
-            <PreOrder/>
+            <PreOrder isFounderBundles={true}/>
             <ChooseHero/>
             <GearList/>
-            <PreOrder/>
+            <PreOrder isFounderBundles={false}/>
             <Footer/>
         </ParallaxProvider>
     )

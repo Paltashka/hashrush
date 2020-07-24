@@ -28,6 +28,7 @@
       line-height: 1.43;
       letter-spacing: 1.31px;
       color: #ffffff;
+      text-transform: uppercase;
     }
 
     &__buttons {
@@ -62,7 +63,18 @@
   }
 
   &__hero-image {
+    background-image: url("../../../assets/images/tile-big.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 400px;
 
+    img {
+
+    }
   }
 
   &--reversed {
