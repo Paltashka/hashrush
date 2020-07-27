@@ -36,6 +36,7 @@
       width: 154px;
       height: 218px;
       transform: rotate(-20deg);
+      border-radius: 4px;
     }
 
     &__items {
@@ -44,6 +45,7 @@
       img {
         width: 92px;
         height: 92px;
+        border-radius: 4px;
       }
 
       :nth-child(2) {
