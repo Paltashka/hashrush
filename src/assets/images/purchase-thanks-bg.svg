@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1017" height="652" viewBox="0 0 1017 652">
+    <defs>
+        <linearGradient id="hs5arbce2c" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#355371"/>
+            <stop offset="100%" stop-color="#0D253A"/>
+        </linearGradient>
+        <linearGradient id="964vjyp8me" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#2C4660"/>
+            <stop offset="100%" stop-color="#446989"/>
+        </linearGradient>
+        <filter id="g2ypev4iza" width="118.5%" height="131.1%" x="-9.3%" y="-15.2%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+            <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="27"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.783061594 0"/>
+        </filter>
+        <filter id="teao92ktrd" width="113.1%" height="122%" x="-6.6%" y="-10.6%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="3"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.0855562515 0 0 0 0 0.206139859 0 0 0 0 0.309497236 0 0 0 1 0"/>
+        </filter>
+        <rect id="513ye2wgob" width="906" height="540" x="267.5" y="84" rx="6"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" opacity=".9" transform="translate(-212 -30)">
+        <use fill="#000" filter="url(#g2ypev4iza)" xlink:href="#513ye2wgob"/>
+        <use fill="url(#hs5arbce2c)" xlink:href="#513ye2wgob"/>
+        <use fill="#000" filter="url(#teao92ktrd)" xlink:href="#513ye2wgob"/>
+        <rect width="908" height="542" x="266.5" y="83" stroke="url(#964vjyp8me)" stroke-width="2" rx="6"/>
+    </g>
+</svg>

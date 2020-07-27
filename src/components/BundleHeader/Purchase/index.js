@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './index.scss';
 import farion from '../../../assets/bundle-page/fario-grandmaster.jpg';
 import visa from '../../../assets/bundle-page/visa.svg';
@@ -9,8 +9,46 @@ import ethereum from '../../../assets/bundle-page/ethereum.svg';
 import PaymentItem from './PaymentItem';
 import BundleDetailsItem from './BundleDetailsItem';
 import Button from '../../Button';
+import Modal from 'react-modal';
+import PurchaseThanksModal from '../../PurchaseThanksModal';
+import melighar from '../../../assets/bundle-page/melighar-grandmaster.jpg';
+import melighar1 from '../../../assets/bundle-page/offensive-staff-min.png';
+import melighar2 from '../../../assets/bundle-page/crystal-helm-min.png';
+import melighar3 from '../../../assets/bundle-page/lingering-hope-min.png';
+import bg from '../../../assets/images/purchase-thanks-bg.svg';
+import close from '../../../assets/images/close-modal.svg';
+
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+        background: 'none',
+        border: 'none',
+        backgroundImage: `url('${bg}`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '100%, 100%',
+        padding: '100px',
+    },
+    overlay: {
+        backgroundColor: 'rgba(1, 1, 1, 0.56)',
+    },
+};
 
 const Purchase = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    }
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    }
+
     return (
         <div className="purchase">
             <h1 className="purchase__heading">Purchase bundle</h1>
@@ -65,7 +103,7 @@ const Purchase = () => {
                             <span className="purchase__content__buy__price--small">.00</span>
                         </span>
                         <div>
-                            <Button text="Purchase" style={{width: '250px'}} width="220px"/>
+                            <Button onClick={openModal} text="Purchase" style={{width: '250px'}} width="220px"/>
                         </div>
                     </div>
                     <p className="purchase__content__buy__terms">By clicking “Purchase” I approve the
@@ -74,7 +112,16 @@ const Purchase = () => {
                     </p>
                 </div>
             </div>
-
+            <Modal
+                isOpen={isModalOpen}
+                style={customStyles}
+            >
+                <PurchaseThanksModal
+                    heroImage={melighar}
+                    images={[melighar1, melighar2, melighar3]}
+                />
+                <img src={close} onClick={closeModal} className="thanks-modal__close-modal"/>
+            </Modal>
         </div>
     );
 };

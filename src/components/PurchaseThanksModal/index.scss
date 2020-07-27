@@ -1,0 +1,78 @@
+.thanks-modal {
+  width: 906px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    color: #ffffff;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    width: 33vw;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+
+  &__close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  &__images {
+    display: flex;
+    margin-top: 40px;
+
+    &__hero {
+      width: 154px;
+      height: 218px;
+      transform: rotate(-20deg);
+    }
+
+    &__items {
+      width: 200px;
+      margin-left: 41px;
+
+      img {
+        width: 92px;
+        height: 92px;
+      }
+
+      :nth-child(2) {
+        transform: translate(25px, 0px);
+      }
+
+      :nth-child(3) {
+        transform: translate(0px, 10px);
+      }
+
+      :nth-child(4) {
+        transform: translate(25px, 10px);
+      }
+    }
+  }
+}
