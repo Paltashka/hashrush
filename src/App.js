@@ -23,6 +23,7 @@ import { signInByToken } from './actions/authorizationFlow';
 import './index.scss';
 import BundlesPage from './pages/BundlesPage';
 import BundlePage from './pages/BundlePage';
+import ThankYouPage from './pages/ThankYouPage';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -58,6 +59,7 @@ function App({ signInByToken }) {
           <Route path="/resetPassword" component={CompleteResetPasswordPage} />
           <Route path="/bundles" component={BundlesPage}/>
           <Route path="/bundle/:id" component={BundlePage} />
+          <Route path="/thank-you" component={ThankYouPage} />
         </Suspense>
       </Switch>
     </HashRouter>
