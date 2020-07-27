@@ -1,7 +1,17 @@
 .other-bundles {
-  background: black;
+  //background: black url("../../assets/bundle-page/3-heroes-bw.png") no-repeat;
+  background-color: black;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
+  height: 600px;
+
+  &__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+  }
 }

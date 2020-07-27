@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.scss'
 
-const HeroType = ({img}) => {
+const HeroType = ({type}) => {
     return (
         <div className="hero-type">
-            <img src={img}/>
+            <p className="hero-type__text">{type}</p>
         </div>
     );
 };

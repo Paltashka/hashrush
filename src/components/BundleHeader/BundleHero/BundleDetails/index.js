@@ -9,6 +9,7 @@ import carax3 from '../../../../assets/bundle-page/vanguard-lance-min.png';
 
 import farion1 from '../../../../assets/bundle-page/defensive-shield-min.png';
 import farion2 from '../../../../assets/bundle-page/offensive-hammer-min.png';
+import grandmaster from '../../../../assets/bundle-page/grandmaster-hero.svg';
 
 const BundleDetails = () => {
     return (
@@ -20,7 +21,9 @@ const BundleDetails = () => {
                 <h1 className="bundle-details__info__heading">Farion</h1>
                 <div className="bundle-details__info__type">
                     <h2 className="bundle-details__info__type__subheading">The crystal shield</h2>
-                    <HeroType/>
+                    <HeroType
+                        type="Grandmaster hero"
+                    />
                 </div>
                 <p className="bundle-details__info__text">
                     Using his trusty Hammer and Shield, Farion will thin the enemy ranks and will hold them back without

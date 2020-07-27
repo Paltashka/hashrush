@@ -18,7 +18,7 @@ const BundleItem = ({heroName, heroImage, items, price}) => {
                     <img className="bundles-item__images__items__fourth" src={brownUrsara} alt="brown ursara"/>
                 </div>
             </div>
-            <Button price={price}/>
+            {price && <Button price={price}/>}
         </div>
     );
 };

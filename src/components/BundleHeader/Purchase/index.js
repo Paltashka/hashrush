@@ -59,13 +59,19 @@ const Purchase = () => {
                     />
                 </div>
                 <div className="purchase__content__buy">
-                    <span className="purchase__content__buy__price">
-                        $20
-                        <span className="purchase__content__buy__price--small">.00</span>
-                    </span>
-                    <div>
-                        <Button text="Purchase" style={{width: '250px'}} width="220px"/>
+                    <div className="purchase__content__buy__wrapper">
+                        <span className="purchase__content__buy__price">
+                            $20
+                            <span className="purchase__content__buy__price--small">.00</span>
+                        </span>
+                        <div>
+                            <Button text="Purchase" style={{width: '250px'}} width="220px"/>
+                        </div>
                     </div>
+                    <p className="purchase__content__buy__terms">By clicking “Purchase” I approve the
+                        <span className="purchase__content__buy__terms--underlined">terms and
+                        conditions</span>
+                    </p>
                 </div>
             </div>
 

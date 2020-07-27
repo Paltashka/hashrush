@@ -69,9 +69,19 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-direction: column;
       height: 128px;
       padding-left: 30px;
       padding-right: 30px;
+
+      &__wrapper {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 20px;
+      }
 
       &__price {
         font-family: Montserrat;
@@ -93,6 +103,25 @@
           line-height: normal;
           letter-spacing: 0.69px;
           color: #ffffff;
+        }
+      }
+
+      &__terms {
+        opacity: 0.5;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.92;
+        letter-spacing: normal;
+        color: #ffffff;
+        margin: 0;
+        padding-bottom: 30px;
+
+        &--underlined {
+          text-decoration: underline;
+          padding-left: 3px;
         }
       }
     }
