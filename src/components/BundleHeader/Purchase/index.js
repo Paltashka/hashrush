@@ -38,17 +38,7 @@ const customStyles = {
     },
 };
 
-const Purchase = ({heroName, heroImg, items}) => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const openModal = () => {
-        setIsModalOpen(true);
-    }
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-    }
-
+const Purchase = ({heroName, heroImg}) => {
     return (
         <div className="purchase">
             <h1 className="purchase__heading">Purchase bundle</h1>
@@ -112,16 +102,16 @@ const Purchase = ({heroName, heroImg, items}) => {
                     </p>
                 </div>
             </div>
-            <Modal
-                isOpen={isModalOpen}
-                style={customStyles}
-            >
-                <PurchaseThanksModal
-                    heroImage={heroImg}
-                    images={items}
-                />
-                <img src={close} onClick={closeModal} className="thanks-modal__close-modal"/>
-            </Modal>
+            {/*<Modal*/}
+            {/*    isOpen={isModalOpen}*/}
+            {/*    style={customStyles}*/}
+            {/*>*/}
+            {/*    <PurchaseThanksModal*/}
+            {/*        heroImage={heroImg}*/}
+            {/*        images={items}*/}
+            {/*    />*/}
+            {/*    <img src={close} onClick={closeModal} className="thanks-modal__close-modal"/>*/}
+            {/*</Modal>*/}
         </div>
     );
 };

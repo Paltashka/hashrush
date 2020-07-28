@@ -13,7 +13,7 @@ const BundleHeader = ({heroName, heroText, heroImg, heroType, heroDetailText, it
         }}>
             <BundleHero heroName={heroName} heroText={heroText} heroImg={heroImg} heroType={heroType}
                         heroDetailText={heroDetailText} items={items}/>
-            <Purchase heroName={heroName} heroImg={heroImg} items={items} />
+            <Purchase heroName={heroName} heroImg={heroImg} />
         </div>
     );
 };
