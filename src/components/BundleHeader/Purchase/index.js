@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './index.scss';
-import farion from '../../../assets/bundle-page/fario-grandmaster.jpg';
 import visa from '../../../assets/bundle-page/visa.svg';
 import mastercard from '../../../assets/bundle-page/mastercard.svg';
 import paypal from '../../../assets/bundle-page/paypal.svg';
@@ -9,34 +8,26 @@ import ethereum from '../../../assets/bundle-page/ethereum.svg';
 import PaymentItem from './PaymentItem';
 import BundleDetailsItem from './BundleDetailsItem';
 import Button from '../../Button';
-import Modal from 'react-modal';
-import PurchaseThanksModal from '../../PurchaseThanksModal';
-import melighar from '../../../assets/bundle-page/melighar-grandmaster.jpg';
-import melighar1 from '../../../assets/bundle-page/offensive-staff-min.png';
-import melighar2 from '../../../assets/bundle-page/crystal-helm-min.png';
-import melighar3 from '../../../assets/bundle-page/lingering-hope-min.png';
-import bg from '../../../assets/images/purchase-thanks-bg.svg';
-import close from '../../../assets/images/close-modal.svg';
 
-const customStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-        background: 'none',
-        border: 'none',
-        backgroundImage: `url('${bg}`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: '100%, 100%',
-        padding: '100px',
-    },
-    overlay: {
-        backgroundColor: 'rgba(1, 1, 1, 0.56)',
-    },
-};
+// const customStyles = {
+//     content: {
+//         top: '50%',
+//         left: '50%',
+//         right: 'auto',
+//         bottom: 'auto',
+//         marginRight: '-50%',
+//         transform: 'translate(-50%, -50%)',
+//         background: 'none',
+//         border: 'none',
+//         backgroundImage: `url('${bg}`,
+//         backgroundRepeat: 'no-repeat',
+//         backgroundSize: '100%, 100%',
+//         padding: '100px',
+//     },
+//     overlay: {
+//         backgroundColor: 'rgba(1, 1, 1, 0.56)',
+//     },
+// };
 
 const Purchase = ({heroName, heroImg}) => {
     return (
@@ -93,7 +84,7 @@ const Purchase = ({heroName, heroImg}) => {
                             <span className="purchase__content__buy__price--small">.00</span>
                         </span>
                         <div>
-                            <Button onClick={openModal} text="Purchase" style={{width: '250px'}} width="220px"/>
+                            <Button text="Purchase" style={{width: '250px'}} width="220px"/>
                         </div>
                     </div>
                     <p className="purchase__content__buy__terms">By clicking “Purchase” I approve the
