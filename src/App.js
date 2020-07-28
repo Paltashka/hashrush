@@ -24,6 +24,9 @@ import './index.scss';
 import BundlesPage from './pages/BundlesPage';
 import BundlePage from './pages/BundlePage';
 import ThankYouPage from './pages/ThankYouPage';
+import MeligharPage from './pages/MeligharPage';
+import CaraxPage from './pages/CaraxPage';
+import FarionPage from './pages/FarionPage';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -58,8 +61,11 @@ function App({ signInByToken }) {
           <Route path="/privacypolicy" component={PrivacyPolicy} />
           <Route path="/resetPassword" component={CompleteResetPasswordPage} />
           <Route path="/bundles" component={BundlesPage}/>
-          <Route path="/bundle/:id" component={BundlePage} />
-          <Route path="/thank-you" component={ThankYouPage} />
+          {/*<Route path="/bundle/:id" component={BundlePage} />*/}
+          <Route path="/bundle/melighar" component={MeligharPage} />
+          <Route path="/bundle/carax" component={CaraxPage} />
+          <Route path="/bundle/farion" component={FarionPage} />
+          <Route path="/thank-you" component={ThankYouPage}/>
         </Suspense>
       </Switch>
     </HashRouter>
