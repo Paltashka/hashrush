@@ -38,7 +38,7 @@ const customStyles = {
     },
 };
 
-const Purchase = () => {
+const Purchase = ({heroName, heroImg, items}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
@@ -54,9 +54,9 @@ const Purchase = () => {
             <h1 className="purchase__heading">Purchase bundle</h1>
             <div className="purchase__content">
                 <div className="purchase__content__bundle">
-                    <img src={farion} alt=""/>
+                    <img src={heroImg} alt=""/>
                     <div className="purchase__content__bundle__details">
-                        <p className="purchase__content__heading">Farion founder bundle</p>
+                        <p className="purchase__content__heading">{heroName} founder bundle</p>
                         <BundleDetailsItem
                             name="Grandmaster hero"
                         />
@@ -117,8 +117,8 @@ const Purchase = () => {
                 style={customStyles}
             >
                 <PurchaseThanksModal
-                    heroImage={melighar}
-                    images={[melighar1, melighar2, melighar3]}
+                    heroImage={heroImg}
+                    images={items}
                 />
                 <img src={close} onClick={closeModal} className="thanks-modal__close-modal"/>
             </Modal>

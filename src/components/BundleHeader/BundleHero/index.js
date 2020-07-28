@@ -2,14 +2,14 @@ import React from 'react';
 import './index.scss';
 import BundleDetails from './BundleDetails';
 
-const BundleHero = () => {
+const BundleHero = ({heroName, heroText, heroImg, heroType, heroDetailText, items}) => {
     return (
         <div className="bundle-hero">
-            <h1 className="heading">Farion founder bundle</h1>
+            <h1 className="heading">{heroName} founder bundle</h1>
             <p className="bundle-hero__text">
-                Shield your allies with Farion and his unique Hero Items, along with a limited edition skin for your Ernack workers.
+                {heroText}
             </p>
-            <BundleDetails/>
+            <BundleDetails heroName={heroName} heroImg={heroImg} heroType={heroType} heroDetailText={heroDetailText} items={items}/>
         </div>
     );
 };

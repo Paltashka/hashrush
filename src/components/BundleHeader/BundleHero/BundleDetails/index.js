@@ -9,36 +9,37 @@ import carax3 from '../../../../assets/bundle-page/vanguard-lance-min.png';
 
 import farion1 from '../../../../assets/bundle-page/defensive-shield-min.png';
 import farion2 from '../../../../assets/bundle-page/offensive-hammer-min.png';
-import grandmaster from '../../../../assets/bundle-page/grandmaster-hero.svg';
 
-const BundleDetails = () => {
+const BundleDetails = ({heroName, heroImg, heroType, heroDetailText, items}) => {
     return (
         <div className="bundle-details">
             <div className="bundle-details__image">
-                <img src={farion}/>
+                <img src={heroImg}/>
             </div>
             <div className="bundle-details__info">
-                <h1 className="bundle-details__info__heading">Farion</h1>
+                <h1 className="bundle-details__info__heading">{heroName}</h1>
                 <div className="bundle-details__info__type">
-                    <h2 className="bundle-details__info__type__subheading">The crystal shield</h2>
+                    <h2 className="bundle-details__info__type__subheading">{heroType}</h2>
                     <HeroType
                         type="Grandmaster hero"
                     />
                 </div>
                 <p className="bundle-details__info__text">
-                    Using his trusty Hammer and Shield, Farion will thin the enemy ranks and will hold them back without
-                    breaking a sweat.
+                    {heroDetailText}
                 </p>
                 <div className="bundle-details__info__items">
                     <p className="bundle-details__info__type__subheading">
                         Included in the bundle
                     </p>
                     <div className="bundle-details__info__items__images">
-                        <img src={carax1} alt=""/>
-                        <img src={carax2} alt=""/>
-                        <img src={carax3} alt=""/>
-                        <img src={farion1} alt=""/>
-                        <img src={farion2} alt=""/>
+                        {items.map(item => {
+                            return <img src={item}/>
+                        })}
+                        {/*<img src={carax1} alt=""/>*/}
+                        {/*<img src={carax2} alt=""/>*/}
+                        {/*<img src={carax3} alt=""/>*/}
+                        {/*<img src={farion1} alt=""/>*/}
+                        {/*<img src={farion2} alt=""/>*/}
                     </div>
                 </div>
             </div>

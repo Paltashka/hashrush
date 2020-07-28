@@ -3,7 +3,7 @@ import './index.scss';
 import HeroType from '../../BundleHeader/BundleHero/HeroType';
 import SpecialEffect from './SpecialEffect';
 
-const IncludedItem = ({name, img, description, type, specialEffect, isLastChild}) => {
+const IncludedItem = ({name, img, description, type, specialEffect, isLastChild, subheader}) => {
     return (
         <>
             <div className="bundle-included__item">
@@ -13,6 +13,9 @@ const IncludedItem = ({name, img, description, type, specialEffect, isLastChild}
                         <h1 className="bundle-included__item__data__heading">{name}</h1>
                         {type && <HeroType type={type}/>}
                     </div>
+                    {subheader && (
+                        <p className="bundle-included__item__data__subheader">{subheader}</p>
+                    )}
                     <p className="bundle-included__item__data__text">{description}</p>
                     {specialEffect && (
                         <SpecialEffect text={specialEffect}/>

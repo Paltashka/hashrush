@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss';
 import brownUrsara from '../../../../assets/bundle-page/brown-ursara-min.png';
 import Button from './Button';
+import {Link} from 'react-router-dom';
 
 const BundleItem = ({heroName, heroImage, items, price}) => {
     return (
@@ -20,7 +21,9 @@ const BundleItem = ({heroName, heroImage, items, price}) => {
                     <img src={brownUrsara} alt="brown ursara"/>
                 </div>
             </div>
-            {price && <Button price={price}/>}
+            {price && <Link to={`/bundle/${heroName}`}>
+                <Button price={price}/>
+            </Link>}
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './index.scss'
 import Button from '../../PreOrder/Bundles/BundleItem/Button';
+import {Link} from 'react-router-dom';
 
 const Bundle = ({heroName, heroType, description, image, isReversed}) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -16,14 +17,15 @@ const Bundle = ({heroName, heroType, description, image, isReversed}) => {
     }, [handleResize, screenWidth]);
 
     return (
-        <div className="choose-hero-bundle" style={isReversed && screenWidth > 1144 ? {flexDirection: 'row-reverse'} : {}}>
-            <div className={"choose-hero-bundle__information " + isReversed && 'choose-hero-bundle--reversed'}
-                 >
+        <div className="choose-hero-bundle"
+             style={isReversed && screenWidth > 1144 ? {flexDirection: 'row-reverse'} : {}}>
+            <div className={'choose-hero-bundle__information ' + isReversed && 'choose-hero-bundle--reversed'}
+            >
                 <h1 className="choose-hero-bundle__information__heading">{heroName}</h1>
                 <h2 className="choose-hero-bundle__information__type">{heroType}</h2>
                 <p className="choose-hero-bundle__information__text">{description}</p>
                 <div className="choose-hero-bundle__information__buttons">
-                    <Button price="$20"/>
+                    <Link to={`/bundle/${heroName}`}><Button price="$20"/></Link>
                     <p className="choose-hero-bundle__information__buttons__read-more">Read more</p>
                 </div>
             </div>
