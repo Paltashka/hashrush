@@ -27,7 +27,7 @@ const FarionPage = () => {
             <Header isLogin={true}/>
             <BundleHeader
                 heroName="Farion"
-                heroType="the crystal shield"
+                heroType="the grandmaster farion"
                 heroText="Shield your allies with Farion and his unique Hero Items, along with a limited edition skin for your Ernack workers."
                 heroImg={farion}
                 heroDetailText="Using his trusty Hammer and Shield, Farion will thin the enemy ranks and will hold them back without breaking a sweat."

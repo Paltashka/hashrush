@@ -27,35 +27,35 @@ const MeligharPage = () => {
             <Header isLogin={true}/>
             <BundleHeader
                 heroName="Melighar"
-                heroType="the crystal shield"
-                heroText="Shield your allies with Farion and his unique Hero Items, along with a limited edition skin for your Ernack workers."
+                heroType="the grandmaster melighar"
+                heroText="Devestate your enemies with fire and thunder with Melighar and his Hero Items, along with a limited edition skin for your Ernack workers"
                 heroImg={melighar}
-                heroDetailText="Using his trusty Hammer and Shield, Farion will thin the enemy ranks and will hold them back without breaking a sweat."
+                heroDetailText="Master of the Arcane arts, Melighar casts destructive spells and aids his magic using counterparts."
                 items={[melighar1, melighar2, melighar3, brownUrsara, usernameMin]}
                 bgImg={farionBg}
             />
             <BundleIncluded items={[
                 {
-                    name: 'Crystal shield',
-                    description: 'Issued to all Trinell Citadel Guard members, believed to be near indestructable. ',
+                    name: 'Thaliel Staff',
+                    description: 'Once weilded by the Archemage Thaliel, this staff is passed down as a relic to each Trinell Archmage.',
                     img: melighar1,
-                    specialEffect: 'Increases the Heros Slashing Damage Resistance by 10%',
+                    specialEffect: 'Special effect: Increases the Heros Damage Stat by 10 %',
                     type: 'defense',
                     subheader: '',
                 },
                 {
-                    name: 'Hammer of Embers',
-                    description: 'Burning with a bright flame, this hammer will scourch anyone who opposes it. ',
+                    name: 'Crystal Helm',
+                    description: 'Durable as steel but light as a feather, this helmet will protect anyone who wears it.',
                     img: melighar2,
-                    specialEffect: '15% of Blunt Damage Burns the enemy for 3 seconds (10 CD) ',
+                    specialEffect: 'Special effect: Increases the Heros Blunt Damage Resistance by 10%',
                     type: 'offense',
                     subheader: '',
                 },
                 {
-                    name: 'Grandmaster Spicy Ernack Stew',
-                    description: 'Magically infused stew that Ernacks consume before heading into battle.',
+                    name: 'Lingering Hope',
+                    description: 'Magical locket that was created by one of the great sages, it is said to have prolonged his life to an unnaturaly long time.',
                     img: melighar3,
-                    specialEffect: 'Increase the Damage of melee units by 15% and their HP by 50',
+                    specialEffect: 'Special effect: When Hero HP becomes less than 10%, the Hero heals itself for 100 HP (60 CD)',
                     type: 'support',
                     subheader: '',
                 },

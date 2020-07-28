@@ -28,35 +28,35 @@ const CaraxPage = () => {
             <Header isLogin={true}/>
             <BundleHeader
                 heroName="Carax"
-                heroType="the crystal shield"
-                heroText="Shield your allies with Farion and his unique Hero Items, along with a limited edition skin for your Ernack workers."
+                heroType="the grandmaster carex"
+                heroText="Carve your way through the field of battle with Carax and his arsenal of Hero Items, along with a limited edition skin for you Ernack workers"
                 heroImg={carax}
-                heroDetailText="Using his trusty Hammer and Shield, Farion will thin the enemy ranks and will hold them back without breaking a sweat."
+                heroDetailText="Wielder of the Braces of Cryptar, Carax can conjur a spiritual manifestation of him to wreak Havok on the battlefiend."
                 items={[carax1, carax2, carax3, brownUrsara, usernameMin]}
                 bgImg={caraxBg}
             />
             <BundleIncluded items={[
                 {
-                    name: 'Crystal shield',
-                    description: 'Issued to all Trinell Citadel Guard members, believed to be near indestructable. ',
+                    name: 'Runic Chainmail',
+                    description: 'An sturdy piece or armour engraved with Ernack runes.',
                     img: carax1,
-                    specialEffect: 'Increases the Heros Slashing Damage Resistance by 10%',
+                    specialEffect: 'Special effect: Increases the Heros Piercing Damage Resistance by 10%',
                     type: 'defense',
                     subheader: '',
                 },
                 {
-                    name: 'Hammer of Embers',
-                    description: 'Burning with a bright flame, this hammer will scourch anyone who opposes it. ',
+                    name: 'Chalice of Filling',
+                    description: 'If water is consumed from this challice, it turns into a powerful elixir that increases the consumers fortitude.',
                     img: carax2,
-                    specialEffect: '15% of Blunt Damage Burns the enemy for 3 seconds (10 CD) ',
+                    specialEffect: 'Special effect: Increases the Heros Slashing damage by 10% if the Heros HP falls below 35 %',
                     type: 'offense',
                     subheader: '',
                 },
                 {
-                    name: 'Grandmaster Spicy Ernack Stew',
-                    description: 'Magically infused stew that Ernacks consume before heading into battle.',
+                    name: 'Vanguard Lance',
+                    description: 'An engraved lance, used by Trinell lancers during the Lone Tower Rebellion.',
                     img: carax3,
-                    specialEffect: 'Increase the Damage of melee units by 15% and their HP by 50',
+                    specialEffect: 'Special effect: Increases the Piercing damage by 10% to all Raken Lancer units around the Hero.',
                     type: 'support',
                     subheader: '',
                 },
