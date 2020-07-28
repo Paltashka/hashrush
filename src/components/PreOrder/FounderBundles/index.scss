@@ -1,6 +1,8 @@
 .founder-list {
   display: flex;
   justify-content: space-around;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .founder-item {
@@ -35,5 +37,25 @@
   span {
     font-weight: bold;
     color: #cec39d;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .founder-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .founder-item {
+    flex: 0 50%;
+  }
+}
+
+@media screen and (max-width: 397px) {
+  .founder-list {
+    flex-wrap: initial;
+    flex-direction: column;
   }
 }
