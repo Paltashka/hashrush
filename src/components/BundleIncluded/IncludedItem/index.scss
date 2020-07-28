@@ -46,3 +46,32 @@
     margin-bottom: 40px;
   }
 }
+
+@media (max-width: 950px) {
+  .bundle-included__item {
+    width: auto;
+  }
+
+  .bundle-included__item__dash {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .bundle-included__item {
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+
+    &__img {
+      width: 100px;
+      height: 130px;
+    }
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .bundle-included__item__img {
+    margin-right: 15px;
+  }
+}

@@ -38,3 +38,16 @@
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  .special-effect {
+    width: 87%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .special-effect {
+    width: auto;
+    padding: 0;
+  }
+}

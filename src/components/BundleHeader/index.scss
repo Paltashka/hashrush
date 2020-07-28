@@ -10,3 +10,11 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+@media screen and (max-width: 950px) {
+  .bundle-header {
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -16,7 +16,7 @@ import farion1 from '../../../assets/bundle-page/defensive-shield-min.png';
 import farion2 from '../../../assets/bundle-page/offensive-hammer-min.png';
 import farion3 from '../../../assets/bundle-page/support-stew-min.png';
 
-import BundleItem from './BundeItem';
+import BundleItem from './BundleItem';
 
 const Bundles = () => {
     return (

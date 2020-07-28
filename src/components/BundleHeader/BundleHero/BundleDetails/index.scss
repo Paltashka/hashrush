@@ -74,3 +74,34 @@
     }
   }
 }
+
+
+@media screen and (max-width: 950px) {
+  .bundle-details {
+    align-items: center;
+    flex-direction: column;
+
+    &__info {
+      margin: 0;
+
+      &__items {
+        width: auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 445px){
+  .bundle-details__info__items__images {
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .bundle-details__info__text {
+    width: auto;
+  }
+}

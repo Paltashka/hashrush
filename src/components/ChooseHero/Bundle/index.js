@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './index.scss'
-import Button from '../../PreOrder/Bundles/BundeItem/Button';
+import Button from '../../PreOrder/Bundles/BundleItem/Button';
 
 const Bundle = ({heroName, heroType, description, image, isReversed}) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);

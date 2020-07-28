@@ -4,7 +4,7 @@ import melighar from '../../assets/bundle-page/melighar-grandmaster.jpg';
 import melighar1 from '../../assets/bundle-page/offensive-staff-min.png';
 import melighar2 from '../../assets/bundle-page/crystal-helm-min.png';
 import melighar3 from '../../assets/bundle-page/lingering-hope-min.png';
-import BundleItem from '../PreOrder/Bundles/BundeItem';
+import BundleItem from '../PreOrder/Bundles/BundleItem';
 import {Link} from 'react-router-dom';
 
 const BoughtBundle = () => {

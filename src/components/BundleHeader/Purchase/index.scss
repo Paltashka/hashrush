@@ -127,3 +127,40 @@
     }
   }
 }
+
+@media (max-width: 1452px) {
+  .bundle-header {
+    flex-direction: column-reverse;
+  }
+  .purchase {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .purchase {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .purchase__content__buy {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .purchase__content__buy {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .purchase__content {
+    padding-top: 5px;
+  }
+
+  .purchase__content__buy__terms {
+    font-size: 10px;
+  }
+}
