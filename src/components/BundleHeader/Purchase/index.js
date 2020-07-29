@@ -44,7 +44,7 @@ const Purchase = ({heroName, heroImg, price}) => {
             alert.show('Choose payment method', { type: 'error' });
         }
         const {Id} = userData;
-        receiveXsollaAccessToken(Id, payment, price);
+        // receiveXsollaAccessToken(Id, payment, price);
     };
 
     return (
