@@ -18,6 +18,11 @@
     margin-left: 12px;
     flex: 1;
   }
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .purchase-dash {

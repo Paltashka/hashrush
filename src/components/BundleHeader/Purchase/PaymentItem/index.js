@@ -7,11 +7,13 @@ const PaymentItem = ({name, images, value}) => {
             <div className="payment-item">
                 <input type="radio" value={value} name="payment"/>
                 <p className="payment-item__text">{name}</p>
-                {images.map(img => {
-                    return <img src={img} alt=""/>
-                })}
+                <div className="payment-item__images">
+                    {images.map(img => {
+                        return <img src={img} alt=""/>
+                    })}
+                </div>
             </div>
-            <div className="purchase-dash"></div>
+            <div className="purchase-dash"/>
         </div>
     );
 };
