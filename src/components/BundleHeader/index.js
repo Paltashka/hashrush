@@ -3,7 +3,7 @@ import './index.scss';
 import Purchase from './Purchase';
 import BundleHero from './BundleHero';
 
-const BundleHeader = ({heroName, heroText, heroImg, heroType, heroDetailText, items, bgImg}) => {
+const BundleHeader = ({heroName, heroText, heroImg, heroType, heroDetailText, items, bgImg, price}) => {
     return (
         <div className="bundle-header" style={{
             backgroundImage: `url('${bgImg}')`,
@@ -13,7 +13,7 @@ const BundleHeader = ({heroName, heroText, heroImg, heroType, heroDetailText, it
         }}>
             <BundleHero heroName={heroName} heroText={heroText} heroImg={heroImg} heroType={heroType}
                         heroDetailText={heroDetailText} items={items}/>
-            <Purchase heroName={heroName} heroImg={heroImg} />
+            <Purchase heroName={heroName} heroImg={heroImg} price={price}/>
         </div>
     );
 };

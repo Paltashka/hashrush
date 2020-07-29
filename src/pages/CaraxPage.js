@@ -34,6 +34,7 @@ const CaraxPage = () => {
                 heroDetailText="Wielder of the Braces of Cryptar, Carax can conjur a spiritual manifestation of him to wreak Havok on the battlefiend."
                 items={[carax1, carax2, carax3, brownUrsara, usernameMin]}
                 bgImg={caraxBg}
+                price="$20.00"
             />
             <BundleIncluded items={[
                 {

@@ -33,6 +33,7 @@ const FarionPage = () => {
                 heroDetailText="Using his trusty Hammer and Shield, Farion will thin the enemy ranks and will hold them back without breaking a sweat."
                 items={[farion1, farion2, farion3, brownUrsara, usernameMin]}
                 bgImg={farionBg}
+                price="$20.00"
             />
             <BundleIncluded items={[
                 {

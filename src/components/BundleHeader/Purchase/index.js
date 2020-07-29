@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './index.scss';
 import visa from '../../../assets/bundle-page/visa.svg';
 import mastercard from '../../../assets/bundle-page/mastercard.svg';
@@ -8,6 +8,10 @@ import ethereum from '../../../assets/bundle-page/ethereum.svg';
 import PaymentItem from './PaymentItem';
 import BundleDetailsItem from './BundleDetailsItem';
 import Button from '../../Button';
+import {receiveXsollaAccessToken} from '../../../actions/purchase';
+import {useSelector} from 'react-redux';
+import {getUserData} from '../../../reducers/userInfoReducer';
+import {useAlert} from 'react-alert';
 
 // const customStyles = {
 //     content: {
@@ -29,7 +33,20 @@ import Button from '../../Button';
 //     },
 // };
 
-const Purchase = ({heroName, heroImg}) => {
+const Purchase = ({heroName, heroImg, price}) => {
+    const [payment, setPayment] = useState('');
+    const userData = useSelector(state => getUserData(state));
+    const alert = useAlert();
+    const splittedPrice = price.split('.');
+
+    const handlePurchase = () => {
+        if (!payment) {
+            alert.show('Choose payment method', { type: 'error' });
+        }
+        const {Id} = userData;
+        receiveXsollaAccessToken(Id, payment, price);
+    };
+
     return (
         <div className="purchase">
             <h1 className="purchase__heading">Purchase bundle</h1>
@@ -53,7 +70,7 @@ const Purchase = ({heroName, heroImg}) => {
                     </div>
                 </div>
                 <div className="purchase__content__payments" onChange={(e) => {
-                    console.log(e.target.value);
+                    setPayment(e.target.value);
                 }}>
                     <p className="purchase__content__payments__heading">Select payment method</p>
                     <PaymentItem
@@ -80,11 +97,11 @@ const Purchase = ({heroName, heroImg}) => {
                 <div className="purchase__content__buy">
                     <div className="purchase__content__buy__wrapper">
                         <span className="purchase__content__buy__price">
-                            $20
-                            <span className="purchase__content__buy__price--small">.00</span>
+                            {splittedPrice[0]}
+                            <span className="purchase__content__buy__price--small">.{splittedPrice[1]}</span>
                         </span>
                         <div>
-                            <Button text="Purchase" style={{width: '250px'}} width="220px"/>
+                            <Button text="Purchase" style={{width: '250px'}} width="220px" onClick={handlePurchase}/>
                         </div>
                     </div>
                     <p className="purchase__content__buy__terms">By clicking “Purchase” I approve the

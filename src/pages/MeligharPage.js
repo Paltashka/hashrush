@@ -33,6 +33,7 @@ const MeligharPage = () => {
                 heroDetailText="Master of the Arcane arts, Melighar casts destructive spells and aids his magic using counterparts."
                 items={[melighar1, melighar2, melighar3, brownUrsara, usernameMin]}
                 bgImg={farionBg}
+                price="$20.00"
             />
             <BundleIncluded items={[
                 {
