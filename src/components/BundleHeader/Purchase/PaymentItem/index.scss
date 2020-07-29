@@ -5,6 +5,20 @@
   padding-right: 30px;
   padding-left: 30px;
 
+  input[type="radio"] {
+    appearance: none;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    background-clip: content-box;
+    border: 1px solid #bbbbbb;
+    border-radius: 50%;
+
+    &:checked {
+      background-color: #f5b72d;
+    }
+  }
 
   &__text {
     font-family: Montserrat;
