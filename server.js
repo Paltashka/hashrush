@@ -33,4 +33,4 @@ app.set('port', process.env.PORT || 3000);
 //     console.log(path.join(__dirname + 'hashrush',  'build'));
 // });
 
-app.listen(3000, () => {});
+app.listen(process.env.PORT, () => {});
