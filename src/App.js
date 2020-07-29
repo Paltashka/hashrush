@@ -21,15 +21,19 @@ import muskernack from './assets/forms/3-muskernack-smaller-size.png';
 import { signInByToken } from './actions/authorizationFlow';
 
 import './index.scss';
-import BundlesPage from './pages/BundlesPage';
+// import BundlesPage from './pages/BundlesPage';
 import BundlePage from './pages/BundlePage';
 import ThankYouPage from './pages/ThankYouPage';
-import MeligharPage from './pages/MeligharPage';
-import CaraxPage from './pages/CaraxPage';
-import FarionPage from './pages/FarionPage';
+// import MeligharPage from './pages/MeligharPage';
+// import CaraxPage from './pages/CaraxPage';
+// import FarionPage from './pages/FarionPage';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
+const BundlesPage = lazy(() => import('./pages/BundlesPage'));
+const MeligharPage = lazy(() => import('./pages/MeligharPage'));
+const CaraxPage = lazy(() => import('./pages/CaraxPage'));
+const FarionPage = lazy(() => import('./pages/FarionPage'));
 
 const history = createBrowserHistory();
 
