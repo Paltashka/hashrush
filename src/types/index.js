@@ -1,2 +1,6 @@
 export const SIGN_IN_SUCCESS = 'SIGN_IN_SUCCESS';
 export const SIGN_OUT_SUCCESS = 'SIGN_OUT_SUCCESS';
+
+export const RECEIVE_XSOLLA_ACCESS_TOKEN = 'RECEIVE_XSOLLA_ACCESS_TOKEN';
+export const SUCCESS = '_SUCCESS';
+export const FAILED = '_FAILED';

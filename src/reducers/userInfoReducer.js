@@ -29,3 +29,5 @@ export default function reducer(store = initStore, { type, payload }) {
             return store;
     }
 }
+
+export const getUserData = (state) => state.userInfo;
