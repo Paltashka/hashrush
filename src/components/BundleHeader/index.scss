@@ -6,6 +6,11 @@
   padding-right: 62px;
 }
 
+.purchase__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 950px) {
   .bundle-header {
     align-items: center;
