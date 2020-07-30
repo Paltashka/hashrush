@@ -55,10 +55,10 @@ const Header = ({isLogin, username}) => {
                             <div className="triangle"></div>
                             <DropDown/>
                         </li>
-                        <li className="navigation__item navigation__item__pre-sale">
-                            <Link to="/bundles">hero pre-sale</Link>
-                            <img src={lightning} alt="hero pre-sale"/>
-                        </li>
+                        {/*<li className="navigation__item navigation__item__pre-sale">*/}
+                        {/*    <Link to="/bundles">hero pre-sale</Link>*/}
+                        {/*    <img src={lightning} alt="hero pre-sale"/>*/}
+                        {/*</li>*/}
                     </ul>
                 </div>
 
