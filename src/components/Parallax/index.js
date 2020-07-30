@@ -52,7 +52,7 @@ const Parallax = ({ token }) => {
         <a onClick={() => history.push(!token ? '/createaccount' : null)}><Button classPosition="welcome__button--position" text="play now for free" /></a>
         <div className="welcome__border">
           <div className="welcome__inside">
-            <span>soft beta coming soon</span>
+            <span>OPEN BETA LIVE!</span>
           </div>
         </div>
       </div>

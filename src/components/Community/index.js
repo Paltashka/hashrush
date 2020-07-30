@@ -53,7 +53,7 @@ const Community = () => {
   }, [handleResize, screnWidth]);
 
   useEffect(() => {
-    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/vz-games')
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=http://medium.com/feed/vz-games')
       .then((res) => res.json())
       .then((data) => {
         const res = data.items;
@@ -67,7 +67,7 @@ const Community = () => {
       <div className="news__blocks">
         {posts && posts.map((item, index) => (
           <div key={index}>
-            <NewsBlock imgUrl={item.thumbnail} date={moment(item.pubDate).format('ll')} title={item.title} text={shortenText(toText(item.content), 0, 120) + '...'} href={item.link} />
+            <NewsBlock imgUrl={item.thumbnail} date={moment(item.pubDate).format('ll')} title={item.title} text={shortenText(toText(item.content), 0, 90) + '...'} href={item.link} />
           </div>
         ))}
         {/* {(screnWidth > 1024 || screnWidth < 415) && <NewsBlock imgUrl={readMore3} date={'31 Jan 2020'} title={'Hash Rush in 2020'} text={'Hello everyone and welcome to our first news blast of 2020! With our last update — the Rise of the Crystal Titan...'} href={'https://medium.com/@Hash_Rush/hash-rush-in-2020-4efec0ffaa11?source=---------4------------------'} />} */}
