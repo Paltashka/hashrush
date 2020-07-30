@@ -66,9 +66,9 @@ function App({ signInByToken }) {
           <Route path="/resetPassword" component={CompleteResetPasswordPage} />
           <Route path="/bundles" component={BundlesPage}/>
           {/*<Route path="/bundle/:id" component={BundlePage} />*/}
-          <Route path="/bundle/melighar" component={MeligharPage} />
-          <Route path="/bundle/carax" component={CaraxPage} />
-          <Route path="/bundle/farion" component={FarionPage} />
+          {/*<Route path="/bundle/melighar" component={MeligharPage} />*/}
+          {/*<Route path="/bundle/carax" component={CaraxPage} />*/}
+          {/*<Route path="/bundle/farion" component={FarionPage} />*/}
           <Route path="/thank-you" component={ThankYouPage}/>
         </Suspense>
       </Switch>
