@@ -3,16 +3,16 @@
 }
 
 .limited-edition {
-  height: 900px;
-  background-image: url("../../assets/bundle-page/3-heroes-main.png");
+  height: 784px;
+  background-image: url("../../assets/bundle-page/3-heroes-main-min.jpg");
   background-repeat: no-repeat;
   background-size: 100%, 100%;
   position: relative;
-  top: -175px;
+  //top: -175px;
 
   &__content {
     position: absolute;
-    top: 830px;
+    top: 510px;
     left: 0;
     right: 0;
     z-index: 1;

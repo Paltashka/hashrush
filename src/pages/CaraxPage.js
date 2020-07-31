@@ -19,7 +19,7 @@ import farion2 from '../assets/bundle-page/offensive-hammer-min.png';
 import farion3 from '../assets/bundle-page/support-stew-min.png';
 import brownUrsara from '../assets/bundle-page/brown-ursara-min.png';
 import usernameMin from '../assets/bundle-page/username-min.png';
-import caraxBg from '../assets/bundle-page/carax-bg.png';
+import caraxBg from '../assets/bundle-page/carax-bg-min.jpg';
 
 const CaraxPage = () => {
 

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <linearGradient id="jv1cd6f13c" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FCF7E9"/>
+            <stop offset="100%" stop-color="#B8A978"/>
+        </linearGradient>
+        <filter id="mhcabcrxya" width="222.9%" height="199.1%" x="-61.5%" y="-45%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <path id="y1cdjs653b" d="M525.895 0h-8.419l-7.457 9.918c-.661.918-.116 1.682.453 1.682h1.399c.992 0 1.053.976.761 1.496l-4.473 8.02c-.487.873.243 1.413.85.86L522.426 9.78c.603-.618.017-1.186-.406-1.186h-1.003c-.816 0-.946-.738-.59-1.243L525.894 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-502)">
+        <use fill="#000" filter="url(#mhcabcrxya)" xlink:href="#y1cdjs653b"/>
+        <use fill="url(#jv1cd6f13c)" xlink:href="#y1cdjs653b"/>
+    </g>
+</svg>

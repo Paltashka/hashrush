@@ -9,7 +9,7 @@ import farion from '../assets/bundle-page/fario-grandmaster.jpg';
 import farion1 from '../assets/bundle-page/defensive-shield-min.png';
 import farion2 from '../assets/bundle-page/offensive-hammer-min.png';
 import farion3 from '../assets/bundle-page/support-stew-min.png';
-import farionBg from '../assets/bundle-page/farion-bg.png';
+import farionBg from '../assets/bundle-page/farion-bg-min.jpg';
 import melighar from '../assets/bundle-page/melighar-grandmaster.jpg';
 import melighar1 from '../assets/bundle-page/offensive-staff-min.png';
 import melighar2 from '../assets/bundle-page/crystal-helm-min.png';

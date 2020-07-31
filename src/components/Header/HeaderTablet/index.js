@@ -8,7 +8,7 @@ import discord from '../../../assets/footer_social-media/discord.svg';
 import tlgrm from '../../../assets/footer_social-media/tlgrm.svg';
 import rc from '../../../assets/about/rc.svg';
 import hc from '../../../assets/about/hc.svg';
-import lightning from '../../../assets/responsive/lightning.png';
+import lightning from '../../../assets/responsive/lightning.svg';
 
 const HeaderTablet = ({isLogin}) => {
     const history = useHistory();
