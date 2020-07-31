@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import { Link, useHistory } from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 
 import fb from '../../../assets/footer_social-media/fb.svg';
 import tw from '../../../assets/footer_social-media/tw.svg';
@@ -10,7 +10,7 @@ import rc from '../../../assets/about/rc.svg';
 import hc from '../../../assets/about/hc.svg';
 import lightning from '../../../assets/responsive/lightning.svg';
 
-const HeaderTablet = ({ isLogin }) => {
+const HeaderTablet = ({isLogin}) => {
     const history = useHistory();
 
     return (
@@ -23,12 +23,12 @@ const HeaderTablet = ({ isLogin }) => {
                             <span
                                 className={'header__choice--active'}
                             >
-                                <img className="header__choice-icon" src={rc} alt="rc" />23
+                                <img className="header__choice-icon" src={rc} alt="rc"/>23
               </span>
                             <span
                                 className={'header__choice--active'}
                             >
-                                <img className="header__choice-icon" src={hc} alt="hc" />142
+                                <img className="header__choice-icon" src={hc} alt="hc"/>142
               </span>
                         </div>
                         <div className="header-tablet__border"></div>
@@ -48,7 +48,7 @@ const HeaderTablet = ({ isLogin }) => {
                     <li className="footer__nav-item footer__nav-item--thin"><a
                         href="https://medium.com/@Hash_Rush/has-recommended" target="_blank">Read our Blog</a></li>
                     <li className="footer__nav-item footer__nav-item--thin"><a href="mailto:community@hashrush.com"
-                        target="_blank">Contact Support</a></li>
+                                                                               target="_blank">Contact Support</a></li>
                     <li className="footer__nav-item footer__nav-item--thin"
                         onClick={() => history.push('/privacypolicy')}>Privacy policy
                     </li>
@@ -58,10 +58,10 @@ const HeaderTablet = ({ isLogin }) => {
             <div className="footer__right">
                 <span className="footer__headline">join our community</span>
                 <div className="footer__medias">
-                    <img className="footer__icon" src={fb} alt="face" />
-                    <img className="footer__icon" src={tw} alt="twitt" />
-                    <img className="footer__icon" src={discord} alt="discord" />
-                    <img className="footer__icon" src={tlgrm} alt="telegram" />
+                    <img className="footer__icon" src={fb} alt="face"/>
+                    <img className="footer__icon" src={tw} alt="twitt"/>
+                    <img className="footer__icon" src={discord} alt="discord"/>
+                    <img className="footer__icon" src={tlgrm} alt="telegram"/>
                 </div>
             </div>
         </div>
