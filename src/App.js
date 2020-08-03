@@ -24,6 +24,9 @@ import './index.scss';
 // import BundlesPage from './pages/BundlesPage';
 import BundlePage from './pages/BundlePage';
 import ThankYouPage from './pages/ThankYouPage';
+import {Elements} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js/pure';
+
 // import MeligharPage from './pages/MeligharPage';
 // import CaraxPage from './pages/CaraxPage';
 // import FarionPage from './pages/FarionPage';
@@ -41,38 +44,42 @@ history.listen(location => {
   ReactGA.pageview(location.hash);
 });
 
+const stripePromise = loadStripe("pk_test_51HBysJJc3FMMgaAwpNHet4XFCvWrFRAjFpHLsU6Gf2c8jbjVMlBwfw5E46iiasnoi7kFwhC2JNthLoMgL8hea7zo0094X633x9");
+
 function App({ signInByToken }) {
   useEffect(() => { 
     localStorage.getItem('token') && signInByToken();
   });
 
   return (
-    <HashRouter history={history}> 
-      <Switch>
-        <Suspense fallback>
-          <Route path="/" component={HomePage} exact />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/createaccount" component={CreateAccount} />
-          <Route path="/login" component={LoginModal} />
-          <Route path="/thanks-register">
-            <ThanksModal img={raken} title="Thank you for Registering!" text={true} />
-          </Route>
-          <Route path="/thanks-download">
-            <ThanksModal img={muskernack} title="Thank you for downloading Hash Rush!" text={false} />
-          </Route>
-          <Route path="/account" component={AccountPage} />
-          <Route path="/emailVerification/:token" component={EmailVerificationPage} />
-          <Route path="/privacypolicy" component={PrivacyPolicy} />
-          <Route path="/resetPassword" component={CompleteResetPasswordPage} />
-          <Route path="/bundles" component={BundlesPage}/>
-          {/*<Route path="/bundle/:id" component={BundlePage} />*/}
-          <Route path="/bundle/melighar" component={MeligharPage} />
-          <Route path="/bundle/carax" component={CaraxPage} />
-          <Route path="/bundle/farion" component={FarionPage} />
-          {/*<Route path="/thank-you" component={ThankYouPage}/>*/}
-        </Suspense>
-      </Switch>
-    </HashRouter>
+    <Elements stripe={stripePromise}>
+      <HashRouter history={history}>
+        <Switch>
+          <Suspense fallback>
+            <Route path="/" component={HomePage} exact />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/createaccount" component={CreateAccount} />
+            <Route path="/login" component={LoginModal} />
+            <Route path="/thanks-register">
+              <ThanksModal img={raken} title="Thank you for Registering!" text={true} />
+            </Route>
+            <Route path="/thanks-download">
+              <ThanksModal img={muskernack} title="Thank you for downloading Hash Rush!" text={false} />
+            </Route>
+            <Route path="/account" component={AccountPage} />
+            <Route path="/emailVerification/:token" component={EmailVerificationPage} />
+            <Route path="/privacypolicy" component={PrivacyPolicy} />
+            <Route path="/resetPassword" component={CompleteResetPasswordPage} />
+            <Route path="/bundles" component={BundlesPage}/>
+            {/*<Route path="/bundle/:id" component={BundlePage} />*/}
+            <Route path="/bundle/melighar" component={MeligharPage} />
+            <Route path="/bundle/carax" component={CaraxPage} />
+            <Route path="/bundle/farion" component={FarionPage} />
+            {/*<Route path="/thank-you" component={ThankYouPage}/>*/}
+          </Suspense>
+        </Switch>
+      </HashRouter>
+    </Elements>
   );
 }
 
