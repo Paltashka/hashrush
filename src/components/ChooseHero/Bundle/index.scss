@@ -6,6 +6,7 @@
   &__information {
     display: flex;
     flex-direction: column;
+    margin-right: 5vw;
 
     &__text {
       font-family: Montserrat;
@@ -45,7 +46,7 @@
         letter-spacing: 0.5px;
         color: #cec39d;
         text-transform: uppercase;
-        margin-left: 5vw;
+        margin-left: 2vw;
       }
     }
 
@@ -59,6 +60,11 @@
       background: -webkit-linear-gradient(#fcf7e9, #b8a978);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    &--reversed {
+      flex-direction: row-reverse;
+      margin-left: 5vw;
     }
   }
 
@@ -75,10 +81,6 @@
     img {
 
     }
-  }
-
-  &--reversed {
-    flex-direction: row-reverse;
   }
 }
 

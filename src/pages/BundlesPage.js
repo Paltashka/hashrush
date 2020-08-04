@@ -23,10 +23,21 @@ const BundlesPage = () => {
         <ParallaxProvider>
             <Header isLogin={true}/>
             <LimitedEdition/>
-            <PreOrder isFounderBundles={true}/>
+            <PreOrder
+                headerText='SUPPORT HASH RUSH'
+                subtext='Estimated delivery of the hero system'
+                date='01 | 11 | 2020'
+                isFounderBundles={true}
+            />
             <ChooseHero/>
             <GearList/>
-            <PreOrder isFounderBundles={false}/>
+            <PreOrder
+                headerText='Pre-order your hero now!'
+                subtext='Purchase hero founder bundle and support Hash Rush!
+                         Estimated delivery of the hero system'
+                date='01 | 11 | 2020'
+                isFounderBundles={false}
+            />
             <Footer/>
         </ParallaxProvider>
     )

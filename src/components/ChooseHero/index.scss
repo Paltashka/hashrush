@@ -2,7 +2,7 @@
   background-color: black;
   position: relative;
   //top: -130px;
-  background-image: url('../../assets/bundle-page/3-heroes-bw.png');
+  background-image: url('../../assets/bundle-page/3-heroes-bw-min.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -12,10 +12,12 @@
   &__title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    //justify-content: center;
     align-items: center;
     width: 50%;
-    height: 460px;
+    //height: 460px;
 
     &__text {
       font-family: Montserrat;
@@ -28,9 +30,5 @@
       text-align: center;
       color: #ffffff;
     }
-  }
-
-  &__content {
-    margin-top: 100px;
   }
 }

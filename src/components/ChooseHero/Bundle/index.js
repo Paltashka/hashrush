@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import {useSelector} from 'react-redux';
 import {getBundleById} from '../../../reducers/purchase';
 
-const Bundle = ({id, isReversed}) => {
+const Bundle = ({id, articleText, isReversed}) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const handleResize = () => setScreenWidth(window.innerWidth);
     const bundle = useSelector(state => getBundleById(state, id));
@@ -21,11 +21,10 @@ const Bundle = ({id, isReversed}) => {
     return (
         <div className="choose-hero-bundle"
              style={isReversed && screenWidth > 1144 ? {flexDirection: 'row-reverse'} : {}}>
-            <div className={'choose-hero-bundle__information ' + isReversed && 'choose-hero-bundle--reversed'}
-            >
+            <div className={!isReversed ? 'choose-hero-bundle__information' : 'choose-hero-bundle__information--reversed'}>
                 <h1 className="choose-hero-bundle__information__heading">{bundle.name}</h1>
                 <h2 className="choose-hero-bundle__information__type">{bundle.type}</h2>
-                <p className="choose-hero-bundle__information__text">{bundle.text}</p>
+                <p className="choose-hero-bundle__information__text">{articleText}</p>
                 <div className="choose-hero-bundle__information__buttons">
                     <Link to={`/bundle/${id}`}><Button price="$20" /></Link>
                     <p className="choose-hero-bundle__information__buttons__read-more">Read more</p>

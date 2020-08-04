@@ -25,14 +25,17 @@ const ChooseHero = () => {
             <div className="choose-hero__content">
                 <Bundle
                     id={2}
+                    articleText='Wielder of the Braces of Cryptar, Carax can conjur a spiritual manifestation of him to wreak Havok on the battlefiend.'
                     isReversed={false}
                 />
                 <Bundle
                     id={3}
+                    articleText='Using his trusty Hammer and Shield, Farion will thin the enemy ranks and will hold them back without breaking a sweat.'
                     isReversed={true}
                 />
                 <Bundle
                     id={1}
+                    articleText='Master of the Arcane arts, Melighar casts destructive spells and aids his magic using counterparts.'
                     isReversed={false}
                 />
             </div>
