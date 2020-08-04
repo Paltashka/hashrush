@@ -10,7 +10,7 @@ const Button = ({price}) => {
                     <div className="bundles-item__btn__dash--dark"/>
                     <div className="bundles-item__btn__dash--light"/>
                 </div>
-                <span>Explore</span>
+                <span className="bundles-item__btn__right">Explore</span>
             </button>
         </div>
     )

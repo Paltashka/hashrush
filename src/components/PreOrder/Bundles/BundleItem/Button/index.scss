@@ -54,6 +54,12 @@
       border-width: 0.5px;
       border-image-source: linear-gradient(to top, #fbd062, rgba(255, 255, 255, 0.4));
       border-image-slice: 1;
+      margin-right: 24px;
     }
+  }
+
+  &__right {
+    position: relative;
+    right: 13px;
   }
 }
