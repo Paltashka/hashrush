@@ -15,16 +15,17 @@ const BundleIncluded = ({id}) => {
             backgroundAttachment: 'fixed',
         }}>
             <h1 className="bundle-included__heading">Included in the bundle</h1>
-            {bundle.bundleIncluded.map((item, i) => {
+            {bundle.bundleIncluded.map((item, index) => {
                 return <IncludedItem
                     id={item.id}
+                    anchorId={index}
                     name={item.name}
                     description={item.description}
                     img={item.img}
                     specialEffect={item.specialEffect}
                     type={item.type}
                     subheader={item.subheader}
-                    isLastChild={i === bundle.items.length - 1}
+                    isLastChild={index === bundle.items.length - 1}
                 />
             })}
             <div className="bundle-included__dash"/>

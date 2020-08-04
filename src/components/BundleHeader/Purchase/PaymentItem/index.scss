@@ -17,6 +17,10 @@
     &:checked {
       background-color: #f5b72d;
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__text {
@@ -43,6 +47,7 @@
 
 .purchase-dash {
   height: 0px;
+  border-width: 2px;
   object-fit: contain;
   opacity: 0.5;
   border-style: solid;

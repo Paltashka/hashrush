@@ -3,10 +3,10 @@ import './index.scss';
 import HeroType from '../../BundleHeader/BundleHero/HeroType';
 import SpecialEffect from './SpecialEffect';
 
-const IncludedItem = ({name, img, description, type, specialEffect, isLastChild, subheader}) => {
+const IncludedItem = ({anchorId, name, img, description, type, specialEffect, isLastChild, subheader}) => {
     return (
         <>
-            <div className="bundle-included__item">
+            <div className="bundle-included__item" id={anchorId}>
                 <img src={img} className="bundle-included__item__img"/>
                 <div className="bundle-included__item__data">
                     <div className="bundle-included__item__data__header">

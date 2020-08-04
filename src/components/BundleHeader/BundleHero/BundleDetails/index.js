@@ -1,8 +1,9 @@
 import React from 'react';
 import './index.scss';
 import HeroType from '../HeroType';
+import { HashLink as Link } from 'react-router-hash-link';
 
-const BundleDetails = ({heroName, heroImg, heroType, heroDetailText, items}) => {
+const BundleDetails = ({id, heroName, heroImg, heroType, heroDetailText, items}) => {
     return (
         <div className="bundle-details">
             <div className="bundle-details__image">
@@ -24,8 +25,8 @@ const BundleDetails = ({heroName, heroImg, heroType, heroDetailText, items}) => 
                         Included in the bundle
                     </p>
                     <div className="bundle-details__info__items__images">
-                        {items.map(item => {
-                            return <img src={item}/>
+                        {items.map((item, index) => {
+                            return <Link to={`#${index}`}><img src={item}/></Link>
                         })}
                     </div>
                 </div>

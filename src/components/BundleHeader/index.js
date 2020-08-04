@@ -27,7 +27,7 @@ const BundleHeader = ({id}) => {
             backgroundSize: 'cover',
             backgroundAttachment: 'fixed',
         }}>
-            <BundleHero heroName={bundle.name} heroText={bundle.text} heroImg={bundle.image} heroType={bundle.type}
+            <BundleHero id={id} heroName={bundle.name} heroText={bundle.text} heroImg={bundle.image} heroType={bundle.type}
                         heroDetailText={bundle.detailText} items={bundle.items}/>
             <div className="purchase__wrapper">
                 {screenWidth > 1442 ? (

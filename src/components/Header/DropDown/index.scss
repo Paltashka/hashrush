@@ -1,9 +1,19 @@
 .dropdown {
-  background-color: #00000066;
+  //background-color: #00000066;
+  //background-color: #2c4660;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 2px 54px 0 rgba(0, 0, 0, 0.78), inset 0 1px 6px 0 #16354f;
+  border-style: solid;
+  border-width: 2px;
+  border-image-source: linear-gradient(to bottom, #2c4660, #446989);
+  border-image-slice: 1;
+  background-image: linear-gradient(to top, #2a4a69, #20415d), linear-gradient(to bottom, #2c4660, #446989);
+  background-origin: border-box;
   width: 145px;
   height: 153px;
   position: absolute;
-  border-top: 1px solid #b2d0e080;
+  //border-top: 1px solid #b2d0e080;
   top: 73px;
   right: -21px;
   box-sizing: border-box;
