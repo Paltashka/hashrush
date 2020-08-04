@@ -3,9 +3,6 @@ import { HashRouter, Route, Switch, BrowserRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
-
-// import HomePage from './pages/HomePage';
-// import AboutPage from './pages/AboutPage';
 import AccountPage from './pages/AccountPage';
 import EmailVerificationPage from './pages/EmailVerificationPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -21,22 +18,14 @@ import muskernack from './assets/forms/3-muskernack-smaller-size.png';
 import { signInByToken } from './actions/authorizationFlow';
 
 import './index.scss';
-// import BundlesPage from './pages/BundlesPage';
-import BundlePage from './pages/BundlePage';
 import ThankYouPage from './pages/ThankYouPage';
 import {Elements} from '@stripe/react-stripe-js';
 import {loadStripe} from '@stripe/stripe-js/pure';
 
-// import MeligharPage from './pages/MeligharPage';
-// import CaraxPage from './pages/CaraxPage';
-// import FarionPage from './pages/FarionPage';
-
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const BundlesPage = lazy(() => import('./pages/BundlesPage'));
-const MeligharPage = lazy(() => import('./pages/MeligharPage'));
-const CaraxPage = lazy(() => import('./pages/CaraxPage'));
-const FarionPage = lazy(() => import('./pages/FarionPage'));
+const BundlePage = lazy(() => import('./pages/BundlePage'));
 
 const history = createBrowserHistory();
 
@@ -71,11 +60,8 @@ function App({ signInByToken }) {
             <Route path="/privacypolicy" component={PrivacyPolicy} />
             <Route path="/resetPassword" component={CompleteResetPasswordPage} />
             <Route path="/bundles" component={BundlesPage}/>
-            {/*<Route path="/bundle/:id" component={BundlePage} />*/}
-            <Route path="/bundle/melighar" component={MeligharPage} />
-            <Route path="/bundle/carax" component={CaraxPage} />
-            <Route path="/bundle/farion" component={FarionPage} />
-            {/*<Route path="/thank-you" component={ThankYouPage}/>*/}
+            <Route path="/bundle/:id" component={BundlePage} />
+            <Route path="/thank-you" component={ThankYouPage}/>
           </Suspense>
         </Switch>
       </HashRouter>

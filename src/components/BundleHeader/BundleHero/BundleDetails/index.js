@@ -1,14 +1,6 @@
 import React from 'react';
 import './index.scss';
-import farion from '../../../../assets/bundle-page/fario-grandmaster.jpg';
 import HeroType from '../HeroType';
-
-import carax1 from '../../../../assets/bundle-page/defensive-chainmail-min.png';
-import carax2 from '../../../../assets/bundle-page/support-chalice-min.png';
-import carax3 from '../../../../assets/bundle-page/vanguard-lance-min.png';
-
-import farion1 from '../../../../assets/bundle-page/defensive-shield-min.png';
-import farion2 from '../../../../assets/bundle-page/offensive-hammer-min.png';
 
 const BundleDetails = ({heroName, heroImg, heroType, heroDetailText, items}) => {
     return (
@@ -35,11 +27,6 @@ const BundleDetails = ({heroName, heroImg, heroType, heroDetailText, items}) => 
                         {items.map(item => {
                             return <img src={item}/>
                         })}
-                        {/*<img src={carax1} alt=""/>*/}
-                        {/*<img src={carax2} alt=""/>*/}
-                        {/*<img src={carax3} alt=""/>*/}
-                        {/*<img src={farion1} alt=""/>*/}
-                        {/*<img src={farion2} alt=""/>*/}
                     </div>
                 </div>
             </div>

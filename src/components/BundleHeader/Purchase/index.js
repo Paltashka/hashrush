@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './index.scss';
 import visa from '../../../assets/bundle-page/visa.svg';
 import mastercard from '../../../assets/bundle-page/mastercard.svg';
@@ -8,16 +8,14 @@ import ethereum from '../../../assets/bundle-page/ethereum.svg';
 import PaymentItem from './PaymentItem';
 import BundleDetailsItem from './BundleDetailsItem';
 import Button from '../../Button';
-import {useSelector} from 'react-redux';
-import {getUserData} from '../../../reducers/userInfoReducer';
+import {useDispatch, useSelector} from 'react-redux';
 import {useAlert} from 'react-alert';
 import Modal from 'react-modal';
-import axios from 'axios';
 import {CardElement, useElements, useStripe} from '@stripe/react-stripe-js';
 import StripeModal from './StripeModal';
 import {stripePayment} from '../../../actions/purchase';
-import {getStripePaymentStatus} from '../../../reducers/purchase';
-import {FAILED, STRIPE_PAYMENT, SUCCESS} from '../../../types';
+import {getBundleById, getStripePaymentStatus} from '../../../reducers/purchase';
+import {useHistory} from 'react-router-dom';
 
 const customStyles = {
     content: {
@@ -39,14 +37,20 @@ const customStyles = {
     },
 };
 
-const Purchase = ({heroName, heroImg, price}) => {
+const Purchase = ({id, heroName, heroImg, price}) => {
     const [payment, setPayment] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
     const alert = useAlert();
     const stripe = useStripe();
     const elements = useElements();
+    const dispatch = useDispatch();
+    const bundle = useSelector(state => getBundleById(state, id));
     const spritePaymentStatus = useSelector(state => getStripePaymentStatus(state));
     const splittedPrice = price.split('.');
+
+    useEffect(() => {
+
+    }, [spritePaymentStatus])
 
     const handleStripePayment = async (e) => {
         if (!payment) {
@@ -62,31 +66,7 @@ const Purchase = ({heroName, heroImg, price}) => {
         const priceToSend = splittedPrice[0].replace('$', '');
         const cardElement = elements.getElement(CardElement);
 
-        try {
-            const {data} = await axios.post(`http://localhost:3002/getStripeToken`, JSON.stringify({
-                amount: priceToSend,
-            }), {
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-
-            const result = await stripe.confirmCardPayment(`${data.secretToken}`, {
-                payment_method: {
-                    card: cardElement,
-                }
-            });
-
-            // stripePayment(stripe, cardElement, priceToSend);
-
-            if (result.paymentIntent.status === 'succeeded') {
-                alert.show('Payment is successful', {type: 'success'});
-            } else {
-                alert.show('Error when processing payment', {type: 'error'});
-            }
-        } catch (e) {
-            console.log(e);
-        }
+        dispatch(stripePayment(stripe, cardElement, bundle, priceToSend));
     };
 
     const handleModal = () => {

@@ -6,13 +6,15 @@ import OtherBundles from '../components/OtherBundles';
 import Footer from '../components/Footer';
 import otherBundleBG from '../assets/bundle-page/3-heroes-bw.png';
 
-const BundlePage = () => {
+const BundlePage = ({match}) => {
+    const id = Number.parseInt(match.params.id);
+
     return (
         <>
             <Header isLogin={true}/>
-            <BundleHeader/>
-            <BundleIncluded/>
-            <OtherBundles bgImg={otherBundleBG}/>
+            <BundleHeader id={id}/>
+            <BundleIncluded id={id}/>
+            <OtherBundles id={id} bgImg={otherBundleBG}/>
             <Footer/>
         </>
     );

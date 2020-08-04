@@ -1,16 +1,20 @@
 import React from 'react';
 import './index.scss';
 import BundleItem from '../PreOrder/Bundles/BundleItem';
+import {useSelector} from 'react-redux';
+import {getBundleById} from '../../reducers/purchase';
 
-const OtherBundles = ({bgImg, otherBundles}) => {
+const OtherBundles = ({id, bgImg}) => {
+    const bundle = useSelector(state => getBundleById(state, id));
     return (
         <div className="other-bundles" style={bgImg && {backgroundImage: `url('${bgImg}'`}}>
             <h1 className="heading">Explore other bundles</h1>
             <div className="other-bundles__items">
-                {otherBundles.map(bundle => {
+                {bundle.otherBundles.map(bundle => {
                     return <BundleItem
+                        id={bundle.id}
                         heroName={bundle.name}
-                        heroImage={bundle.img}
+                        image={bundle.img}
                         items={bundle.items}
                         price="$20"
                     />

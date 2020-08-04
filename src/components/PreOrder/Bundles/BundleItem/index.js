@@ -4,7 +4,7 @@ import brownUrsara from '../../../../assets/bundle-page/brown-ursara-min.png';
 import Button from './Button';
 import {Link} from 'react-router-dom';
 
-const BundleItem = ({heroName, heroImage, items, price}) => {
+const BundleItem = ({id, heroName, image, items, price}) => {
     return (
         <div className="bundles-item">
             {heroName && (
@@ -13,7 +13,7 @@ const BundleItem = ({heroName, heroImage, items, price}) => {
                 </div>
             )}
             <div className="bundles-item__images">
-                <img className="bundles-item__images__hero" src={heroImage} alt={heroName}/>
+                <img className="bundles-item__images__hero" src={image} alt={heroName}/>
                 <div className="bundles-item__images__items">
                     {items.map(item => {
                         return <img src={item}/>
@@ -21,8 +21,8 @@ const BundleItem = ({heroName, heroImage, items, price}) => {
                     <img src={brownUrsara} alt="brown ursara"/>
                 </div>
             </div>
-            {price && <Link to={`/bundle/${heroName}`}>
-                <Button price={price}/>
+            {price && <Link to={`/bundle/${id}`}>
+                <Button price={price} />
             </Link>}
         </div>
     );

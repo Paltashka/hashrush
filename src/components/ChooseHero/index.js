@@ -2,9 +2,6 @@ import React from 'react';
 import './index.scss';
 import Button from '../Button';
 import Bundle from './Bundle';
-import carax from '../../assets/bundle-page/carax-article.png';
-import melighar from '../../assets/bundle-page/melighar-article.png';
-import farion from '../../assets/bundle-page/farion-article.png';
 
 const ChooseHero = () => {
     return (
@@ -27,24 +24,15 @@ const ChooseHero = () => {
             </div>
             <div className="choose-hero__content">
                 <Bundle
-                    heroName="Carax"
-                    heroType="The Conjuror"
-                    description="Wielder of the Braces of Cryptar, Carax can conjur a spiritual manifestation of him to wreak Havok on the battlefiend."
-                    image={carax}
+                    id={2}
                     isReversed={false}
                 />
                 <Bundle
-                    heroName="Farion"
-                    heroType="the Crystal Shield"
-                    description="Wielder of the Braces of Cryptar, Carax can conjur a spiritual manifestation of him to wreak Havok on the battlefiend."
-                    image={farion}
+                    id={3}
                     isReversed={true}
                 />
                 <Bundle
-                    heroName="Melighar"
-                    heroType="The grand sage"
-                    description="Wielder of the Braces of Cryptar, Carax can conjur a spiritual manifestation of him to wreak Havok on the battlefiend."
-                    image={melighar}
+                    id={1}
                     isReversed={false}
                 />
             </div>

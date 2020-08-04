@@ -22,20 +22,23 @@ const Bundles = () => {
     return (
         <div className="bundles-list">
             <BundleItem
+                id={1}
                 heroName="Melighar"
-                heroImage={melighar}
+                image={melighar}
                 items={[melighar1, melighar2, melighar3]}
                 price="$20"
             />
             <BundleItem
+                id={2}
                 heroName="Carax"
-                heroImage={carax}
+                image={carax}
                 items={[carax1, carax2, carax3]}
                 price="$20"
             />
             <BundleItem
+                id={3}
                 heroName="Farion"
-                heroImage={farion}
+                image={farion}
                 items={[farion1, farion2, farion3]}
                 price="$20"
             />
