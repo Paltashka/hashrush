@@ -47,7 +47,7 @@ const CARD_ELEMENT_OPTIONS = {
     }
 };
 
-const StripeModal = ({handleStripePayment}) => {
+const StripeModal = ({location}) => {
     const paymentStatus = useSelector(state => getStripePaymentStatus(state));
     const history = useHistory();
 
@@ -56,6 +56,11 @@ const StripeModal = ({handleStripePayment}) => {
             history.push('/thank-you');
         }
     }, [paymentStatus])
+
+    const handleSubmit = () => {
+        const {handleStripePayment} = location.state;
+        handleStripePayment();
+    }
 
     return (
         <div className="stripe__modal__wrapper">
@@ -84,7 +89,7 @@ const StripeModal = ({handleStripePayment}) => {
                         </div>
                     </div>
                 </fieldset>
-                <Button text="Purchase $20.00" classPosition="modal__button" width="534px" type="submit" />
+                <Button onClick={handleSubmit} text="Purchase $20.00" classPosition="modal__button" width="534px" type="submit" />
                 <div className="stripe__modal__verified__labels">
                     <img src={stripe} alt=""/>
                     <img src={mastercard} alt=""/>

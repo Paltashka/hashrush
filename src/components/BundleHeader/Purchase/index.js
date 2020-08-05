@@ -10,35 +10,14 @@ import Button from '../../Button';
 import {useDispatch, useSelector} from 'react-redux';
 import {useAlert} from 'react-alert';
 import Modal from 'react-modal';
-import {CardElement, useElements, useStripe} from '@stripe/react-stripe-js';
+import {CardElement, CardNumberElement, useElements, useStripe} from '@stripe/react-stripe-js';
 import StripeModal from './StripeModal';
 import {stripePayment} from '../../../actions/purchase';
 import {getBundleById, getStripePaymentStatus} from '../../../reducers/purchase';
 import {useHistory} from 'react-router-dom';
 
-const customStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-        border: 'none',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: '100%, 100%',
-        padding: '100px',
-        width: '50%',
-        background: 'none',
-    },
-    overlay: {
-        backgroundColor: 'rgba(1, 1, 1, 0.56)',
-    },
-};
-
 const Purchase = ({id, heroName, heroImg, price}) => {
     const [payment, setPayment] = useState('');
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const alert = useAlert();
     const stripe = useStripe();
     const elements = useElements();
@@ -52,19 +31,17 @@ const Purchase = ({id, heroName, heroImg, price}) => {
 
     }, [spritePaymentStatus])
 
-    const handleStripePayment = async (e) => {
+    const handleStripePayment = async () => {
         if (!payment) {
             alert.show('Choose payment method', {type: 'error'});
         }
-
-        e.preventDefault();
 
         if (!stripe || !elements) {
             return;
         }
 
         const priceToSend = splittedPrice[0].replace('$', '');
-        const cardElement = elements.getElement(CardElement);
+        const cardElement = elements.getElement(CardNumberElement);
 
         dispatch(stripePayment(stripe, cardElement, bundle, priceToSend));
     };
@@ -74,7 +51,12 @@ const Purchase = ({id, heroName, heroImg, price}) => {
             alert.show('Choose payment method', {type: 'error'});
             return;
         }
-        history.push('/payment/card');
+        history.push({
+            pathname: '/payment/card',
+            state: {
+                handleStripePayment,
+            }
+        });
     }
 
     return (
@@ -135,13 +117,6 @@ const Purchase = ({id, heroName, heroImg, price}) => {
                     </p>
                 </div>
             </div>
-            {/*<Modal*/}
-            {/*    isOpen={isModalOpen}*/}
-            {/*    style={customStyles}*/}
-            {/*    onRequestClose={handleModal}*/}
-            {/*>*/}
-            {/*    <StripeModal handleStripePayment={handleStripePayment}/>*/}
-            {/*</Modal>*/}
             {/*<Modal*/}
             {/*    isOpen={isModalOpen}*/}
             {/*    style={customStyles}*/}
