@@ -14,6 +14,8 @@ import farion2 from '../assets/bundle-page/offensive-hammer-min.png';
 import farion3 from '../assets/bundle-page/support-stew-min.png';
 import melighar from '../assets/bundle-page/melighar-grandmaster.jpg';
 import farionBg from '../assets/bundle-page/farion-bg.png';
+import meligharBg from '../assets/bundle-page/melighar-bg.png';
+import caraxBg from '../assets/bundle-page/carax-bg.png';
 import meligharArticle from '../assets/bundle-page/melighar-article.png';
 import farionArticle from '../assets/bundle-page/farion-article.png';
 import caraxArticle from '../assets/bundle-page/carax-article.png';
@@ -39,7 +41,7 @@ const initialState = {
             type: 'the grandmaster melighar',
             text: 'Devestate your enemies with fire and thunder with Melighar and his Hero Items, along with a limited edition skin for your Ernack workers',
             detailText: 'Master of the Arcane arts, Melighar casts destructive spells and aids his magic using counterparts.',
-            bgImg: farionBg,
+            bgImg: meligharBg,
             articleImg: meligharArticle,
             price: '$20.00',
             items: [
@@ -116,7 +118,7 @@ const initialState = {
             type: 'the grandmaster carax',
             text: 'Carve your way through the field of battle with Carax and his arsenal of Hero Items, along with a limited edition skin for you Ernack workers',
             detailText: 'Wielder of the Braces of Cryptar, Carax can conjur a spiritual manifestation of him to wreak Havok on the battlefiend.',
-            bgImg: farionBg,
+            bgImg: caraxBg,
             articleImg: caraxArticle,
             price: '$20.00',
             items: [
