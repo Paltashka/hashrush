@@ -39,3 +39,9 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .pre-order {
+    padding-bottom: 0;
+  }
+}

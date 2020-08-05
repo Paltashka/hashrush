@@ -50,3 +50,22 @@
     align-items: center;
   }
 }
+
+
+@media screen and (max-width: 375px) {
+  .choose-hero__title__text {
+    width: auto;
+  }
+
+  .choose-hero__background {
+    background: none;
+  }
+
+  .choose-hero__title {
+    width: 90%;
+  }
+
+  .choose-hero {
+    height: 1600px;
+  }
+}

@@ -114,13 +114,19 @@
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .limited-edition {
-    top: 8px;
+    top: 65px;
     height: 550px;
   }
 
   .limited-edition__content {
     top: 175px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .limited-edition__scroll {
+    display: none;
   }
 }

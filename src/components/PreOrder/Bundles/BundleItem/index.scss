@@ -138,3 +138,37 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .bundles-item {
+    margin-left: 0;
+    height: 550px;
+    background-size: auto 100%;
+    background-position: center;
+  }
+  .bundles-item__images {
+    flex-direction: column;
+
+    &__hero {
+      align-self: center;
+      padding-top: 50px;
+      width: 182px;
+      height: 257px;
+      transform: rotate(-10deg);
+    }
+
+    &__items {
+      display: flex;
+      margin-left: 10px;
+      margin-top: 60px;
+
+      img {
+        margin-right: 10px;
+      }
+
+      :nth-child(2), :nth-child(3), :nth-child(4) {
+        transform: none;
+      }
+    }
+  }
+}

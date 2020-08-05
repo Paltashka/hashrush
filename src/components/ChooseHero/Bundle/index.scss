@@ -129,3 +129,19 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .choose-hero-bundle {
+    flex-direction: column-reverse;
+
+    &__hero-image {
+      width: 345px;
+      background-size: 100% 100%;
+      margin-bottom: 40px;
+
+      img {
+        width: 323px;
+      }
+    }
+  }
+}
