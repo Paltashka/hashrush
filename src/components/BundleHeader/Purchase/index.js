@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import './index.scss';
 import visa from '../../../assets/bundle-page/visa.svg';
 import mastercard from '../../../assets/bundle-page/mastercard.svg';
-import paypal from '../../../assets/bundle-page/paypal.svg';
 import bitcoin from '../../../assets/bundle-page/bitcoin.svg';
 import ethereum from '../../../assets/bundle-page/ethereum.svg';
 import PaymentItem from './PaymentItem';
@@ -107,11 +106,6 @@ const Purchase = ({id, heroName, heroImg, price}) => {
                         name="Card payment"
                         images={[visa, mastercard]}
                         value="card"
-                    />
-                    <PaymentItem
-                        name="Paypal"
-                        images={[paypal]}
-                        value="paypal"
                     />
                     <PaymentItem
                         name="Bitcoin"

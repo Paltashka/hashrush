@@ -42,7 +42,7 @@ const StripeModal = ({handleStripePayment}) => {
                 </div>
             </fieldset>
             <div className="purchase__strapi__modal__button">
-                <Button text="Purchase" width="220px" onClick={handleStripePayment}/>
+                <Button text="Pay" width="220px" onClick={handleStripePayment}/>
             </div>
         </form>
     )
