@@ -25,7 +25,8 @@ const BundlesPage = () => {
             <LimitedEdition/>
             <PreOrder
                 headerText='SUPPORT HASH RUSH'
-                subtext='Estimated delivery of the hero system'
+                subtext='Purchase hero founder bundle and support Hash Rush!
+                         Estimated delivery of the hero system'
                 date='01 | 11 | 2020'
                 isFounderBundles={true}
             />
@@ -33,8 +34,7 @@ const BundlesPage = () => {
             <BundlesBackground/>
             <PreOrder
                 headerText='Pre-order your hero now!'
-                subtext='Purchase hero founder bundle and support Hash Rush!
-                         Estimated delivery of the hero system'
+                subtext='Estimated delivery of the hero system'
                 date='01 | 11 | 2020'
                 isFounderBundles={false}
             />
