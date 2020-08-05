@@ -3,7 +3,7 @@
 }
 
 .limited-edition {
-  height: 784px;
+  height: 1001px;
   background-image: url("../../assets/bundle-page/3-heroes-main-min.jpg");
   background-repeat: no-repeat;
   background-size: 100%, 100%;
@@ -12,7 +12,7 @@
 
   &__content {
     position: absolute;
-    top: 510px;
+    top: 660px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -57,6 +57,7 @@
   background: linear-gradient(to right, rgba(57, 78, 96, 0.2), #d4f0ff, rgba(57, 78, 96, 0.2));
   height: 1px;
   opacity: 0.5;
+  margin-top: 66px;
 }
 
 @media (max-width: 1325px) {

@@ -4,8 +4,8 @@ import Header from '../components/Header';
 import LimitedEdition from '../components/LimitedEdition';
 import PreOrder from '../components/PreOrder';
 import ChooseHero from '../components/ChooseHero';
-import GearList from '../components/GearList';
 import Footer from '../components/Footer';
+import BundlesBackground from '../components/BundlesBackground';
 
 const BundlesPage = () => {
     const [isReadyFirstPart, setReadyFirstPart] = useState(false);
@@ -30,7 +30,7 @@ const BundlesPage = () => {
                 isFounderBundles={true}
             />
             <ChooseHero/>
-            <GearList/>
+            <BundlesBackground/>
             <PreOrder
                 headerText='Pre-order your hero now!'
                 subtext='Purchase hero founder bundle and support Hash Rush!
