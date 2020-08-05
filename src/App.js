@@ -21,6 +21,7 @@ import './index.scss';
 import ThankYouPage from './pages/ThankYouPage';
 import {Elements} from '@stripe/react-stripe-js';
 import {loadStripe} from '@stripe/stripe-js/pure';
+import StripeModal from './components/BundleHeader/Purchase/StripeModal';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -62,6 +63,7 @@ function App({ signInByToken }) {
             <Route path="/bundles" component={BundlesPage}/>
             <Route path="/bundle/:id" component={BundlePage} />
             <Route path="/thank-you" component={ThankYouPage}/>
+            <Route path="/payment/card" component={StripeModal}/>
           </Suspense>
         </Switch>
       </HashRouter>

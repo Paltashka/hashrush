@@ -1,26 +1,49 @@
 import React, {useEffect} from 'react';
-import {CardElement} from '@stripe/react-stripe-js';
+import {CardCvcElement, CardElement, CardExpiryElement, CardNumberElement} from '@stripe/react-stripe-js';
 import './index.scss';
 import Button from '../../../Button';
 import {useSelector} from 'react-redux';
 import {getStripePaymentStatus} from '../../../../reducers/purchase';
-import {useHistory} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
+import logo from '../../../../assets/images/logo.png';
+import stripe from '../../../../assets/card-payment/powered-by-stripe.svg';
+import mastercard from '../../../../assets/card-payment/mastercard-secure.svg';
+import visa from '../../../../assets/card-payment/visa-verified.svg';
+import paysafe from '../../../../assets/card-payment/paysafe.svg';
 
 const CARD_ELEMENT_OPTIONS = {
     style: {
         base: {
-            color: '#32325d',
-            fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+            color: 'rgba(255, 255, 255, 0.5)',
             fontSmoothing: 'antialiased',
-            fontSize: '16px',
+            fontSize: '14px',
+            fontWeight: '300',
+            fontStretch: 'normal',
+            fontStyle: 'normal',
+            lineHeight: '1.64',
+            letterSpacing: 'normal',
+
+            ':focus': {
+                color: 'rgba(255, 255, 255, 0.5)',
+            },
+
             '::placeholder': {
-                color: '#aab7c4'
-            }
+                color: 'rgba(255, 255, 255, 0.5)',
+            },
+
+            ':focus::placeholder': {
+                color: 'rgba(255, 255, 255, 0.5)',
+            },
         },
         invalid: {
-            color: '#fa755a',
-            iconColor: '#fa755a'
-        }
+            color: '#f66b5f',
+            ':focus': {
+                color: '#f66b5f',
+            },
+            '::placeholder': {
+                color: 'rgba(255, 255, 255, 0.5)',
+            },
+        },
     }
 };
 
@@ -35,16 +58,41 @@ const StripeModal = ({handleStripePayment}) => {
     }, [paymentStatus])
 
     return (
-        <form className="purchase__strapi__modal">
-            <fieldset className="FormGroup">
-                <div className="FormRow">
-                    <CardElement options={CARD_ELEMENT_OPTIONS} />
+        <div className="stripe__modal__wrapper">
+            <div className="stripe__modal">
+                <span className="modal__back" onClick={() => history.goBack()}>back</span>
+                <Link to="/"><img className="stripe__modal__logo" src={logo} alt="logo"/></Link>
+                <div className="stripe__modal__header">
+                    <h1>Purchase bundle</h1>
+                    <p>Farion founder bundle</p>
                 </div>
-            </fieldset>
-            <div className="purchase__strapi__modal__button">
-                <Button text="Pay" width="220px" onClick={handleStripePayment}/>
+                <fieldset className="stripe__modal__form">
+                    <p className="stripe__modal__form__text">Card number</p>
+                    <div className="FormGroup">
+                        <div className="FormRow">
+                            <CardNumberElement options={CARD_ELEMENT_OPTIONS}/>
+                        </div>
+                        <div className="stripe__modal__form__expire_cvc">
+                            <div className="FormRow FormRow--small">
+                                <p className="stripe__modal__form__text">Valid until</p>
+                                <CardExpiryElement options={CARD_ELEMENT_OPTIONS}/>
+                            </div>
+                            <div className="FormRow FormRow--small">
+                                <p className="stripe__modal__form__text">CVC</p>
+                                <CardCvcElement options={CARD_ELEMENT_OPTIONS}/>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <Button text="Purchase $20.00" classPosition="modal__button" width="534px" type="submit" />
+                <div className="stripe__modal__verified__labels">
+                    <img src={stripe} alt=""/>
+                    <img src={mastercard} alt=""/>
+                    <img src={visa} alt=""/>
+                    <img src={paysafe} alt=""/>
+                </div>
             </div>
-        </form>
+        </div>
     )
 }
 

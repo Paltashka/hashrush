@@ -43,6 +43,7 @@ const Purchase = ({id, heroName, heroImg, price}) => {
     const stripe = useStripe();
     const elements = useElements();
     const dispatch = useDispatch();
+    const history = useHistory();
     const bundle = useSelector(state => getBundleById(state, id));
     const spritePaymentStatus = useSelector(state => getStripePaymentStatus(state));
     const splittedPrice = price.split('.');
@@ -73,7 +74,7 @@ const Purchase = ({id, heroName, heroImg, price}) => {
             alert.show('Choose payment method', {type: 'error'});
             return;
         }
-        setIsModalOpen(!isModalOpen);
+        history.push('/payment/card');
     }
 
     return (
@@ -134,13 +135,13 @@ const Purchase = ({id, heroName, heroImg, price}) => {
                     </p>
                 </div>
             </div>
-            <Modal
-                isOpen={isModalOpen}
-                style={customStyles}
-                onRequestClose={handleModal}
-            >
-                <StripeModal handleStripePayment={handleStripePayment}/>
-            </Modal>
+            {/*<Modal*/}
+            {/*    isOpen={isModalOpen}*/}
+            {/*    style={customStyles}*/}
+            {/*    onRequestClose={handleModal}*/}
+            {/*>*/}
+            {/*    <StripeModal handleStripePayment={handleStripePayment}/>*/}
+            {/*</Modal>*/}
             {/*<Modal*/}
             {/*    isOpen={isModalOpen}*/}
             {/*    style={customStyles}*/}
