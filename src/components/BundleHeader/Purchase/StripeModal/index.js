@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {CardCvcElement, CardElement, CardExpiryElement, CardNumberElement} from '@stripe/react-stripe-js';
 import './index.scss';
 import Button from '../../../Button';
@@ -48,8 +48,18 @@ const CARD_ELEMENT_OPTIONS = {
 };
 
 const StripeModal = ({location}) => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const paymentStatus = useSelector(state => getStripePaymentStatus(state));
     const history = useHistory();
+    const handleResize = () => setScreenWidth(window.innerWidth);
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, [handleResize, screenWidth]);
 
     useEffect(() => {
         if (paymentStatus) {
@@ -89,7 +99,13 @@ const StripeModal = ({location}) => {
                         </div>
                     </div>
                 </fieldset>
-                <Button onClick={handleSubmit} text="Purchase $20.00" classPosition="modal__button" width="534px" type="submit" />
+                <Button
+                    onClick={handleSubmit}
+                    text="Purchase $20.00"
+                    classPosition="modal__button"
+                    width={screenWidth > 534 ? "534px" : "auto"}
+                    type="submit"
+                />
                 <div className="stripe__modal__verified__labels">
                     <img src={stripe} alt=""/>
                     <img src={mastercard} alt=""/>

@@ -133,3 +133,29 @@
     margin-top: 50px;
   }
 }
+
+@media  screen and (max-width: 768px) {
+  .stripe__modal {
+    &__logo {
+      top: 0;
+    }
+
+    &__form {
+      width: auto;
+    }
+
+    &__verified__labels {
+      width: 95vw;
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+  .stripe__modal {
+    &__verified__labels {
+      flex-direction: column;
+      width: auto;
+      height: 20%;
+    }
+  }
+}
