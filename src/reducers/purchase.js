@@ -30,6 +30,9 @@ import farion2Full from '../assets/bundle-page/farion2_full.jpg';
 import farion3Full from '../assets/bundle-page/farion3_full.jpg';
 import brownUrsaraFull from '../assets/bundle-page/brown-ursara_full.jpg';
 import usernameFull from '../assets/bundle-page/username_full.jpg';
+import meligharTrailer from '../assets/video/melighar trailer.mov';
+import caraxTrailer from '../assets/video/carax trailer.mov';
+import farionTrailer from '../assets/video/farion trailer.mov';
 
 const initialState = {
     stripeStatus: null,
@@ -44,6 +47,7 @@ const initialState = {
             bgImg: meligharBg,
             articleImg: meligharArticle,
             price: '$20.00',
+            video: meligharTrailer,
             items: [
                 melighar1,
                 melighar2,
@@ -123,6 +127,7 @@ const initialState = {
             bgImg: caraxBg,
             articleImg: caraxArticle,
             price: '$20.00',
+            video: caraxTrailer,
             items: [
                 carax1,
                 carax2,
@@ -202,6 +207,7 @@ const initialState = {
             bgImg: farionBg,
             articleImg: farionArticle,
             price: '$20.00',
+            video: farionTrailer,
             items: [
                 farion1,
                 farion2,
@@ -283,6 +289,7 @@ const initialState = {
         bgImg: meligharBg,
         articleImg: meligharArticle,
         price: '$20.00',
+        video: meligharTrailer,
         items: [
             melighar1,
             melighar2,

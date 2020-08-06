@@ -28,6 +28,12 @@
   }
 }
 
+.pre-order__wrapper {
+  z-index: 2;
+  position: relative;
+  top: -400px;
+}
+
 @media screen and (max-width: 768px) {
   .pre-order__text {
     width: 90vw;
@@ -43,5 +49,9 @@
 @media screen and (max-width: 375px) {
   .pre-order {
     padding-bottom: 0;
+  }
+
+  .pre-order__wrapper {
+    top: 0;
   }
 }

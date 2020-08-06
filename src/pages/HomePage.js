@@ -29,12 +29,14 @@ const HomePage = () => {
             <Parallax/>
             {isReadyFirstPart === true && (
                 <div>
-                    {/*<PreOrder*/}
-                    {/*    headerText='SUPPORT HASH RUSH'*/}
-                    {/*    subtext='Estimated delivery of the hero system'*/}
-                    {/*    date='01 | 11 | 2020'*/}
-                    {/*    isFounderBundles={true}*/}
-                    {/*/>*/}
+                    <div className='pre-order__wrapper'>
+                        <PreOrder
+                            headerText='SUPPORT HASH RUSH'
+                            subtext='Estimated delivery of the hero system'
+                            date='01 | 11 | 2020'
+                            isFounderBundles={true}
+                        />
+                    </div>
                     <News/>
                     <Community/>
                 </div>

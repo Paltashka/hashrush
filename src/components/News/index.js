@@ -5,7 +5,7 @@ const News = () => {
 
   return (
     <div className="news">
-      <div className="news__content container"> 
+      <div className="news__content">
         <h1 className="news__heading heading">latest news</h1>
       </div>
     </div>

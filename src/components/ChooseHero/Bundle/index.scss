@@ -77,9 +77,11 @@
     justify-content: center;
     width: 700px;
     height: 400px;
+    flex-direction: column;
 
-    img {
-
+    &__video {
+      width: 88%;
+      height: 367px;
     }
   }
 }
