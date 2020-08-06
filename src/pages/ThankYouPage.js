@@ -12,7 +12,7 @@ const ThankYouPage = () => {
     return (
         <>
             <Header isLogin={true}/>
-            <BoughtBundle id={purchased.id} heroName={purchased.heroName} items={purchased.items} image={purchased.image}/>
+            <BoughtBundle id={purchased.id} heroName={purchased.name} items={purchased.items} image={purchased.image}/>
             <OtherBundles id={purchased.id} bgImg={otherBundleBG} />
             <Footer/>
         </>

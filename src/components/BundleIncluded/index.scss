@@ -44,3 +44,24 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .bundle-included__item {
+    margin-right: 0;
+    align-items: center;
+    img {
+      width: 170px;
+      height: 240px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .bundle-included__item__data__header {
+    flex-direction: column;
+  }
+
+  .bundle-included__dash {
+    margin-top: 0;
+  }
+}

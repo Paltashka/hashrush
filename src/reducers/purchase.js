@@ -1,4 +1,4 @@
-import {ADD_PURCHASED_BUNDLE, FAILED, STRIPE_PAYMENT, SUCCESS} from '../types';
+import {ADD_PURCHASED_BUNDLE, FAILED, SELECT_BUNDLE, STRIPE_PAYMENT, SUCCESS} from '../types';
 import melighar1 from '../assets/bundle-page/offensive-staff-min.png';
 import melighar2 from '../assets/bundle-page/crystal-helm-min.png';
 import melighar3 from '../assets/bundle-page/lingering-hope-min.png';
@@ -48,6 +48,8 @@ const initialState = {
                 melighar1,
                 melighar2,
                 melighar3,
+            ],
+            sharedItems: [
                 brownUrsara,
                 username,
             ],
@@ -125,8 +127,10 @@ const initialState = {
                 carax1,
                 carax2,
                 carax3,
+            ],
+            sharedItems: [
                 brownUrsara,
-                username
+                username,
             ],
             otherBundles: [
                 {
@@ -202,6 +206,8 @@ const initialState = {
                 farion1,
                 farion2,
                 farion3,
+            ],
+            sharedItems: [
                 brownUrsara,
                 username,
             ],
@@ -267,7 +273,85 @@ const initialState = {
         },
 
     ],
-    purchasedBundle: {},
+    purchasedBundle: {
+        id: 1,
+        name: 'Melighar',
+        image: melighar,
+        type: 'the grandmaster melighar',
+        text: 'Devestate your enemies with fire and thunder with Melighar and his Hero Items, along with a limited edition skin for your Ernack workers',
+        detailText: 'Master of the Arcane arts, Melighar casts destructive spells and aids his magic using counterparts.',
+        bgImg: meligharBg,
+        articleImg: meligharArticle,
+        price: '$20.00',
+        items: [
+            melighar1,
+            melighar2,
+            melighar3,
+        ],
+        sharedItems: [
+            brownUrsara,
+            username,
+        ],
+        otherBundles: [
+            {
+                id: 2,
+                name: 'Carax',
+                img: carax,
+                items: [carax1, carax2, carax3],
+            },
+            {
+                id: 3,
+                name: 'Farion',
+                img: farion,
+                items: [farion1, farion2, farion3],
+            },
+        ],
+        bundleIncluded: [
+            {
+                id: 1,
+                name: 'Thaliel Staff',
+                description: 'Once weilded by the Archemage Thaliel, this staff is passed down as a relic to each Trinell Archmage.',
+                img: melighar1Full,
+                specialEffect: 'Special effect: Increases the Heros Damage Stat by 10 %',
+                type: 'defense',
+                subheader: '',
+            },
+            {
+                id: 2,
+                name: 'Crystal Helm',
+                description: 'Durable as steel but light as a feather, this helmet will protect anyone who wears it.',
+                img: melighar2Full,
+                specialEffect: 'Special effect: Increases the Heros Blunt Damage Resistance by 10%',
+                type: 'offense',
+                subheader: '',
+            },
+            {
+                id: 3,
+                name: 'Lingering Hope',
+                description: 'Magical locket that was created by one of the great sages, it is said to have prolonged his life to an unnaturaly long time.',
+                img: melighar3Full,
+                specialEffect: 'Special effect: When Hero HP becomes less than 10%, the Hero heals itself for 100 HP (60 CD)',
+                type: 'support',
+                subheader: '',
+            },
+            {
+                id: 4,
+                name: 'The legendary Brown Ursara Ernack worker skin',
+                description: 'Made from the furs of a vanquished feral Ursara, these cloaks will make your Workers shine from the Crystals still visible on the Ursaras antlers.',
+                img: brownUrsaraFull,
+                type: '',
+                subheader: 'Make your Workers stand out in the limited edition Beastly Worker skin, first of its kind! ',
+            },
+            {
+                id: 5,
+                name: 'Mark your name in Hash Rush history!',
+                description: 'Have your username on the Hero Systems Founders banner that will be visable while the game loads. ',
+                img: usernameFull,
+                type: '',
+                subheader: '',
+            },
+        ],
+    },
 };
 
 export default function reducer(state = initialState, {type, payload}) {

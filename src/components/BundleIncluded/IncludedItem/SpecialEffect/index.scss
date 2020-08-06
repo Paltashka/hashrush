@@ -45,9 +45,12 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .special-effect {
     width: auto;
-    padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0 50px;
   }
 }
+

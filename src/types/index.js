@@ -3,5 +3,6 @@ export const SIGN_OUT_SUCCESS = 'SIGN_OUT_SUCCESS';
 
 export const STRIPE_PAYMENT = 'STRIPE_PAYMENT';
 export const ADD_PURCHASED_BUNDLE = 'ADD_PURCHASED_BUNDLE';
+export const SELECT_BUNDLE = 'SELECT_BUNDLE';
 export const SUCCESS = '_SUCCESS';
 export const FAILED = '_FAILED';

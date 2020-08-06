@@ -9,9 +9,7 @@ import BundleDetailsItem from './BundleDetailsItem';
 import Button from '../../Button';
 import {useDispatch, useSelector} from 'react-redux';
 import {useAlert} from 'react-alert';
-import Modal from 'react-modal';
-import {CardElement, CardNumberElement, useElements, useStripe} from '@stripe/react-stripe-js';
-import StripeModal from './StripeModal';
+import {CardNumberElement, useElements, useStripe} from '@stripe/react-stripe-js';
 import {stripePayment} from '../../../actions/purchase';
 import {getBundleById, getStripePaymentStatus} from '../../../reducers/purchase';
 import {useHistory} from 'react-router-dom';
@@ -27,9 +25,7 @@ const Purchase = ({id, heroName, heroImg, price}) => {
     const spritePaymentStatus = useSelector(state => getStripePaymentStatus(state));
     const splittedPrice = price.split('.');
 
-    useEffect(() => {
-
-    }, [spritePaymentStatus])
+    useEffect(() => {}, [spritePaymentStatus])
 
     const handleStripePayment = async () => {
         if (!payment) {
@@ -108,7 +104,7 @@ const Purchase = ({id, heroName, heroImg, price}) => {
                             <span className="purchase__content__buy__price--small">.{splittedPrice[1]}</span>
                         </span>
                         <div>
-                            <Button text="Purchase" style={{width: '250px'}} width="220px" onClick={handleModal}/>
+                            <Button text="Purchase" width="220px" onClick={handleModal}/>
                         </div>
                     </div>
                     <p className="purchase__content__buy__terms">By clicking “Purchase” I approve the

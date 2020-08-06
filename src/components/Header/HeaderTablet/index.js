@@ -37,10 +37,10 @@ const HeaderTablet = ({isLogin}) => {
                 <ul className="footer__nav">
                     <li className="footer__nav-item" onClick={() => history.push('/')}>main</li>
                     <li className="footer__nav-item" onClick={() => history.push('/about')}>about game</li>
-                    {/* <li className="navigation__item navigation__item__pre-sale" onClick={() => history.push('/bundles')}>
+                    <li className="navigation__item navigation__item__pre-sale" onClick={() => history.push('/bundles')}>
                         <Link to="/bundles">hero pre-sale</Link>
                         <img src={lightning} alt="hero pre-sale"/>
-                    </li> */}
+                    </li>
                     {/* <li className="footer__nav-item">store</li>
           <li className="footer__nav-item">leaderboard</li> */}
                 </ul>

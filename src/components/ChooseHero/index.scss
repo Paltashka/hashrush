@@ -51,12 +51,13 @@
   }
 }
 
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .choose-hero__title__text {
     width: auto;
   }
+}
 
+@media screen and (max-width: 375px) {
   .choose-hero__background {
     background: none;
   }

@@ -73,7 +73,7 @@
   .bundle-included__item {
     flex-direction: column;
     align-items: center;
-    height: 450px;
+    height: 550px;
 
     &__img {
       width: 100px;
@@ -84,6 +84,6 @@
 
 @media screen and (max-width: 437px) {
   .bundle-included__item__img {
-    margin-right: 15px;
+    margin-right: 0;
   }
 }

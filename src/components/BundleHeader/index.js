@@ -5,6 +5,7 @@ import BundleHero from './BundleHero';
 import Sticky from 'react-stickynode';
 import {useSelector} from 'react-redux';
 import {getBundleById} from '../../reducers/purchase';
+import PurchaseMobile from './Purchase/PurchaseMobile';
 
 const BundleHeader = ({id}) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -28,14 +29,14 @@ const BundleHeader = ({id}) => {
             backgroundAttachment: 'fixed',
         }}>
             <BundleHero id={id} heroName={bundle.name} heroText={bundle.text} heroImg={bundle.image} heroType={bundle.type}
-                        heroDetailText={bundle.detailText} items={bundle.items}/>
+                        heroDetailText={bundle.detailText} items={bundle.items} sharedItems={bundle.sharedItems}/>
             <div className="purchase__wrapper">
-                {screenWidth > 1442 ? (
+                {screenWidth > 1468 ? (
                     <Sticky enabled={true} top='.header' bottomBoundary={2800}>
                         <Purchase id={id} heroName={bundle.name} heroImg={bundle.image} price={bundle.price}/>
                     </Sticky>
                 ) : (
-                    <Purchase id={id} heroName={bundle.name} heroImg={bundle.image} price={bundle.price}/>
+                    <></>
                 )}
             </div>
         </div>
