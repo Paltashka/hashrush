@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Link, useHistory} from 'react-router-dom';
 
 import '../Header/index.scss';
@@ -7,9 +7,9 @@ import './index.scss';
 import logo from '../../assets/images/logo.png';
 import download from '../../assets/about/download.svg';
 
-const ThanksModal = (props) => {
+const ThanksModal = ({verifying, img, title, text}) => {
     const history = useHistory();
-    const {verifying, img, title, text} = props;
+
     return (
         <div className="thanks">
             <Link to="/"><span className="modal__back">back</span></Link>
@@ -20,7 +20,7 @@ const ThanksModal = (props) => {
                     Please check your email box for the verification email,
                     you will not be able to play the game unless your email address is verified
                 </p>}
-                <img className="thanks__img" src={logo} alt="Raken"/>
+                <img className="thanks__img" src={img} alt="Raken"/>
                 <div className="login__account">
                     {verifying && <a href={`${process.env.REACT_APP_ProdUrl}/HashRush`} download>
             <span className="button">
