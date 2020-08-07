@@ -32,7 +32,7 @@ const BundleHeader = ({id}) => {
                         heroDetailText={bundle.detailText} items={bundle.items} sharedItems={bundle.sharedItems}/>
             <div className="purchase__wrapper">
                 {screenWidth > 1468 ? (
-                    <Sticky enabled={true} top='.header' bottomBoundary={2800}>
+                    <Sticky enabled={true} top='.header' bottomBoundary={2600}>
                         <Purchase id={id} heroName={bundle.name} heroImg={bundle.image} price={bundle.price}/>
                     </Sticky>
                 ) : (
