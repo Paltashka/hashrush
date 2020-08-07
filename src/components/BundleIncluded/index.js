@@ -9,7 +9,7 @@ const BundleIncluded = ({id}) => {
     const bundle = useSelector(state => getBundleById(state, id));
     return (
         <div className="bundle-included" style={{
-            backgroundImage: `url('${bundle.bgImg}')`,
+            // backgroundImage: `url('${bundle.bgImg}')`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundAttachment: 'fixed',

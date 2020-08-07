@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
-import Bundle from '../ChooseHero/Bundle';
-import GearList from '../GearList';
+import GearList from '../../GearList';
+import Bundle from '../Bundle';
 
 const BundleBackground = () => {
     return (

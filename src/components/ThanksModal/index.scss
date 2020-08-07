@@ -17,7 +17,8 @@
         left: 0;
         position: fixed;
         z-index: 1;
-        background-size: contain;
+        //background-size: contain;
+        background-size: 100% auto;
     }
     &__img {
         position: absolute;

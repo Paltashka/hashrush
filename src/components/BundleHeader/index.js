@@ -23,7 +23,7 @@ const BundleHeader = ({id}) => {
 
     return (
         <div className="bundle-header" style={{
-            backgroundImage: `url('${bundle.bgImg}')`,
+            // backgroundImage: `url('${bundle.bgImg}')`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundAttachment: 'fixed',

@@ -5,7 +5,7 @@ import LimitedEdition from '../components/LimitedEdition';
 import PreOrder from '../components/PreOrder';
 import ChooseHero from '../components/ChooseHero';
 import Footer from '../components/Footer';
-import BundlesBackground from '../components/BundlesBackground';
+import BundlesBackground from '../components/ChooseHero/Background';
 
 const BundlesPage = () => {
     const [isReadyFirstPart, setReadyFirstPart] = useState(false);
