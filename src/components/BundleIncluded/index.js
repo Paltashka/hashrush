@@ -25,7 +25,7 @@ const BundleIncluded = ({id}) => {
                     specialEffect={item.specialEffect}
                     type={item.type}
                     subheader={item.subheader}
-                    isLastChild={index === bundle.items.length - 1}
+                    isLastChild={index === bundle.bundleIncluded.length - 1}
                 />
             })}
             <div className="bundle-included__dash"/>
