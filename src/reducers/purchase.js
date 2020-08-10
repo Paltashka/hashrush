@@ -14,7 +14,7 @@ import farion2 from '../assets/bundle-page/offensive-hammer-min.png';
 import farion3 from '../assets/bundle-page/support-stew-min.png';
 import melighar from '../assets/bundle-page/melighar-grandmaster.jpg';
 import farionBg from '../assets/bundle-page/farion-bg.png';
-import meligharBg from '../assets/bundle-page/melighar-bg.png';
+import meligharBg from '../assets/bundle-page/melighar-bg-min.jpg';
 import caraxBg from '../assets/bundle-page/carax-bg.png';
 import meligharArticle from '../assets/bundle-page/melighar-article.png';
 import farionArticle from '../assets/bundle-page/farion-article.png';
