@@ -4,9 +4,10 @@ import FounderBundles from './FounderBundles';
 import Bundles from './Bundles';
 
 const PreOrder = ({headerText, subtext, date, isFounderBundles, bgColor}) => {
+    console.log(bgColor);
     return (
         <div className="pre-order" style={{
-            backgroundColor: bgColor,
+            background: bgColor,
         }}>
             <div className="pre-order_title">
                 <h1 className="heading">{headerText}</h1>
