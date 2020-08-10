@@ -1,22 +1,17 @@
 .choose-hero {
-  background-color: #0E1A27;
   position: relative;
-  //background-image: url('../../assets/bundle-page/3-heroes-bw.png');
-  //background-repeat: no-repeat;
-  //background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #07131E;
 
   &__title {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
     margin-bottom: 300px;
-    //justify-content: center;
     align-items: center;
     width: 50%;
-    //height: 460px;
 
     &__text {
       font-family: Montserrat;

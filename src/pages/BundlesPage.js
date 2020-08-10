@@ -8,17 +8,6 @@ import Footer from '../components/Footer';
 import BundlesBackground from '../components/ChooseHero/Background';
 
 const BundlesPage = () => {
-    const [isReadyFirstPart, setReadyFirstPart] = useState(false);
-    const [isReadySecondPart, setReadySecondPart] = useState(false);
-
-    setTimeout(() => {
-        setReadyFirstPart(true);
-    }, 5000);
-
-    setTimeout(() => {
-        setReadySecondPart(true);
-    }, 8000);
-
     return (
         <ParallaxProvider>
             <Header isLogin={true}/>
@@ -29,7 +18,7 @@ const BundlesPage = () => {
                          Estimated delivery of the hero system'
                 date='01 | 11 | 2020'
                 isFounderBundles={true}
-                bgColor='#171327'
+                bgColor='#06121E'
             />
             <ChooseHero/>
             <BundlesBackground/>

@@ -4,7 +4,6 @@ import FounderBundles from './FounderBundles';
 import Bundles from './Bundles';
 
 const PreOrder = ({headerText, subtext, date, isFounderBundles, bgColor}) => {
-    console.log(bgColor);
     return (
         <div className="pre-order" style={{
             background: bgColor,
