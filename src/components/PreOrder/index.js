@@ -3,9 +3,11 @@ import './index.scss';
 import FounderBundles from './FounderBundles';
 import Bundles from './Bundles';
 
-const PreOrder = ({headerText, subtext, date, isFounderBundles}) => {
+const PreOrder = ({headerText, subtext, date, isFounderBundles, bgColor}) => {
     return (
-        <div className="pre-order">
+        <div className="pre-order" style={{
+            backgroundColor: bgColor,
+        }}>
             <div className="pre-order_title">
                 <h1 className="heading">{headerText}</h1>
                 <div className="pre-order__text__wrapper">

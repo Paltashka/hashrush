@@ -35,6 +35,7 @@ const HomePage = () => {
                             subtext='Estimated delivery of the hero system'
                             date='01 | 11 | 2020'
                             isFounderBundles={true}
+                            bgColor='#171327'
                         />
                     </div>
                     <News/>

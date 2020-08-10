@@ -29,6 +29,7 @@ const BundlesPage = () => {
                          Estimated delivery of the hero system'
                 date='01 | 11 | 2020'
                 isFounderBundles={true}
+                bgColor='#171327'
             />
             <ChooseHero/>
             <BundlesBackground/>
@@ -37,6 +38,7 @@ const BundlesPage = () => {
                 subtext='Estimated delivery of the hero system'
                 date='01 | 11 | 2020'
                 isFounderBundles={false}
+                bgColor='black'
             />
             <Footer/>
         </ParallaxProvider>
