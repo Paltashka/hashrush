@@ -63,7 +63,7 @@ function App({ signInByToken }) {
             <Route path="/resetPassword" component={CompleteResetPasswordPage} />
             <Route path="/bundles" component={BundlesPage}/>
             <Route path="/bundle/:id" component={BundlePage} />
-            <Route path="/thank-you" component={ThankYouPage}/>
+            <Route path="/thanks-order" component={ThankYouPage}/>
             <Route path="/purchase" component={PurchaseModal} />
             <Route path="/payment/card" component={StripeModal}/>
           </Suspense>

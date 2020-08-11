@@ -142,7 +142,8 @@
   .purchase {
     width: auto;
     position: relative;
-    top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     &__heading {
       margin-left: 15px;

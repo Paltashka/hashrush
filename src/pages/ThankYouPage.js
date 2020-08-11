@@ -13,7 +13,7 @@ const ThankYouPage = () => {
         <>
             <Header isLogin={true}/>
             <BoughtBundle id={purchased.id} heroName={purchased.name} items={purchased.items} image={purchased.image}/>
-            <OtherBundles id={purchased.id} bgImg={otherBundleBG} />
+            <OtherBundles id={purchased.id} />
             <Footer/>
         </>
     );

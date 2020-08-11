@@ -41,6 +41,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .bought-bundle {
+    background: black;
+  }
   .bought-bundle__text {
     width: 71vw;
   }
