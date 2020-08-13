@@ -44,7 +44,7 @@ const Bundle = ({id, articleText, isReversed}) => {
                 </div>
             </div>
             <div onClick={toggleVideo} className="choose-hero-bundle__hero-image">
-                {!isVideoPlay && <img style={{ width: '200px', position: 'absolute', zIndex: '2' }} src={play} alt="play" />}
+                {!isVideoPlay && <img style={{ width: '133px', position: 'absolute', zIndex: '2' }} src={play} alt="play" />}
                 {!isVideoPlay && times < 1 && <img style={{ position: 'absolute' }} src={bundle.articleImg} alt="pre video" />}
                 {/*<img src={bundle.articleImg}/>*/}
                 <video ref={videoRef} className="choose-hero-bundle__hero-image__video">

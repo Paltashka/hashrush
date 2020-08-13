@@ -61,6 +61,10 @@
 }
 
 @media (max-width: 1325px) {
+  .limited-edition__wrapper {
+    height: 645px;
+  }
+
   .limited-edition {
     height: 900px;
   }
@@ -68,56 +72,34 @@
 
 @media (max-width: 1155px) {
   .limited-edition {
-    //height: 700px;
-    top: -80px;
+    top: -169px;
     background-size: initial;
     background-position: top;
   }
 }
 
-@media (max-width: 965px) {
-  .limited-edition {
-    top: -60px;
-  }
-}
-
-//@media (max-width: 823px) {
-//  .limited-edition {
-//    height: 600px;
-//    top: -50px;
-//  }
-//
-//  .limited-edition__content {
-//    top: 378px;
-//  }
-//}
-
-@media (max-width: 723px) {
-  .limited-edition {
-    top: -40px;
-  }
-}
-
 @media (max-width: 652px) {
-  .limited-edition {
-    top: -30px;
-  }
-
   .limited-edition__content {
     height: 290px;
   }
 }
 
-//@media screen and (max-width: 425px) {
-//  .limited-edition {
-//    top: 65px;
-//    height: 550px;
-//  }
-//
-//  .limited-edition__content {
-//    top: 175px;
-//  }
-//}
+
+@media screen and (max-width: 375px) {
+  .limited-edition {
+    background-image: url("../../assets/bundle-page/3-heroes-main-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__content {
+      top: 528px;
+    }
+
+    &__text {
+      width: 90vw;
+    }
+  }
+}
 
 @media screen and (max-width: 425px) {
   .limited-edition__scroll {

@@ -27,7 +27,7 @@ const BundlesPage = () => {
                 subtext='Estimated delivery of the hero system'
                 date='01 | 11 | 2020'
                 isFounderBundles={false}
-                bgColor='#06111C'
+                bgColor='linear-gradient(to bottom, #06121d, #02080e 97%)'
             />
             <Footer/>
         </ParallaxProvider>

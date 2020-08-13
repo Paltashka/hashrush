@@ -59,4 +59,8 @@
     flex-wrap: initial;
     flex-direction: column;
   }
+
+  .founder-item:not(:last-child) {
+    margin-bottom: 60px
+  }
 }

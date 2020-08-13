@@ -1,6 +1,6 @@
 .choose-hero-bundle {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 160px;
   align-items: center;
 
   &__information {
@@ -39,7 +39,7 @@
       &__read-more {
         font-family: Montserrat;
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
@@ -138,11 +138,27 @@
 
     &__hero-image {
       width: 345px;
-      background-size: 100% 100%;
+      background-image: none;
       margin-bottom: 40px;
 
       img {
-        width: 323px;
+        width: 360px;
+      }
+
+      &__video {
+        height: auto;
+      }
+    }
+
+    &__information {
+      &__type {
+        margin-top: 0;
+      }
+
+      &__buttons {
+        &__read-more {
+          margin-left: 30px;
+        }
       }
     }
   }
