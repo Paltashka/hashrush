@@ -8,6 +8,7 @@ import otherBundleBG from '../assets/bundle-page/3-heroes-bw.png';
 import PurchaseMobile from '../components/BundleHeader/Purchase/PurchaseMobile';
 import {useSelector} from 'react-redux';
 import {getBundleById} from '../reducers/purchase';
+import Sticky from 'react-stickynode';
 
 const BundlePage = ({match}) => {
     const id = Number.parseInt(match.params.id);
@@ -26,7 +27,7 @@ const BundlePage = ({match}) => {
     return (
         <>
             <Header isLogin={true}/>
-            <div style={ screenWidth > 375 ?{
+            <div style={screenWidth > 375 ? {
                 backgroundImage: `url('${bundle.bgImg}')`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '100% auto',
