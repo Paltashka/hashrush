@@ -1,9 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import OtherBundles from '../components/OtherBundles';
 import BoughtBundle from '../components/BoughtBundle';
-import otherBundleBG from '../assets/bundle-page/3-heroes-bw.png';
 import {useSelector} from 'react-redux';
 import {getPurchasedBundle} from '../reducers/purchase';
 

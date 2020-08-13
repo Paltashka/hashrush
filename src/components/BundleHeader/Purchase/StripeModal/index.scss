@@ -1,21 +1,8 @@
-//.purchase__stripe__modal {
-//  display: flex;
-//  flex-direction: column;
-//
-//  &__button {
-//    width: 50%;
-//    display: flex;
-//    align-self: center;
-//    justify-content: center;
-//  }
-//}
-//
 .FormGroup {
   border: none;
 }
 
 .FormRow {
-  //width: 373px;
   margin-top: 20px;
 
   &--small {
@@ -59,8 +46,8 @@
 
 .stripe__modal {
   &__logo {
-    width: 131px;
-    height: 78px;
+    width: 100px;
+    height: 60px;
     position: absolute;
     z-index: 2;
     top: 40px;
@@ -83,6 +70,7 @@
       line-height: normal;
       letter-spacing: 1.08px;
       color: #ffffff;
+      margin-bottom: 0;
     }
 
     & > p {
@@ -137,7 +125,9 @@
 @media  screen and (max-width: 768px) {
   .stripe__modal {
     &__logo {
-      top: 0;
+      width: 61px;
+      height: 37px;
+      top: 20px
     }
 
     &__form {
@@ -156,6 +146,19 @@
       flex-direction: column;
       width: auto;
       height: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .stripe__modal__wrapper {
+    height: auto;
+  }
+
+  .stripe__modal {
+    &__verified__labels {
+      margin-top: 18px;
+      margin-bottom: 50px;
     }
   }
 }

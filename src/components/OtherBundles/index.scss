@@ -1,5 +1,4 @@
 .other-bundles {
-  //background: black url("../../assets/bundle-page/3-heroes-bw.png") no-repeat;
   background-color: black;
   background-size: cover;
   display: flex;
@@ -20,8 +19,19 @@
   .other-bundles {
     height: auto;
   }
+
   .other-bundles__items {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .other-bundles {
+    padding-top: 0;
+
+    &__items {
+      margin-top: 30px;
+    }
   }
 }
