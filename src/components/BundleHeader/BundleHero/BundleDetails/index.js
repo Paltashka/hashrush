@@ -30,6 +30,7 @@ const BundleDetails = ({id, heroName, heroImg, heroType, heroDetailText, items})
                         })}
                     </div>
                 </div>
+                <div className="bundle-included__dash"/>
             </div>
         </div>
     );

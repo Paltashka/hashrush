@@ -28,10 +28,16 @@
 
 @media screen and (max-width: 435px) {
   .other-bundles {
-    padding-top: 0;
+    //padding-top: 0;
 
     &__items {
       margin-top: 30px;
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .other-bundles {
+    background-image: none !important;
   }
 }

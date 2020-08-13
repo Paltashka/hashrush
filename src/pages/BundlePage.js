@@ -26,10 +26,13 @@ const BundlePage = ({match}) => {
     return (
         <>
             <Header isLogin={true}/>
-            <div style={{
+            <div style={ screenWidth > 375 ?{
                 backgroundImage: `url('${bundle.bgImg}')`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '100% auto',
+                backgroundColor: 'black',
+            } : {
+
                 backgroundColor: 'black',
             }}>
                 <BundleHeader id={id}/>

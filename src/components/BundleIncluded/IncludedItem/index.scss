@@ -15,6 +15,7 @@
       display: flex;
       align-items: center;
     }
+
     &__heading {
       font-family: Montserrat;
       font-size: 22px;
@@ -85,5 +86,23 @@
 @media screen and (max-width: 437px) {
   .bundle-included__item__img {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bundle-included__item {
+    height: 530px;
+
+    &__heading {
+      margin-bottom: 40px;
+    }
+
+    &__img {
+      margin-bottom: 40px;
+    }
+
+    &__dash {
+      margin-top: 80px;
+    }
   }
 }

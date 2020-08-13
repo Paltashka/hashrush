@@ -100,7 +100,6 @@ html {
 @media screen and (max-width: 445px){
   .bundle-details__info__items__images {
     flex-direction: column;
-    align-items: center;
     height: 273px;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -120,5 +119,21 @@ html {
 @media screen and (max-width: 425px) {
   .bundle-details__info__type {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bundle-hero > h1 {
+    margin-top: 30px;
+  }
+
+  .bundle-details {
+    margin-top: 30px;
+
+    &__info {
+      &__items {
+        margin-bottom: 0;
+      }
+    }
   }
 }
