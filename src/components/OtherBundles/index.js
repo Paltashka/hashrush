@@ -7,7 +7,7 @@ import {getBundleById} from '../../reducers/purchase';
 const OtherBundles = ({id, bgImg}) => {
     const bundle = useSelector(state => getBundleById(state, id));
     return (
-        <div className="other-bundles" style={bgImg && {backgroundImage: `url('${bgImg}'`}}>
+        <div className="other-bundles" style={bgImg && {backgroundImage: `url('${bgImg}'), linear-gradient(to bottom, #06121d, #02080e 97%)`}}>
             <h1 className="heading">Explore other bundles</h1>
             <div className="other-bundles__items">
                 {bundle.otherBundles.map(bundle => {

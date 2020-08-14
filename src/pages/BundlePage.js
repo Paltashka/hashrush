@@ -28,13 +28,12 @@ const BundlePage = ({match}) => {
         <>
             <Header isLogin={true}/>
             <div style={screenWidth > 375 ? {
-                backgroundImage: `url('${bundle.bgImg}')`,
+                backgroundImage: `url('${bundle.bgImg}'), linear-gradient(to bottom, #06121d, #02080e 97%)`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '100% auto',
-                backgroundColor: 'black',
             } : {
 
-                backgroundColor: 'black',
+                background: 'linear-gradient(to bottom, #06121d, #02080e 97%)',
             }}>
                 <BundleHeader id={id}/>
                 <BundleIncluded id={id}/>

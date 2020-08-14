@@ -3,7 +3,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: black url("../../assets/bundle-page/3-heroes-bw.png") no-repeat;
+  background: linear-gradient(to bottom, #06121d, #02080e 97%) no-repeat;
   background-size: cover;
   padding-top: 125px;
 
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 768px) {
   .bought-bundle {
-    background: black;
+    background: linear-gradient(to bottom, #06121d, #02080e 97%);
   }
 
   .bought-bundle__text {
