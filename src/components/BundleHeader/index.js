@@ -5,7 +5,6 @@ import BundleHero from './BundleHero';
 import Sticky from 'react-stickynode';
 import {useSelector} from 'react-redux';
 import {getBundleById} from '../../reducers/purchase';
-import PurchaseMobile from './Purchase/PurchaseMobile';
 
 const BundleHeader = ({id}) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
